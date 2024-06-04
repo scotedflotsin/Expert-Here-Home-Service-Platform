@@ -1,0 +1,123 @@
+<!-- res/layout/dialog_custom_layout.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/widgets_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:paddingTop="@dimen/_10sdp"
+            android:paddingStart="@dimen/_10sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_weight="1"
+            android:fontFamily="@font/outfit"
+            android:text="@string/ready_to_add_your_first_service"
+            android:textAlignment="textEnd"
+            android:textStyle="bold"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/_13sdp"
+            tools:ignore="RtlSymmetry" />
+
+        <LinearLayout
+            android:background="@color/grey_white_bg"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/addressTextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textColorHint="@null"
+            app:boxBackgroundColor="@color/et_bg_color"
+            app:boxStrokeColor="@drawable/custom_box_stroke_color"
+
+            app:cursorColor="@color/black"
+            app:expandedHintEnabled="true"
+            app:hintTextColor="@color/text_color"/>
+
+
+
+        <LinearLayout
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:fontFamily="@font/outfit"
+                    android:textColor="@color/text_color"
+                    android:text="@string/start_offering_your_service_today"
+                    android:textSize="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_15sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+
+
+
+        </LinearLayout>
+
+
+
+        <Button
+            android:id="@+id/submitTicketBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:backgroundTint="@color/theme_Blue"
+            android:fontFamily="@font/outfit_medium"
+            android:text="@string/add_first_service"
+            android:textColor="@color/secondTextColor"
+            android:textSize="@dimen/_11sdp">
+
+        </Button>
+
+        <ProgressBar
+            android:id="@+id/progressEmail"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_15sdp">
+
+        </ProgressBar>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

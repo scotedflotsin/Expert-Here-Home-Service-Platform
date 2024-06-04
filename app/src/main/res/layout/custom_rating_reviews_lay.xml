@@ -1,0 +1,175 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_10sdp"
+    android:background="@color/widgets_background"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/star1Layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_3sdp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/star1Label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="@dimen/_3sdp"
+            android:text="1"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/_10sdp" />
+
+        <ProgressBar
+            android:id="@+id/star1Progress"
+            
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:indeterminate="false"
+            android:max="100"
+            android:progress="0"
+            android:progressDrawable="@drawable/custom_progress"
+            android:progressTint="@color/enable_green" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/star2Layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_3sdp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/star2Label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="@dimen/_3sdp"
+            android:text="2"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/_10sdp" />
+
+        <ProgressBar
+            android:id="@+id/star2Progress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:indeterminate="false"
+            android:max="100"
+            android:progress="0"
+
+            android:progressDrawable="@drawable/custom_progress"
+            android:progressTint="@color/enable_green" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/star3Layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_3sdp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/star3Label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="@dimen/_3sdp"
+            android:text="3"
+            android:textColor="@color/text_color"
+
+            android:textSize="@dimen/_10sdp" />
+
+        <ProgressBar
+            android:id="@+id/star3Progress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:indeterminate="false"
+            android:max="100"
+            android:progress="0"
+
+            android:progressDrawable="@drawable/custom_progress"
+            android:progressTint="@color/enable_green" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/star4Layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_3sdp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/star4Label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="@dimen/_3sdp"
+            android:text="4"
+            android:textColor="@color/text_color"
+
+            android:textSize="@dimen/_10sdp" />
+
+        <ProgressBar
+            android:id="@+id/star4Progress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:indeterminate="false"
+            android:max="100"
+            android:progress="0"
+
+            android:progressDrawable="@drawable/custom_progress"
+            android:progressTint="@color/enable_green" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/star5Layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_3sdp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/star5Label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="@dimen/_3sdp"
+            android:text="5"
+            android:textColor="@color/text_color"
+
+            android:textSize="@dimen/_10sdp" />
+
+        <ProgressBar
+            android:id="@+id/star5Progress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:indeterminate="false"
+            android:max="100"
+            android:progress="0"
+
+            android:progressDrawable="@drawable/custom_progress"
+            android:progressTint="@color/enable_green" />
+    </LinearLayout>
+
+
+</LinearLayout>
+
+

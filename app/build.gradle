@@ -1,0 +1,131 @@
+plugins {
+    id 'com.android.application'
+    id 'com.google.gms.google-services'
+    id 'com.google.firebase.crashlytics'
+
+}
+
+android {
+    namespace 'www.experthere.in'
+    compileSdk 34
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+    }
+    sourceSets {
+        main {
+            res.srcDirs += 'src/main/res'
+        }
+    }
+
+        defaultConfig {
+            applicationId "www.experthere.in"
+            minSdk 26
+            targetSdk 34
+            versionCode 3
+            versionName "1.1.2"
+            multiDexEnabled true
+            testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+
+//            ndk {
+//                abiFilters "armeabi-v7a", "arm64-v8a"
+//            }
+
+
+        }
+
+        buildTypes {
+            release {
+                minifyEnabled false
+
+                proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            }
+        }
+        compileOptions {
+            sourceCompatibility JavaVersion.VERSION_1_8
+            targetCompatibility JavaVersion.VERSION_1_8
+        }
+        buildFeatures {
+            viewBinding true
+        }
+    }
+
+    dependencies {
+
+
+        implementation 'androidx.appcompat:appcompat:1.6.1'
+        implementation 'com.google.android.material:material:1.11.0'
+        implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+        implementation 'androidx.navigation:navigation-fragment:2.6.0'
+        implementation 'androidx.navigation:navigation-ui:2.6.0'
+
+
+        implementation 'com.google.firebase:firebase-messaging:23.4.1'
+        implementation 'com.google.firebase:firebase-messaging-ktx:23.4.1'
+        implementation 'com.google.firebase:firebase-crashlytics:18.6.2'
+        implementation 'androidx.activity:activity:1.9.0'
+        testImplementation 'junit:junit:4.13.2'
+        androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+        androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+
+        implementation 'com.intuit.sdp:sdp-android:1.1.0'
+        implementation 'com.github.bumptech.glide:glide:4.14.2'
+        annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
+
+
+        implementation 'me.relex:circleindicator:2.1.6'
+        implementation 'org.imaginativeworld.whynotimagecarousel:whynotimagecarousel:2.1.0'
+
+
+        implementation 'com.google.android.gms:play-services-location:21.0.1'
+        implementation 'com.google.android.libraries.places:places:2.5.0'
+
+        implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+        implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+
+        implementation 'com.hbb20:ccp:2.7.0'
+        implementation 'com.hbb20:android-country-picker:0.0.2'
+        implementation 'com.googlecode.libphonenumber:libphonenumber:8.12.33'
+
+
+        implementation 'com.github.chandreshandroid:MaterialProgressButton:1.7'
+        implementation 'com.google.android.gms:play-services-auth:19.2.0'
+
+        implementation 'com.google.android.gms:play-services-maps:17.0.1'
+        implementation 'com.google.android.gms:play-services-places:16.1.0'
+        implementation 'com.karumi:dexter:6.2.3'
+        implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.22'
+        implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
+
+
+        implementation 'jp.wasabeef:richeditor-android:2.0.0'
+        implementation 'com.github.Dhaval2404:ColorPicker:2.3'
+
+
+        api 'com.theartofdev.edmodo:android-image-cropper:2.8.+'
+
+
+        implementation project(':cupertinoswitch')
+        implementation 'androidx.viewpager2:viewpager2:1.0.0'
+
+//        implementation 'io.agora.rtc:full-sdk:4.2.6'
+//        implementation 'io.agora.rtc:voice-sdk:4.2.6'
+        implementation 'io.agora.rtc:voice-rtc-basic:4.2.6'
+
+        implementation 'com.google.auth:google-auth-library-oauth2-http:1.19.0'
+        implementation 'com.squareup.okhttp3:okhttp:4.9.1' // Use the latest version
+        implementation 'com.airbnb.android:lottie:4.2.0'
+
+        implementation 'com.facebook.shimmer:shimmer:0.5.0'
+
+        implementation 'com.google.android.play:app-update:2.1.0'
+
+
+        implementation 'com.google.android.gms:play-services-ads:23.1.0'
+        implementation project(':nativetemplates')
+        implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+        implementation 'com.squareup.retrofit2:converter-gson:2.5.0'
+
+
+    }

@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_screen_bg_color"
+    tools:context=".users.UserServiceSerachActivity">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_alignParentTop="true"
+        android:elevation="@dimen/_5sdp"
+        android:foreground="?attr/selectableItemBackground"
+        android:orientation="vertical"
+        app:cardCornerRadius="@dimen/_5sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+
+        <LinearLayout
+            android:gravity="center"
+            android:background="@color/widgets_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:id="@+id/backBtn"
+                android:focusable="true"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:padding="@dimen/_5sdp"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/baseline_arrow_back_24"
+                    >
+
+                </ImageView>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/linearLayout6"
+                android:layout_margin="@dimen/_10sdp"
+                android:background="@drawable/bg_et"
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_weight="1"
+                android:text="@string/swipe_down_to_refresh"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:orientation="horizontal">
+
+
+                <androidx.appcompat.widget.SearchView
+                    android:id="@+id/searchView"
+                    android:fontFamily="@font/oxygen_regular"
+                    app:queryHint="@string/search_service_at_expert_here"
+                    app:iconifiedByDefault="false"
+                    app:searchIcon="@null"
+
+                    android:theme="@style/MySearchViewStyle"
+                    app:queryBackground="@color/widgets_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_27sdp">
+
+                </androidx.appcompat.widget.SearchView>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/searchClick"
+                android:focusable="true"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:padding="@dimen/_5sdp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/search"
+                    android:layout_marginRight="@dimen/_3sdp"
+                    app:tint="@color/theme_Blue">
+
+                </ImageView>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+    <ListView
+        android:id="@+id/listViewSuggestions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:listitem="@layout/custom_search_item"
+        android:layout_below="@+id/linearLayout15"
+        android:visibility="gone" />
+    <LinearLayout
+        android:id="@+id/linearLayout15"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_below="@id/cardView"
+        android:background="@color/main_screen_bg_color"
+        android:foreground="?attr/selectableItemBackground"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/_5sdp">
+
+
+        <LinearLayout
+            android:id="@+id/locationBtn"
+            android:focusable="true"
+            android:clickable="true"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:src="@drawable/baseline_location_on_24"
+                app:tint="@color/theme_Blue">
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/locationTxtCat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:fontFamily="@font/outfit"
+                android:maxLines="1"
+                android:text="@string/location_details"
+                android:textAlignment="viewStart"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/_10sdp">
+
+            </TextView>
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/filterBtn"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:gravity="center|end"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:fontFamily="@font/outfit_light"
+                android:maxLines="1"
+                android:text="@string/filters"
+                android:textAlignment="viewStart"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/_10sdp">
+
+            </TextView>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_3sdp"
+                    android:src="@drawable/round_filter_list_24"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </ImageView>
+
+                <LinearLayout
+                    android:layout_width="@dimen/_10sdp"
+                    android:layout_height="@dimen/_10sdp"
+                    android:gravity="center"
+                    android:background="@drawable/red_circle"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/imageView6">
+
+
+                    <TextView
+                        android:id="@+id/filterNumber"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:text="0"
+                        android:layout_marginBottom="@dimen/_1sdp"
+                        android:textSize="@dimen/_8sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+
+        android:id="@+id/qlkdnlk"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_above="@id/my_template"
+        android:layout_below="@+id/linearLayout15"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.recyclerview.widget.RecyclerView
+
+            android:id="@+id/recyclerUserSearch"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="match_parent"
+
+            android:layout_marginTop="@dimen/_3sdp">
+
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+
+        <com.facebook.shimmer.ShimmerFrameLayout
+
+            android:id="@+id/shimmer_lay"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="match_parent"
+
+            android:layout_marginTop="@dimen/_3sdp">
+            <androidx.recyclerview.widget.RecyclerView
+
+                android:id="@+id/recycler_shimmer"
+                android:layout_width="match_parent"
+                android:visibility="visible"
+                android:layout_height="match_parent"
+                >
+
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+
+
+        </com.facebook.shimmer.ShimmerFrameLayout>
+
+        <TextView
+
+            android:id="@+id/noDataText"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:fontFamily="@font/outfit_light"
+            android:gravity="center"
+            android:text="@string/no_data_available"
+            android:layout_height="match_parent"
+
+            android:layout_marginTop="@dimen/_3sdp">
+
+
+        </TextView>
+        <ProgressBar
+            android:visibility="gone"
+            android:layout_marginTop="-30dp"
+            android:id="@+id/prograssBar"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp">
+
+        </ProgressBar>
+
+
+
+    </LinearLayout>
+
+
+
+    <com.google.android.ads.nativetemplates.TemplateView
+        android:id="@+id/my_template"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_100sdp"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:background="@color/main_screen_bg_color"
+        app:gnt_template_type="@layout/gnt_small_template_view" />
+
+
+
+</RelativeLayout>

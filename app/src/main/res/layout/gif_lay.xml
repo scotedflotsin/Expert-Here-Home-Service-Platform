@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:background="@color/widgets_background"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:gravity="center|top"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/orelegaone"
+            android:text="Expert "
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/_18sdp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/orelegaone"
+            android:text="here"
+            android:textColor="@color/theme_Blue"
+            android:textSize="@dimen/_18sdp" />
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/outfit"
+        android:padding="@dimen/_10sdp"
+        android:text="@string/please_allow_location_permission_in_you_app_settings_to_use_the_app"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/_13sdp"
+        android:textStyle="bold">
+
+    </TextView>
+    <LinearLayout
+        android:id="@+id/locationTunLay"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/gifImageViewLocation"
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="100sp"
+            android:src="@drawable/loc" />
+
+        <Button
+            android:id="@+id/settingOpenBtn1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:background="@drawable/bgrectangle"
+            android:fontFamily="@font/outfit"
+            android:text="@string/tun_on_location"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_15sdp"
+            app:backgroundTint="@color/black"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:background="@color/grey"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gifImageView"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="100sp"
+        android:src="@drawable/location" />
+
+
+
+    <Button
+        android:id="@+id/settingOpenBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:layout_marginBottom="@dimen/_15sdp"
+        android:background="@drawable/bgrectangle"
+        android:fontFamily="@font/outfit"
+        android:text="@string/open_permission_settings"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_15sdp"
+        app:backgroundTint="@color/black">
+
+    </Button>
+</LinearLayout>

@@ -1,0 +1,60 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.ExpertHere" parent="Theme.Material3.Dark.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="android:windowLayoutInDisplayCutoutMode" tools:targetApi="o_mr1">shortEdges
+        </item>
+        <item name="colorPrimaryDark">@color/theme_Blue</item>
+        <item name="android:statusBarColor">@color/white</item>
+
+        <item name="android:windowAnimationStyle">@style/myAnim</item>
+
+
+        <!--        <item name="colorControlNormal">@color/black</item>-->
+
+
+
+    </style>
+
+
+    <style name="Theme.ExpertHere" parent="Base.Theme.ExpertHere" />
+
+    <style name="myAnim">
+
+        <item name="android:activityOpenEnterAnimation">@anim/no_anim</item>
+        <item name="android:activityOpenExitAnimation">@anim/no_anim</item>
+        <item name="android:activityCloseEnterAnimation">@anim/no_anim</item>
+        <item name="android:activityCloseExitAnimation">@anim/no_anim</item>
+
+
+    </style>
+
+
+    <style name="SearchViewStyle" parent="Widget.AppCompat.SearchView">
+        <!-- Remove the underline -->
+        <item name="android:queryBackground">@android:color/transparent</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+    </style>
+    <style name="Theme.FullScreen" parent="Base.Theme.ExpertHere" >
+
+
+        <item name="android:windowTranslucentNavigation">true</item>
+        <item name="android:statusBarColor">@color/white</item>
+        <item name="android:windowActivityTransitions">true</item>
+
+
+    </style>
+
+    <style name="DatePickerDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/theme_Blue</item> <!-- Change colorAccent to your desired color -->
+        <item name="android:textColorPrimary">#000</item> <!-- Change textColorPrimary to your desired color -->
+        <item name="android:textColorSecondary">#000</item> <!-- Change textColorSecondary to your desired color -->
+    </style>
+
+
+
+</resources>

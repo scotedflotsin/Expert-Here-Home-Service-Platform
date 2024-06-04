@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:background="@color/main_screen_bg_color"
+    android:paddingTop="@dimen/_5sdp"
+    android:paddingBottom="@dimen/_5sdp"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:padding="@dimen/_5sdp"
+        android:src="@drawable/search"
+        android:layout_width="@dimen/_25sdp"
+        android:layout_height="@dimen/_25sdp">
+
+    </ImageView>
+
+    <TextView
+        android:text="Service Suggestion Title Here!"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@color/text_color"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+
+    <ImageView
+        android:padding="@dimen/_5sdp"
+        android:src="@drawable/arror_45"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:tint="@color/grey_white_text_color">
+
+    </ImageView>
+
+
+
+
+
+
+</LinearLayout>

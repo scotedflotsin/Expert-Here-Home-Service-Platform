@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    app:cardBackgroundColor="@color/redBtnTxtColor"
+    app:cardCornerRadius="@dimen/_5sdp"
+
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint_layout"
+        android:layout_width="match_parent"
+        android:background="#FFEFEE"
+
+        android:layout_margin="1dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal">
+
+        <LinearLayout
+            android:id="@+id/color_strip_view"
+            android:layout_width="@dimen/_5sdp"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@color/redBtnTxtColor" />
+
+        <ImageView
+            android:id="@+id/left_drawable_image_view"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_margin="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_5sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/color_strip_view"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/ic_baseline_error_24" />
+
+        <TextView
+            android:id="@+id/message_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:textColor="@color/redBtnTxtColor"
+            android:textStyle="bold"
+            android:ellipsize="end"
+            android:lines="1"
+            android:layout_marginEnd="@dimen/_10sdp"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/left_drawable_image_view"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Some message" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

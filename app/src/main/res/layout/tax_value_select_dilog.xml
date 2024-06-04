@@ -1,0 +1,34 @@
+<!-- res/layout/dialog_custom_layout.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/widgets_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_weight="1"
+            android:fontFamily="@font/outfit"
+            android:text="@string/choose_category"
+            android:textAlignment="textEnd"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/_18sdp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerTax"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+    </LinearLayout>
+</LinearLayout>

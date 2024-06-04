@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_screen_bg_color"
+    tools:context=".users.ForgotPassOtpVerifyActivity">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:gravity="center|top"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/orelegaone"
+            android:text="Expert "
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/_18sdp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/orelegaone"
+            android:text="here"
+            android:textColor="@color/theme_Blue"
+            android:textSize="@dimen/_18sdp" />
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/main_screen_bg_color"
+            android:padding="@dimen/_5sdp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/outfit"
+                android:text="@string/verify_email_nvia_otp"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/_16sdp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:fontFamily="@font/outfit"
+                android:text="@string/code_send_to"
+
+                android:textSize="@dimen/_15sdp" />
+
+            <LinearLayout
+                android:layout_marginStart="@dimen/_10sdp"
+                android:gravity="start|center"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/emailForOtp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/outfit"
+                    android:textColor="@color/text_color"
+                    android:text="harshvermadr30@gmail.com"
+                    android:textSize="@dimen/_15sdp" />
+
+                <TextView
+                    android:id="@+id/changeEmailTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/outfit"
+                    android:textColor="@color/theme_light_blue"
+                    android:text="@string/change"
+                    android:textSize="@dimen/_15sdp" />
+            </LinearLayout>
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="@dimen/_10sdp">
+
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/professionTextInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_15sdp"
+                    android:gravity="center"
+                    android:textColorHint="@null"
+                    app:boxStrokeColor="@drawable/custom_box_stroke_color"
+
+                    app:expandedHintEnabled="true"
+                    app:hintTextColor="@color/text_color"
+                    app:cursorColor="@color/black"                    app:boxBackgroundColor="@color/et_bg_color"
+
+                    >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/otpEt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/outfit"
+                        android:hint="@string/enter_6_digit_verification_code_xxxxxx"
+                        android:inputType="number"
+                        android:importantForAutofill="noExcludeDescendants"
+
+                        android:layout_margin="@dimen/_4sdp"
+                        android:paddingStart="@dimen/_10sdp"
+                        android:textSize="@dimen/_13sdp"
+                        android:maxLines="1"
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:gravity="center|start">
+
+                    <TextView
+                        android:id="@+id/resendTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/outfit"
+                        android:text="@string/resend_in"
+                        android:textColor="@color/theme_light_blue"
+                        android:textSize="@dimen/_15sdp" />
+
+                    <TextView
+                        android:id="@+id/otpTimerTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/outfit"
+                        android:text="01:23"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/_15sdp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/completeVerificationBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:layout_marginBottom="@dimen/_15sdp"
+        android:background="@drawable/bgrectangle"
+        android:fontFamily="@font/outfit"
+        android:text="@string/complete_verification"
+        android:textSize="@dimen/_15sdp"
+        app:backgroundTint="@color/black">
+
+    </Button>
+
+</RelativeLayout>

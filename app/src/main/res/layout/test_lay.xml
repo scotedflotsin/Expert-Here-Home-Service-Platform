@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:clipToPadding="false"
+    android:padding="@dimen/_5sdp"
+    android:clickable="true"
+    >
+
+    <ImageView
+        android:id="@+id/toolbar_share"
+        android:src="@drawable/test_ic"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp">
+
+    </ImageView>
+
+</FrameLayout>

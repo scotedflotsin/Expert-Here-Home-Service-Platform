@@ -1,0 +1,60 @@
+<!-- dialog_fullscreen.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+
+    <!-- Main ImageView -->
+
+    <LinearLayout
+        android:gravity="end"
+        android:layout_margin="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/cancelBtn"
+            android:padding="@dimen/_2sdp"
+            android:src="@drawable/cancel_cross_white"
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"
+            app:tint="@color/black">
+
+        </ImageView>
+
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/mainImageViewFullScreen"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+         />
+
+    <!-- RecyclerView for Mini Image List -->
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/miniImageRecyclerViewFullScreen"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            android:layout_weight="1"
+            />
+
+        <ProgressBar
+            android:id="@+id/progress_images_view"
+            android:visibility="gone"
+            android:layout_margin="@dimen/_10sdp"
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"/>
+    </LinearLayout>
+
+
+</LinearLayout>

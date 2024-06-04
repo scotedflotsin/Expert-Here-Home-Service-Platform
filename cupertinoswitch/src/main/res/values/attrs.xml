@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CupertinoSwitch">
+        <attr name="switchWidth" format="dimension" />
+        <attr name="switchHeight" format="dimension" />
+        <attr name="switchDuration" format="integer" />
+        <attr name="trackOnColor" format="color" />
+        <attr name="trackOffColor" format="color" />
+        <attr name="sliderOnColor" format="color" />
+        <attr name="sliderOffColor" format="color" />
+        <attr name="sliderRadius" format="dimension" />
+        <attr name="sliderShadowEnabled" format="boolean" />
+        <attr name="sliderShadowColor" format="color" />
+        <attr name="sliderShadowRadius" format="dimension" />
+        <attr name="cupertinoSwitchStyle" format="reference" />
+        <attr name="android:checked" />
+        <attr name="android:enabled" />
+    </declare-styleable>
+</resources>

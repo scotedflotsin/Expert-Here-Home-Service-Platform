@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="@dimen/_5sdp"
+    android:clickable="true"
+    android:focusable="true"
+    android:id="@+id/clickLay"
+    android:foreground="?attr/selectableItemBackground"
+    android:background="@color/widgets_background"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+
+            android:src="@drawable/watch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/titleTxt"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/oxygen_regular"
+            android:layout_marginStart="@dimen/_3sdp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:text="Festival lights installations"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/_10sdp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/dateTxt"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/oxygen_regular"
+            android:text="10/08/2023 08:16 AM"
+            android:textAlignment="center"
+            android:maxLines="1"
+            android:background="@color/light_grey"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/_10sdp">
+
+        </TextView>
+
+        <ImageView
+            android:id="@+id/delBtn"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:src="@drawable/del_icon"
+            android:layout_width="@dimen/_18sdp"
+            android:layout_height="@dimen/_18sdp" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/nameTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/mukta_vaani_semi_bold"
+        android:layout_marginStart="@dimen/_3sdp"
+        android:maxLines="1"
+        android:layout_marginTop="-5dp"
+        android:layout_marginBottom="-5dp"
+        android:ellipsize="end"
+        android:text="Customer Name"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/_14sdp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:foreground="?attr/selectableItemBackground"
+        android:layout_below="@+id/toolbarnewservice"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:background="@color/widgets_background"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/_3sdp">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/location_pin_user"
+            app:tint="@color/theme_Blue">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/locationTxtCat"
+            android:layout_width="wrap_content"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/outfit"
+            android:textColor="@color/text_secondary"
+            android:text="JS, Building 24A, Sector 2, Behind Sunaja Tower..."
+            android:textAlignment="viewStart"
+            android:textSize="@dimen/_10sdp">
+
+        </TextView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@color/light_grey"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+
+</LinearLayout>

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fragment_background">
+
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/rating_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_margin="@dimen/_5sdp"
+                app:cardCornerRadius="@dimen/_8sdp"
+                app:cardElevation="0dp">
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/widgets_background"
+                    android:gravity="center"
+                    android:paddingStart="@dimen/_20sdp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:id="@+id/avgRatingTxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/oxygen_light"
+                            android:text="0.0"
+                            android:textColor="@color/text_color"
+                            android:textSize="@dimen/_21sdp" />
+
+
+                        <androidx.appcompat.widget.AppCompatRatingBar
+                            android:id="@+id/ratingBarNew"
+                            style="@style/Widget.AppCompat.RatingBar.Small"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:numStars="5"
+                            android:progressTint="@color/rating_bar_color">
+
+                        </androidx.appcompat.widget.AppCompatRatingBar>
+
+                        <TextView
+                            android:id="@+id/totalReviewsTxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/oxygen_regular"
+                            android:text="Total Reviews(0)"
+                            android:textSize="@dimen/_8sdp" />
+
+
+                    </LinearLayout>
+
+<!--                    <com.taufiqrahman.reviewratings.RatingReviews-->
+<!--                        xmlns:bar="http://schemas.android.com/apk/res-auto"-->
+<!--                        android:id="@+id/rating_reviews"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:layout_gravity="center"-->
+<!--                        android:layout_marginTop="8dp"-->
+<!--                        android:layout_marginBottom="8dp"-->
+<!--                        android:layout_weight="2"-->
+<!--                        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                        app:layout_constraintEnd_toEndOf="parent"-->
+<!--                        app:layout_constraintStart_toEndOf="@+id/textView"-->
+<!--                        app:layout_constraintTop_toTopOf="parent"-->
+<!--                        app:layout_constraintVertical_bias="0.499"-->
+<!--                        bar:animation="true"-->
+<!--                        bar:rounded="true"-->
+<!--                        bar:show_label="true"-->
+<!--                        bar:show_raters="false"-->
+<!--                        bar:spaces="2dp"-->
+<!--                        bar:text_color="@color/text_color"-->
+<!--                        bar:text_size="@dimen/_10sdp" />-->
+
+                    <include layout="@layout/custom_rating_reviews_lay"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <!-- TODO: Update blank fragment layout -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_review"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                android:layout_above="@id/progressService"
+                android:layout_below="@id/rating_lay"
+                android:scrollbars="none">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <LinearLayout
+                android:id="@+id/txtNoData"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_above="@id/progressService"
+                android:layout_below="@id/rating_lay"
+                >
+
+                <ImageView
+                    android:src="@drawable/blue_star"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </ImageView>
+
+                <TextView
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:text="@string/no_review_yet_on_your_services"
+                    android:textColor="@color/grey_white_text_color"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <com.facebook.shimmer.ShimmerFrameLayout
+                android:id="@+id/shimmerReview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@id/progressService"
+                android:layout_below="@id/rating_lay"
+               >
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerShimmer"
+                    android:focusable="false"
+                    android:scrollbars="none"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                </androidx.recyclerview.widget.RecyclerView>
+
+            </com.facebook.shimmer.ShimmerFrameLayout>
+
+
+            <ProgressBar
+                android:id="@+id/progressService"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:visibility="gone">
+
+            </ProgressBar>
+        </RelativeLayout>
+
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+</RelativeLayout>
+
+
+

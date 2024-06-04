@@ -1,0 +1,47 @@
+<!-- res/layout/dialog_custom_layout.xml -->
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="16dp"
+    app:cardBackgroundColor="@color/widgets_background"
+    app:cardCornerRadius="20dp"
+    android:layout_marginHorizontal="20dp"
+    >
+
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="vertical"
+android:padding="16dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:fontFamily="@font/outfit"
+        android:text="@string/select_currency"
+        android:textAlignment="textEnd"
+        android:textSize="@dimen/_13sdp"/>
+
+<!--    currency text can not be more than 20 characters -->
+
+
+<RadioButton
+    android:id="@+id/radioInr"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textColor="@color/text_color"
+    android:text="INR" />
+
+<RadioButton
+    android:id="@+id/radioUSD"
+    android:textColor="@color/text_color"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="USD ($)" />
+
+
+
+</LinearLayout>
+    </androidx.cardview.widget.CardView>

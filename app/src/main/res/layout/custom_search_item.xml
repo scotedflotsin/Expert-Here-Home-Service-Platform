@@ -1,0 +1,49 @@
+<!-- custom_list_item.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:background="@color/main_screen_bg_color"
+    android:id="@+id/laycustomsearch"
+    android:orientation="horizontal"
+    android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/iconImageView"
+        android:layout_width="@dimen/_15sdp"
+        android:layout_height="@dimen/_15sdp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="8dp"
+        app:tint="@color/black"
+        android:src="@drawable/search" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/searchTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/outfit"
+            android:text="User Address"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/_12sdp" />
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iconArrow"
+        android:layout_width="@dimen/_15sdp"
+        android:layout_height="@dimen/_15sdp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="8dp"
+        android:paddingEnd="@dimen/_2sdp"
+        android:src="@drawable/arror_45"
+        app:tint="@color/black" />
+
+</LinearLayout>

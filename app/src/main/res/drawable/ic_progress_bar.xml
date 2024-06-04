@@ -1,0 +1,21 @@
+<!-- res/drawable/ic_progress_bar.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/background">
+        <shape>
+            <solid android:color="#CCCCCC" />
+            <corners android:radius="4dp" />
+        </shape>
+    </item>
+    <item android:id="@android:id/progress">
+        <rotate
+            android:fromDegrees="0"
+            android:toDegrees="360"
+            android:pivotX="50%"
+            android:pivotY="50%">
+            <shape>
+                <solid android:color="#3498db" />
+                <corners android:radius="4dp" />
+            </shape>
+        </rotate>
+    </item>
+</layer-list>

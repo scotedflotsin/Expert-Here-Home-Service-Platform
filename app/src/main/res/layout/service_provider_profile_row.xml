@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/itemClickService"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/_6sdp"
+    android:layout_marginEnd="@dimen/_6sdp"
+    android:layout_marginBottom="@dimen/_5sdp"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackground"
+    app:cardElevation="0dp"
+    app:cardCornerRadius="@dimen/_8sdp">
+
+
+
+
+        <LinearLayout
+            android:background="@color/widgets_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="@dimen/_10sdp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/serviceImage"
+                        android:layout_width="@dimen/_90sdp"
+                        android:layout_height="@dimen/_110sdp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/demo_img"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout11"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:background="@drawable/bottom_shadow_imageview"
+                        android:orientation="horizontal"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                    <TextView
+                        android:id="@+id/discountTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:fontFamily="@font/outfit_medium"
+                        android:text="50 % Off"
+                        android:textColor="#fff"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent">
+
+                    </TextView>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </androidx.cardview.widget.CardView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:gravity="center|start"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/titleTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="Festival lights installations"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/_12sdp" />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:gravity="center|start"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/personTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/outfit_light"
+                        android:text="1 Person"
+                        android:textSize="@dimen/_10sdp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/outfit_light"
+                        android:text=" | "
+                        android:textSize="@dimen/_10sdp" />
+
+                    <TextView
+                        android:id="@+id/durationTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/outfit_light"
+                        android:text="120 min"
+                        android:textSize="@dimen/_10sdp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:gravity="center|start"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/displayPriceTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/outfit_medium"
+                        android:paddingBottom="@dimen/_2sdp"
+                        android:text="$ 80"                    android:textColor="@color/text_color"
+
+                        android:textSize="@dimen/_13sdp" />
+
+
+                    <TextView
+                        android:id="@+id/cutPriceTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_3sdp"
+                        android:background="@drawable/strike_line"
+                        android:fontFamily="@font/outfit_light"
+                        android:paddingStart="3sp"
+                        android:paddingEnd="3sp"
+                        android:paddingBottom="@dimen/_2sdp"
+                        android:text="$ 180"
+                        android:textSize="@dimen/_10sdp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="@dimen/_16sdp"
+                        android:layout_height="@dimen/_16sdp"
+                        android:src="@drawable/start_rating_icon">
+
+                    </ImageView>
+
+                    <TextView
+                        android:id="@+id/reviewTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="21dp"
+                        android:fontFamily="@font/oxygen_regular"
+                        android:paddingTop="@dimen/_3sdp"
+                        android:text="0.0 (0)"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/_9sdp">
+
+                    </TextView>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="right|bottom">
+
+                  <ImageView
+                      android:id="@+id/btnView"
+                      android:src="@drawable/view_btn_img"
+                      android:layout_width="@dimen/_45sdp"
+                      android:layout_height="@dimen/_20sdp">
+
+                  </ImageView>
+                </LinearLayout>
+
+
+            </LinearLayout>
+            </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

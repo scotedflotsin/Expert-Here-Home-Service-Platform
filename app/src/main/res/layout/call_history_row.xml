@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/callHistroryLayout"
+    android:focusable="true"
+    android:background="@color/widgets_background"
+    android:clickable="true"
+    android:foreground="?attr/selectableItemBackground"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/_5sdp"
+    >
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_marginRight="@dimen/_5sdp"
+            android:id="@+id/displayImage"
+            android:src="@drawable/app_icon"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp">
+
+        </ImageView>
+
+    </LinearLayout>
+
+ <LinearLayout
+     android:gravity="center_vertical"
+     android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+     <LinearLayout
+         android:gravity="center_vertical"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+         <TextView
+
+             android:id="@+id/userName"
+             android:textColor="@color/text_color"
+             android:text="USER NAME"
+             android:maxLines="1"
+             android:ellipsize="end"
+             android:textSize="@dimen/_13sdp"
+             android:fontFamily="@font/mukta_vaani_semi_bold"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content">
+
+         </TextView>
+
+         <TextView
+             android:id="@+id/receivedTxt"
+             android:textAlignment="textEnd"
+             android:layout_weight="1"
+             android:textColor="@color/redBtnTxtColor"
+             android:text="Not Received"
+             android:textSize="@dimen/_9sdp"
+             android:fontFamily="@font/istok_web_reg"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content">
+
+         </TextView>
+
+
+     </LinearLayout>
+
+
+
+     <LinearLayout
+         android:gravity="center_vertical"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content">
+
+         <ImageView
+             android:id="@+id/greenArrow"
+             android:visibility="gone"
+            android:src="@drawable/green_arrow_down"
+             android:layout_width="@dimen/_8sdp"
+             android:layout_height="@dimen/_8sdp">
+
+         </ImageView>
+
+         <ImageView
+             android:id="@+id/redArrow"
+             android:visibility="gone"
+             android:src="@drawable/green_arrow_down"
+             android:layout_width="@dimen/_8sdp"
+             android:layout_height="@dimen/_8sdp"
+             app:tint="@color/redBtnTxtColor">
+
+         </ImageView>
+
+         <TextView
+             android:id="@+id/timeTxt"
+             android:text="8 January, 8:00 pm"
+             android:layout_marginStart="@dimen/_5sdp"
+             android:textSize="@dimen/_8sdp"
+             android:fontFamily="@font/istok_web_reg"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content">
+
+         </TextView>
+
+
+     </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

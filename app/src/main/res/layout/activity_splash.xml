@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_screen_bg_color"
+    android:backgroundTint="@color/main_screen_bg_color"
+    tools:context=".SplashScreen">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/orelegaone"
+            android:text="Expert"
+            android:textColor="@color/black"
+            android:textSize="35dp">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/orelegaone"
+            android:text=" here "
+            android:textColor="@color/theme_Blue"
+            android:textSize="35dp">
+
+        </TextView>
+
+        <ImageView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/service"
+            app:tint="@color/theme_Blue">
+
+        </ImageView>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter_regular"
+        android:text="On Demand Services"
+        android:layout_marginBottom="@dimen/_25sdp"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/_13sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout19"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout19">
+
+    </TextView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.cardview.widget.CardView
+        app:cardElevation="0dp"
+        app:cardCornerRadius="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!-- nav_header.xml -->
+
+        <LinearLayout
+            android:background="@color/widgets_background"
+            android:padding="@dimen/_10sdp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/titleProfile"
+                android:textStyle="bold"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="@color/text_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/outfit"
+                android:text="@string/term_amp_privacy">
+
+            </TextView>
+
+            <LinearLayout
+                android:background="@color/light_grey"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/subRecyclerProfile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/progressBtnLay"
+    android:clickable="true"
+    android:focusable="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/bgrectangle"
+    android:padding="@dimen/_10sdp"
+    android:gravity="center"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/btnTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/outfit"
+        android:text="@string/sign_in"
+        android:textColor="#fff"
+        android:textSize="@dimen/_15sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </TextView>
+
+    <ProgressBar
+        android:id="@+id/btnProgressBar"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:visibility="gone"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:indeterminateTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnTxt"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </ProgressBar>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+
+        android:id="@+id/callUserMenuBtn"
+        android:enabled="true"
+        android:icon="@drawable/call"
+        android:title="@string/call_history">
+
+    </item>
+    <item
+        android:id="@+id/catUserMenuBtn"
+        android:icon="@drawable/cat"
+        android:title="@string/categories">
+
+    </item>
+    <item
+        android:id="@+id/homeUserMenuBtn"
+        android:icon="@drawable/home"
+        android:title="@string/home">
+
+    </item>
+    <item
+        android:id="@+id/bookmarkUserMenuBtn"
+        android:icon="@drawable/bookmark"
+        android:title="@string/bookmark">
+
+    </item>
+    <item
+        android:id="@+id/profileUserMenuBtn"
+        android:icon="@drawable/profile"
+        android:title="@string/profile">
+
+    </item>
+
+</menu>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "58600737043",
+    "project_id": "expert-here-9f4de",
+    "storage_bucket": "expert-here-9f4de.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:58600737043:android:64008349f69de6cb4a72e6",
+        "android_client_info": {
+          "package_name": "www.experthere.in"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC8CAYr1T22WrrQn8OsbrwY2uNto2UPXs0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

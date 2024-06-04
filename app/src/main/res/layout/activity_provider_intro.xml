@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_screen_bg_color"
+    tools:context=".serviceProvider.ProviderIntroActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:gravity="center|top"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/orelegaone"
+            android:text="Expert "
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/_18sdp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/orelegaone"
+            android:text="here"
+            android:textColor="@color/theme_Blue"
+            android:textSize="@dimen/_18sdp" />
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_above="@+id/linearLayout2"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="5dp"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/main_screen_bg_color"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:orientation="vertical"
+
+                android:padding="@dimen/_5sdp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/ramabhadra"
+                    android:text="@string/get_started_with"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/_16sdp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/orelegaone"
+                        android:text="Expert "
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/_15sdp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/orelegaone"
+                        android:text="here "
+                        android:textColor="@color/theme_Blue"
+                        android:textSize="@dimen/_15sdp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/orelegaone"
+                        android:text="! "
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/_15sdp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:fontFamily="@font/outfit"
+                    android:text="@string/welcome_to_expert_here"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/outfit"
+                    android:text="@string/your_expert_hub_service_provider"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/_12sdp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/outfit"
+                    android:text="@string/why_choose_expert_here"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/_14sdp"
+                    android:textStyle="bold" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/outfit"
+                    android:text="@string/why_join_us_nat_exper_here_we_believe_in_fostering_a_community_of_experts_dedicated_to_delivering_exceptional_services_by_joining_us_you_become_part_of_a_dynamic_platform_that_connects_you_with_a_diverse_range_of_clients_seeking_your_expertise_whether_you_re_a_seasoned_professional_or_a_rising_star_in_your_field_our_platform_provides_the_perfect_stage_for_you_to_showcase_your_skills_and_connect_with_customers_who_value_your_unique_talents"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/_12sdp"
+
+                    />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/outfit"
+
+                    android:text="@string/privacy_policy_nwe_prioritize_the_security_and_confidentiality_of_both_our_service_providers_and_customers_our_robust_privacy_policy_ensures_that_your_personal_information_is_handled_with_the_utmost_care_and_is_never_compromised_trust_is_the_foundation_of_our_platform_and_we_are_committed_to_maintaining_the_highest_standards_of_privacy_and_security_to_create_a_safe_and_trustworthy_environment_for_everyone"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/_12sdp"
+
+                    />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/outfit"
+                    android:text="@string/profit_through_connection_with_your_customers_nat_expert_here_we_understand_that_your_success_is_our_success_by_joining_our_platform_you_gain_access_to_a_vast_network_of_potential_clients_actively_seeking_the_services_you_offer_maximize_your_earnings_and_broaden_your_professional_reach_by_connecting_with_customers_who_appreciate_your_expertise_we_provide_the_tools_and_support_you_need_to_turn_every_interaction_into_a_profitable_opportunity"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/_12sdp"
+
+                    />
+ <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/outfit"
+                    android:text="@string/get_started_today_ndon_t_miss_out_on_the_incredible_opportunities_that_await_you_at_your_company_name_join_us_today_and_embark_on_a_journey_of_professional_growth_meaningful_connections_and_financial_success_your_expertise_deserves_a_platform_that_values_and_rewards_your_skills_and_that_platform_is_your_company_name_welcome_aboard_and_here_s_to_a_thriving_partnership"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/_12sdp"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/outfit"
+                    android:text="@string/get_started_in_3_easy_steps"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/_14sdp"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/outfit"
+                    android:text="@string/n1_create_your_profile_showcase_your_skills_and_experience_to_attract_potential_clients_n2_browse_service_requests_explore_service_requests_in_your_area_and_choose_the_ones_that_match_your_expertise_n3_connect_and_serve_engage_with_customers_schedule_appointments_and_provide_exceptional_services"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/_12sdp"
+
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/outfit"
+                        android:text="@string/learn_more_on"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <TextView
+                        android:id="@+id/linkText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/outfit"
+                        android:text="https://www.experthere.in/providers "
+                        android:textColor="@color/theme_light_blue"
+                        android:textSize="@dimen/_12sdp" />
+
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <CheckBox
+                        android:id="@+id/checkPrivacy"
+                        android:text="@string/accept_privacy_policy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/outfit"
+                        android:gravity="center"
+                        android:textColor="@color/text_color"
+                        android:checked="false"
+                        app:buttonTint="@color/black"
+                        android:layoutDirection="rtl"/>
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="2dp"
+        android:gravity="center"
+        android:orientation="vertical"
+
+        android:padding="@dimen/_5sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <ProgressBar
+                android:id="@+id/providerIntroProg"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:padding="@dimen/_5sdp"
+                android:visibility="gone"
+               >
+
+            </ProgressBar>
+
+            <Button
+                android:id="@+id/registerBtnProvider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:backgroundTint="@color/black"
+                android:textColor="@color/white"
+                android:text="@string/register_now_as_service_provider"
+                android:textSize="@dimen/_12sdp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/fragment_background"
+    android:layout_height="match_parent"
+    tools:context=".serviceProvider.fragments.IncomingFragment">>
+
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/linearLayout6"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_margin="@dimen/_10sdp"
+                android:paddingLeft="@dimen/_2sdp"
+                android:paddingRight="@dimen/_2sdp"
+                android:background="@drawable/bg_et"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+                <androidx.appcompat.widget.SearchView
+                    android:id="@+id/searchView"
+                    android:theme="@style/AppSearchView"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_27sdp"
+                    android:fontFamily="@font/oxygen_regular"
+                    app:iconifiedByDefault="false"
+                    android:background="@color/main_screen_bg_color"
+                    app:queryBackground="@color/main_screen_bg_color"
+                    app:queryHint="@string/search_call"
+                    app:searchIcon="@drawable/search">
+
+                </androidx.appcompat.widget.SearchView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/txtNoData"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                android:gravity="center"
+                android:orientation="vertical"
+
+                >
+
+                <ImageView
+                    android:src="@drawable/time_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </ImageView>
+
+                <TextView
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:text="@string/no_data_available"
+                    android:textColor="@color/grey_white_text_color"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+
+                android:id="@+id/recycler_call"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/progressBar"
+                android:layout_below="@id/linearLayout6">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+
+            <com.facebook.shimmer.ShimmerFrameLayout
+
+                android:id="@+id/shimmer_call"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/progressBar"
+                android:layout_below="@id/linearLayout6">
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerShimmer"
+                    android:focusable="false"
+                    android:scrollbars="none"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                </androidx.recyclerview.widget.RecyclerView>
+
+
+            </com.facebook.shimmer.ShimmerFrameLayout>
+
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:visibility="gone">
+
+            </ProgressBar>
+
+        </RelativeLayout>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+</RelativeLayout>

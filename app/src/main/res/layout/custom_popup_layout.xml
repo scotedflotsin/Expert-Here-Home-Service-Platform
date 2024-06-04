@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="@dimen/_10sdp"
+    android:layout_margin="@dimen/_10sdp">
+
+    <LinearLayout
+        android:background="@color/options_bg"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/logoutBtn"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_8sdp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logout_icon">
+
+        </ImageView>
+
+        <TextView
+            android:textColor="@color/redBtnTxtColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:text="@string/logout">
+
+        </TextView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/mid_grey">
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

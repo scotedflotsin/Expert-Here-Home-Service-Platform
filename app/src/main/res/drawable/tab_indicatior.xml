@@ -1,0 +1,10 @@
+<!-- res/drawable/custom_tab_indicator.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:gravity="center">
+        <shape android:shape="rectangle">
+            <size android:height="2dp" /> <!-- Set the desired height here -->
+            <size android:width="@dimen/_60sdp" /> <!-- Set the desired height here -->
+            <solid android:color="@color/theme_Blue" /> <!-- Set the desired color here -->
+        </shape>
+    </item>
+</layer-list>

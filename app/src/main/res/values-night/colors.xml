@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <color name="text_color">#FFFFFF</color>
+
+    <color name="black">#FFFFFFFF</color>
+
+    <color name="white">#171717</color>
+    <color name="theme_Blue">#1E74DA</color>
+    <color name="theme_light_blue">#1E74DA</color>
+    <color name="grey">#8F000000</color>
+    <color name="mid_grey">@color/transparent</color>
+    <color name="light_grey">#2B2D30</color>
+    <color name="transparent">#00000000</color>
+
+    <!-- Here you can add color of your choice  -->
+    <color name="positiveButtonTextColor">@color/theme_Blue</color>
+    <color name="negativeButtonTextColor">@color/theme_Blue</color>
+    <color name="bottomSheetDividerColor">#F5F5F5</color>
+    <color name="red_bg_light">#2BF44545</color>
+    <color name="blackish_grey">#3D3D3D</color>
+
+    <color name="main_screen_bg_color">#1F1E2C</color>
+    <color name="main_screen_bg_color2">#1F1E2C</color>
+
+    <color name="enable_green">#609030</color>
+    <color name="redBtnTxtColor">#F23131</color>
+    <color name="theme_blue_alpha">#C61E74DA</color>
+    <color name="rating_bar_color">#FFD700</color>
+    <color name="green_on">#CCFCD1</color>
+    <color name="slider_green">#69A157</color>
+    <color name="slider_off_color_red">#FCCECE</color>
+    <color name="slider_red">#F23131</color>
+    <color name="light_green">#69A157</color>
+    <color name="dark_green">#fff</color>
+    <color name="nav_lay_color">#1F1E2C</color>
+    <color name="stock_color_location_et">#060606</color>
+    <color name="query_bg_searchview">#000000</color>
+    <color name="options_bg">#1F1E2C</color>
+    <color name="et_bg_color">#1F1E2C</color>
+    <color name="bottom_nav_bg">#171717</color>
+    <color name="secondTextColor">#FFFFFF</color>
+    <color name="bottom_nav_color">#0D0D0D</color>
+    <color name="fragment_background" >#1F1E2C</color>
+    <color name="widgets_background" >#2A2B3D</color>
+    <color name="grey_white_text_color" >#D2D2D2</color>
+    <color name="light_grey_white" >#CBCBCB</color>
+    <color name="grey_white_bg" >#fff</color>
+    <color name="color_grey_mainscreen">#1F1E2C</color>
+    <color name="color_sky_blue_main_screen">#1F1E2C</color>
+    <color name="color_sky_blue_dark_main_screen">#1F1E2C</color>
+</resources>

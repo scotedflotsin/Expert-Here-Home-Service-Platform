@@ -1,0 +1,61 @@
+<!-- res/layout/dialog_custom_layout.xml -->
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    android:layout_marginHorizontal="20dp"
+    app:cardBackgroundColor="@color/widgets_background"
+    app:cardCornerRadius="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_weight="1"
+            android:fontFamily="@font/outfit"
+            android:text="@string/service_duration"
+            android:textAlignment="textEnd"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/_13sdp" />
+
+        <RadioButton
+            android:id="@+id/radioMin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Minute"
+            android:textColor="@color/text_color" />
+
+        <RadioButton
+            android:id="@+id/radioHourly"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:text="Hourly"
+            android:textColor="@color/text_color" />
+
+        <RadioButton
+            android:id="@+id/radioDay"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:text="Day"
+            android:textColor="@color/text_color" />
+
+        <RadioButton
+            android:id="@+id/radioServiceFinish"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:text="When service finish"
+            android:textColor="@color/text_color" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

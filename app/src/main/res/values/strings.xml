@@ -1,0 +1,321 @@
+<resources>
+    <string name="app_name">Expert Here</string>
+
+
+    <string name="apikey" translatable="false">MYAPI123</string>
+
+    <!--    <string name="agoraAppId" translatable="false">70f9e2cb2e7b40ab820fe158b863fd12</string>-->
+    <!--    <string name="agoraTempKey" translatable="false">007eJxTYOAzPsw1pUnV5O/EMo2m31nvdy9nnMjyOsd4/1P27rD9PH4KDOYGaZapRslJRqnmSSYGiUkWRgZpqYamFkkWZsZpKYZGD1hPpTYEMjLYu+9gYmRgZGABYhCfCUwyg0kWKFmSWlzCwAAANFEhFQ==</string>-->
+    <!--    <string name="agora_certificate" translatable="false">1e6b33ad4eaa45f3966c1abf2f4dd06c</string>-->
+    <!--    <string name="agora_certificate2" translatable="false">f5dfd7d4544c4872b6aca7f7396c1a70</string>-->
+    <!--    <string name="google_maps_api_key" translatable="false">AIzaSyAtZkerAuqL6UNiN3SL3IEEXHgYcJKAzVw</string>-->
+    <string name="google_maps_api_key" translatable="false">AIzaSyAtZkerAuqL6UNiN3SL3IEEXHgYcJKAzVw</string>
+
+    <string name="FcmSendUrl" translatable="false">https://fcm.googleapis.com/v1/projects/expert-here-9f4de/messages:send</string>
+    <string name="default_notification_channel_id" translatable="false">1</string>
+
+    <!--    <string name="aboutUsUrl" translatable="false">https://www.google.com</string>-->
+    <!--    <string name="privacyUrl" translatable="false">https://www.google.com</string>-->
+    <!--    <string name="contactUsUrl" translatable="false">https://www.google.com</string>-->
+    <!--    <string name="termsUrl" translatable="false">https://www.google.com</string>-->
+    <!--    <string name="url_review_learn_more" translatable="false">www.google.com</string>-->
+
+
+    <string name="app_tag_line">India’s best home service \n #provider</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="navigation_drawer_open">open Drawer\n</string>
+    <string name="navigation_drawer_close">close drawer\n</string>
+    <string name="title_activity_more_reviews">MoreReviewsActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+
+    <string name="title_activity_categories_list">CategoriesListActivity</string>
+
+
+    <string name="select_account_type">Select Account type?</string>
+    <string name="individual">Individual</string>
+    <string name="organization">Organization</string>
+    <string name="about_us">About Us</string>
+    <string name="categories">Categories</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="terms_amp_coditions"><![CDATA[Terms & Coditions]]></string>
+    <string name="edit_your_profile">Edit Your Profile</string>
+    <string name="set_new_photo">Set new Photo</string>
+    <string name="forgot_your_password">Forgot your password?</string>
+    <string name="name">Name</string>
+    <string name="profession">Profession</string>
+    <string name="phone">Phone</string>
+    <string name="email">Email</string>
+    <string name="verify_email_nvia_otp">Verify Email\nVia OTP</string>
+    <string name="code_send_to">Code send to</string>
+    <string name="change">change</string>
+    <string name="resend_in">Resend in</string>
+    <string name="complete_verification">Complete verification</string>
+
+    <string name="enter_6_digit_verification_code_xxxxxx">Enter 6 digit verification code XXXXXX</string>
+    <string name="step_into_a_world_of_comfort_and_convenience_with_expert_your_sanctuary_awaits_where_seamless_living_meets_modern_convenience_unlock_the_door_to_a_smarter_home_experience_where_every_room_is_designed_with_you_in_mind">Step into a world of comfort and convenience with Expert. Your sanctuary awaits, where seamless living meets modern convenience. Unlock the door to a smarter home experience, where every room is designed with you in mind.</string>
+    <string name="get_started_with">Get Started with,</string>
+    <string name="welcome_to_expert_here_nconnecting_home_service_providers_with_ease">Welcome to Expert Here \nConnecting Home Service Providers with Ease</string>
+    <string name="why_choose_expert_here">Why Choose Expert Here?</string>
+    <string name="join_comm">\nJoin a community of skilled professionals dedicated to providing top-notch home services.Expert Here is your gateway to:\n • Expanded Reach: Connect with a broader customer base seeking your expertise.\n • Effortless Scheduling: Manage your appointments seamlessly through our user-friendly platform.\n • Secure Payments: Enjoy hassle-free transactions with our secure payment system.\n • Transparent Ratings: Build trust with customers through transparent ratings and reviews.</string>
+    <string name="get_started_in_3_easy_steps">Get Started in 3 Easy Steps:</string>
+    <string name="stringkamka">\n1. Create Your Profile: Showcase your skills and experience to attract potential clients.\n2. Browse Service Requests: Explore service requests in your area and choose the ones that match your expertise.\n3. Connect and Serve: Engage with customers, schedule appointments, and provide exceptional services.</string>
+    <string name="learn_more_on">Learn more on</string>
+    <string name="lets_go">Lets Go</string>
+    <string name="create_new_account">Create New Account!</string>
+    <string name="already_have_account">Already Have Account?</string>
+    <string name="become_a_patner">Become a patner!</string>
+    <string name="partner_login">Partner Login</string>
+    <string name="service_place">Service Place?</string>
+
+
+    <string name="choose_service_place">Choose service place?</string>
+    <string name="your_address_will_show_here">Your Address Will Show Here!</string>
+    <string name="confirm_location">Confirm Location</string>
+    <string name="search_your_place">Search Your place?</string>
+    <string name="lets_sign_you_in">Lets Sign you in</string>
+    <string name="welcome_back_nyou_have_been_missed">Welcome Back ,\nYou have been missed</string>
+    <string name="forgot_password">Forgot Password ?</string>
+    <string name="or">or</string>
+    <string name="don_t_have_an_account">Don’t have an account ?</string>
+    <string name="register_now">Register Now</string>
+    <string name="password">Password</string>
+    <string name="ongoing_call">Ongoing call..</string>
+    <string name="all_reiews">All Reiews</string>
+    <string name="no_reviews_available">No Reviews Available !</string>
+    <string name="create_order">Create Order</string>
+    <string name="select_date_and_time">Select Date And Time</string>
+    <string name="select_service">Select Service</string>
+    <string name="create_and_add">Create and Add</string>
+    <string name="customer_name">Customer Name</string>
+    <string name="address">Address</string>
+    <string name="delete_review">Delete Review</string>
+    <string name="your_review">Your review</string>
+    <string name="hey_users_give_your_review_as_your_service_experience_choose_start_for_rating_as_your_experience">Hey users, give your review as your service experience choose start for rating as your experience</string>
+    <string name="handy_men_work_image">Handy men work image</string>
+    <string name="work_image_1_1">Work Image 1:1</string>
+    <string name="your_review_and_work_image_will_be_public_for">Your review and work Image will be public for</string>
+    <string name="enhance_user_experience">enhance user experience</string>
+    <string name="learn_more">Learn more</string>
+    <string name="submit_review">Submit Review</string>
+    <string name="describe_your_experiences_with_this_service">Describe your experiences with this service.</string>
+    <string name="create_service">Create Service</string>
+    <string name="service_title">Service Title</string>
+    <string name="maximum_5_tags">Maximum 5 Tags</string>
+    <string name="select_category">Select category</string>
+    <string name="select_sub_category">Select sub category</string>
+    <string name="status">Status</string>
+    <string name="service_image">Service Image</string>
+    <string name="upload_logo_jpg_png_jpeg_amp_ratio_1_2"><![CDATA[Upload Logo jpg, png, jpeg & Ratio (1:2)]]></string>
+    <string name="service_cost">Service Cost</string>
+    <string name="tax_type">Tax Type</string>
+    <string name="tax_value">Tax Value</string>
+    <string name="currency">Currency</string>
+    <string name="select_duration">Select Duration</string>
+    <string name="size">Size</string>
+    <string name="create">Create</string>
+    <string name="service_tag_press_enter_to_add_tag">Service tag(press enter to add tag)</string>
+    <string name="final_price">Final Price</string>
+    <string name="discount_price">Discount Price</string>
+    <string name="members_for_this_service">Members for this service</string>
+    <string name="service_duration">Service duration</string>
+    <string name="ringing">Ringing..</string>
+    <string name="reset_profile_npassword">Reset profile\npassword</string>
+    <string name="your_request_accepted_for_reset_your_npassword">Your request accepted for reset your\npassword</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="fill_required_details">Fill required details</string>
+    <string name="personal_details">Personal Details</string>
+    <string name="government_issued_id_proof">Government Issued ID proof</string>
+    <string name="select_id_type">Select ID type?</string>
+    <string name="upload_document_ratio_16_9">Upload Document Ratio (16:9)</string>
+    <string name="document_verified">Document Verified!</string>
+    <string name="verify_email_via_otp">Verify Email\nVia OTP</string>
+    <string name="company_details">Company Details</string>
+    <string name="select_type">Select type</string>
+    <string name="logo">Logo</string>
+    <string name="upload_logo_jpg_png_jpeg_amp_ratio_1_1"><![CDATA[Upload Logo jpg, png, jpeg & Ratio (1:1)]]></string>
+    <string name="banner_image">Banner Image</string>
+    <string name="upload_banner_jpg_png_jpeg_amp_ratio_16_9"><![CDATA[Upload Banner jpg, png, jpeg & Ratio (16:9)]]></string>
+    <string name="location_information">Location Information</string>
+    <string name="choose_your_location">Choose your Location</string>
+    <string name="set_password">Set Password</string>
+    <string name="set_new_profile_npassword">Set New profile\npassword</string>
+    <string name="complete">Complete</string>
+    <string name="company_name">Company name?</string>
+    <string name="visiting_charges">visiting charges</string>
+    <string name="advance_booking_days">Advance booking days</string>
+    <string name="no_of_members">No. of Members</string>
+    <string name="city">City</string>
+    <string name="latitude">Latitude</string>
+    <string name="longitude">Longitude</string>
+    <string name="your_full_name">Your full name?</string>
+    <string name="valid_email">Valid Email?</string>
+    <string name="valid_phone_number">Valid Phone number</string>
+    <string name="welcome_to_expert_here">Welcome to Expert Here</string>
+    <string name="your_expert_hub_service_provider">Your Expert Hub Service Provider!</string>
+
+
+    <string name="why_join_us_nat_exper_here_we_believe_in_fostering_a_community_of_experts_dedicated_to_delivering_exceptional_services_by_joining_us_you_become_part_of_a_dynamic_platform_that_connects_you_with_a_diverse_range_of_clients_seeking_your_expertise_whether_you_re_a_seasoned_professional_or_a_rising_star_in_your_field_our_platform_provides_the_perfect_stage_for_you_to_showcase_your_skills_and_connect_with_customers_who_value_your_unique_talents">🚀 Why Join Us? \nAt Exper Here, we believe in fostering a community of experts dedicated to delivering exceptional services. By joining us, you become part of a dynamic platform that connects you with a diverse range of clients seeking your expertise. Whether you\'re a seasoned professional or a rising star in your field, our platform provides the perfect stage for you to showcase your skills and connect with customers who value your unique talents.</string>
+    <string name="privacy_policy_nwe_prioritize_the_security_and_confidentiality_of_both_our_service_providers_and_customers_our_robust_privacy_policy_ensures_that_your_personal_information_is_handled_with_the_utmost_care_and_is_never_compromised_trust_is_the_foundation_of_our_platform_and_we_are_committed_to_maintaining_the_highest_standards_of_privacy_and_security_to_create_a_safe_and_trustworthy_environment_for_everyone">🔐 Privacy Policy \nWe prioritize the security and confidentiality of both our service providers and customers. Our robust privacy policy ensures that your personal information is handled with the utmost care and is never compromised. Trust is the foundation of our platform, and we are committed to maintaining the highest standards of privacy and security to create a safe and trustworthy environment for everyone.</string>
+    <string name="profit_through_connection_with_your_customers_nat_expert_here_we_understand_that_your_success_is_our_success_by_joining_our_platform_you_gain_access_to_a_vast_network_of_potential_clients_actively_seeking_the_services_you_offer_maximize_your_earnings_and_broaden_your_professional_reach_by_connecting_with_customers_who_appreciate_your_expertise_we_provide_the_tools_and_support_you_need_to_turn_every_interaction_into_a_profitable_opportunity">💼 Profit through Connection with Your Customers.\nAt Expert Here, we understand that your success is our success. By joining our platform, you gain access to a vast network of potential clients actively seeking the services you offer. Maximize your earnings and broaden your professional reach by connecting with customers who appreciate your expertise. We provide the tools and support you need to turn every interaction into a profitable opportunity.</string>
+    <string name="get_started_today_ndon_t_miss_out_on_the_incredible_opportunities_that_await_you_at_your_company_name_join_us_today_and_embark_on_a_journey_of_professional_growth_meaningful_connections_and_financial_success_your_expertise_deserves_a_platform_that_values_and_rewards_your_skills_and_that_platform_is_your_company_name_welcome_aboard_and_here_s_to_a_thriving_partnership">🤝 Get Started Today!\nDon\'t miss out on the incredible opportunities that await you at [Your Company Name]. Join us today and embark on a journey of professional growth, meaningful connections, and financial success. Your expertise deserves a platform that values and rewards your skills - and that platform is [Your Company Name]. Welcome aboard, and here\'s to a thriving partnership!</string>
+    <string name="n1_create_your_profile_showcase_your_skills_and_experience_to_attract_potential_clients_n2_browse_service_requests_explore_service_requests_in_your_area_and_choose_the_ones_that_match_your_expertise_n3_connect_and_serve_engage_with_customers_schedule_appointments_and_provide_exceptional_services">\n1. Create Your Profile: Showcase your skills and experience to attract potential clients.\n2. Browse Service Requests: Explore service requests in your area and choose the ones that match your expertise.\n3. Connect and Serve: Engage with customers, schedule appointments, and provide exceptional services.</string>
+    <string name="accept_privacy_policy">Accept Privacy policy</string>
+
+
+    <string name="register_now_as_service_provider">Register now as service provider</string>
+    <string name="lets_register_naccount">Lets Register \nAccount</string>
+    <string name="hello_user_you_have_na_greatful_journey">Hello user , you have \na greatful journey</string>
+    <string name="already_have_an_account">Already have an account ?</string>
+    <string name="login">Login</string>
+    <string name="loading">Loading..</string>
+    <string name="category_title">Category Title</string>
+    <string name="location_details">Location Details</string>
+    <string name="swipe_down_to_refresh">Swipe Down To Refresh!</string>
+    <string name="filters">Filters</string>
+    <string name="no_data_available">No DATA Available!</string>
+    <string name="search_service_at_expert_here">Search Service at Expert Here</string>
+    <string name="active">Active</string>
+    <string name="choose_category">Choose Category</string>
+    <string name="select_currency">Select Currency?</string>
+    <string name="incoming_call">Incoming Call</string>
+    <string name="decline">Decline</string>
+    <string name="accept">Accept</string>
+    <string name="delete_service">Delete Service</string>
+    <string name="are_you_sure_you_want_to_delete_this_service">Are you sure you want to delete this service?</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete">Delete</string>
+    <string name="user_address">User Address</string>
+    <string name="application_preference">Application Preference</string>
+    <string name="language">Language</string>
+    <string name="dark_theme">Dark Theme</string>
+    <string name="change_password">Change Password</string>
+    <string name="help_amp_privacy_policy"><![CDATA[Help & Privacy Policy]]></string>
+    <string name="terms_of_service">Terms of Service</string>
+    <string name="logout">Logout</string>
+    <string name="delete_account">Delete Account</string>
+    <string name="lock_per"><![CDATA[Allow Show On Lock Screen Permission To show call Notification While device Screen is off. Please go to \'\'app settings > Other Permissions >Show On Lock Screen\'\' and allow permission manually.]]></string>
+    <string name="dont_show_again">Dont Show Again?</string>
+    <string name="processing_please_wait">Processing Please Wait..</string>
+    <string name="rating">Rating</string>
+    <string name="services_searching_radius">Services searching radius</string>
+    <string name="reset">Reset</string>
+    <string name="apply">Apply</string>
+    <string name="service_description">Service Description</string>
+    <string name="our_location">Our Location</string>
+    <string name="enter_email_to_send_code">Enter Email To Send Code!</string>
+    <string name="submit">Submit</string>
+    <string name="do_you_want_to_exit">Do You Want to Exit?</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="select_options">Select options</string>
+    <string name="camera">Camera</string>
+    <string name="gallery">Gallery</string>
+    <string name="your_status">Your Status</string>
+    <string name="now_you_can_receive_calls">Now you can receive calls</string>
+    <string name="now_you_can_t_receive_any_calls">Now you can’t receive any calls</string>
+    <string name="your_services">Your Services</string>
+    <string name="total_services">Total Services</string>
+    <string name="not_activate">Not Activate</string>
+    <string name="your_pending_orders">Your Pending orders</string>
+    <string name="search_services">Search services</string>
+    <string name="select_category_to_view_subcategories">Subcategories</string>
+    <string name="your_location">Your Location</string>
+    <string name="services_searching_range">Services Searching Range</string>
+    <string name="search_service_at">Search Service at</string>
+    <string name="no_images_are_uploaded_to_image_slider">No Images Are Uploaded To Image Slider!</string>
+    <string name="profile">Profile</string>
+    <string name="preference">Preference</string>
+    <string name="term_amp_privacy"><![CDATA[Term & Privacy]]></string>
+    <string name="term_amp_condition"><![CDATA[Term & Condition]]></string>
+    <string name="others">Others</string>
+    <string name="share_app">Share App</string>
+    <string name="rate_app">Rate App</string>
+    <string name="help">Help</string>
+    <string name="about">About</string>
+    <string name="join_amp_prosper"><![CDATA[💼 Join & Prosper]]></string>
+    <string name="join_us_and_witness_the_transformation_as_you_evolve_from_a_service_provider_to_a_trailblazer_together_let_s_redefine_success_one_opportunity_at_a_time_your_journey_begins_now">Join us, and witness the transformation as you evolve from a service provider to a trailblazer. Together, let\'s redefine success, one opportunity at a time. Your journey begins now.</string>
+    <string name="become_provider">Become Provider</string>
+    <string name="read_more_on">Read More On</string>
+    <string name="please_allow_location_permission_in_you_app_settings_to_use_the_app">Please Allow Location Permission In You App Settings To Use The App</string>
+    <string name="tun_on_location">Tun On Location</string>
+    <string name="open_permission_settings">Open Permission Settings</string>
+    <string name="internet_connection_is_required_to_proceed_with_your_operation_the_system_cannot_connect_to_the_main_server_without_internet_access_please_check_your_internet_connection">Internet connection is required to proceed with your operation. The system cannot connect to the main server without internet access. Please check your internet connection</string>
+    <string name="no_internet">(: No Internet</string>
+    <string name="retry">Retry</string>
+    <string name="try_after_some_time">Try after some time?</string>
+    <string name="insert_link">Insert Link</string>
+    <string name="enter_url">Enter URL</string>
+    <string name="add_link">Add Link</string>
+    <string name="we_are_processing_your_request_to_the_nprovider_connecting">We are processing your request to the \nprovider, connecting...</string>
+    <string name="sign_in">Sign in</string>
+    <string name="select_service_serching_range">Select Service Serching Range</string>
+    <string name="range">Range</string>
+    <string name="edit_review">Edit Review</string>
+    <string name="service_charge">Service Charge</string>
+    <string name="discount_cost">Discount Cost</string>
+    <string name="tax_include">Tax Include</string>
+    <string name="total">Total</string>
+    <string name="given_service_cost_not_fixed_it_can_be_change_according_to_your_demand_and_other_issues">Given service cost not fixed it can be change according to your demand and other issues!</string>
+    <string name="images">Images</string>
+    <string name="review_amp_rating"><![CDATA[Review & Rating]]></string>
+    <string name="more">More..</string>
+    <string name="choose_sub_category">Choose Sub Category</string>
+    <string name="taxes">Taxes</string>
+    <string name="choose_your_language">Choose your language</string>
+    <string name="language_change">Language changed</string>
+
+
+    <string name="in_coming">In coming</string>
+    <string name="out_going">Out going</string>
+    <string name="home">Home</string>
+    <string name="services">Services</string>
+    <string name="reviews">Reviews</string>
+    <string name="search_call">Search Call</string>
+
+    <string name="no_review_yet_on_your_services">No review yet on \n your services !</string>
+    <string name="your_bookmark">Your Bookmark</string>
+    <string name="providers_in_your_wishlist">providers in your wishlist</string>
+    <string name="you_have">You have</string>
+    <string name="why_choose_us">Why Choose Us?</string>
+    <string name="top_service_providers_services_near_you">Top Service Providers Services Near You</string>
+    <string name="browse_services_nand_compare_nthan_filter">Browse Services \nand compare \nthan filter</string>
+    <string name="book_service_at_your_n_home_hassles_nservice">Book service at your\n home hassles\nservice</string>
+    <string name="enjoy_service_which_n_is_booked_by_you_nexperts_is_here">Enjoy service which\n is booked by you,\nExperts is here!</string>
+    <string name="call_history">Call history</string>
+    <string name="bookmark">Bookmark</string>
+    <string name="are_you_sure_you_want_to_logout">Are you sure you want to Logout ?</string>
+    <string name="service_request_calls_history">Service Request Calls History</string>
+    <string name="view">View</string>
+    <string name="describe_your_issue">Describe your issue</string>
+    <string name="type_here">Type Here..</string>
+    <string name="our_team_will_review_your_issue_than_we_will_nprovide_you_possible_support_and_help_you_no_nworry_about_it_user_satisfaction_is_our_first_priority">Our team will review your issue, than we will \nprovide you possible support and help, You no \nworry about it, User satisfaction is our first priority</string>
+    <string name="submit_ticket">Submit Ticket</string>
+    <string name="home_services_near_you">Home Services near you</string>
+    <string name="service_provider_near_you">Service Provider near you</string>
+    <string name="are_you_sure_to_reset_your_password_we_will_send_you_otp_in_your_email">Are You sure to reset your password we will send you otp in your email!</string>
+    <string name="confirm_reset_password">Confirm Reset Password ?</string>
+    <string name="exit">Exit</string>
+    <string name="exit_edit_page">Exit Edit Page ?</string>
+    <string name="exitpagemessage">You have made some changes do you want to staye in editpage or exit and discard all changes?</string>
+    <string name="your_wishlist_is_empty">Your Wishlist is Empty</string>
+    <string name="not_found_any_provider_in_you_list">(: Not found any Provider in you list.</string>
+    <string name="review_images">Review Images</string>
+    <string name="book_service">Book Service</string>
+    <string name="rate_service">Rate Service</string>
+    <string name="app_is_under_maintenance">App is Under Maintenance</string>
+    <string name="maintenance_txt">Maintenance massage by admin, Please show massage here, Which will provided my admin through app, Ok please you have any question you can ask me.</string>
+    <string name="blocked_by_admin">Blocked By Admin!</string>
+    <string name="you_are_blocked_by_admin_due_to_some_invalid_activity_contact_admin_for_more_info">You Are Blocked By Admin Due To Some Invalid Activity. Contact Admin For More Info!</string>
+    <string name="ready_to_add_your_first_service">Ready To Add Your First Service?</string>
+    <string name="start_offering_your_service_today">Start Offering Your Service Today!</string>
+    <string name="add_first_service">Add First Service</string>
+
+</resources>

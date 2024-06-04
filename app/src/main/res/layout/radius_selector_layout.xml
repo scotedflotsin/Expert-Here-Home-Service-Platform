@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/widgets_background"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/_10sdp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/outfit_light"
+        android:text="@string/select_service_serching_range"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/_14sdp">
+
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@color/light_grey" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/_5sdp"
+            android:paddingEnd="@dimen/_5sdp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:fontFamily="@font/outfit_medium"
+                android:text="@string/range"
+                android:textColor="@color/text_color" />
+
+            <TextView
+                android:id="@+id/rangeTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:layout_weight="1"
+                android:fontFamily="@font/outfit_medium"
+                android:text="1 KM"
+                android:textAlignment="viewEnd"
+                android:textColor="@color/text_color" />
+        </LinearLayout>
+
+        <com.google.android.material.slider.Slider
+            android:id="@+id/rangeSlider"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:valueFrom="1"
+            android:valueTo="100"
+
+            app:haloColor="@color/theme_Blue"
+            app:labelBehavior="gone"
+            app:thumbColor="@color/theme_Blue"
+            app:tickVisible="false"
+            app:trackColorActive="@color/theme_Blue"
+            app:trackHeight="@dimen/_10sdp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/cancelBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/rectange_button_white"
+            android:text="@string/cancel"
+            android:textColor="#000" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/applyBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/theme_Blue"
+            android:text="@string/apply"
+            android:background="@drawable/rectange_button_white"
+            android:textColor="#fff" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

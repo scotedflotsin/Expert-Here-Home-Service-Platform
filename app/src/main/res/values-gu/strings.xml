@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Expert Here</string>
+<!--    <string name="apikey" translatable="false">MYAPI123</string>-->
+<!--    <string name="agoraAppId" translatable="false">70f9e2cb2e7b40ab820fe158b863fd12</string>-->
+<!--    <string name="agoraTempKey" translatable="false">007eJxTYOAzPsw1pUnV5O/EMo2m31nvdy9nnMjyOsd4/1P27rD9PH4KDOYGaZapRslJRqnmSSYGiUkWRgZpqYamFkkWZsZpKYZGD1hPpTYEMjLYu+9gYmRgZGABYhCfCUwyg0kWKFmSWlzCwAAANFEhFQ==</string>-->
+<!--    <string name="agora_certificate" translatable="false">1e6b33ad4eaa45f3966c1abf2f4dd06c</string>-->
+<!--    <string name="agora_certificate2" translatable="false">f5dfd7d4544c4872b6aca7f7396c1a70</string>-->
+<!--    <string name="google_maps_api_key" translatable="false">AIzaSyAtZkerAuqL6UNiN3SL3IEEXHgYcJKAzVw</string>-->
+
+<!--    <string name="FcmSendUrl" translatable="false">https://fcm.googleapis.com/v1/projects/expert-here-9f4de/messages:send</string>-->
+<!--    <string name="default_notification_channel_id" translatable="false">1</string>-->
+<!--    <string name="aboutUsUrl" translatable="false">https://www.google.com</string>-->
+<!--    <string name="privacyUrl" translatable="false">https://www.google.com</string>-->
+<!--    <string name="contactUsUrl" translatable="false">https://www.google.com</string>-->
+<!--    <string name="termsUrl" translatable="false">https://www.google.com</string>-->
+
+
+    <string name="app_tag_line">ભારતનું શ્રેષ્ઠ ઘરેલું સેવા પ્રોવાઇડર</string>
+    <string name="hello_blank_fragment">હેલો ખાલી ફ્રેગમેન્ટ</string>
+    <string name="navigation_drawer_open">ડ્રોઅર ખોલો\n</string>
+    <string name="navigation_drawer_close">ડ્રોઅર બંધ કરો\n</string>
+    <string name="title_activity_more_reviews">MoreReviewsActivity</string>
+    <!-- નેવિગેશન માટે ફ્રેગમેન્ટ માટે વાપરાતા સિટ્રિંગ -->
+    <string name="first_fragment_label">પ્રથમ ફ્રેગમેન્ટ</string>
+    <string name="second_fragment_label">બીજું ફ્રેગમેન્ટ</string>
+    <string name="next">આગળ</string>
+    <string name="previous">પહેલા</string>
+
+    <string name="title_activity_categories_list">CategoriesListActivity</string>
+
+
+    <string name="select_account_type">એકાઉન્ટ પ્રકાર પસંદ કરો?</string>
+    <string name="individual">વ્યક્તિગત</string>
+    <string name="organization">સંસ્થા</string>
+    <string name="about_us">અમારા વિશે</string>
+    <string name="categories">કેટેગરીઓ</string>
+    <string name="contact_us">સંપર્ક કરો</string>
+    <string name="terms_amp_coditions"><![CDATA[શરતો અને શરતો]]></string>
+    <string name="edit_your_profile">તમારું પ્રોફાઇલ ફેરફાર કરો</string>
+    <string name="set_new_photo">નવી ફોટો સેટ કરો</string>
+    <string name="forgot_your_password">તમારો પાસવર્ડ ભૂલ્યો છે?</string>
+    <string name="name">નામ</string>
+    <string name="profession">વૃત્તિ</string>
+    <string name="phone">ફોન</string>
+    <string name="email">ઈમેલ</string>
+    <string name="verify_email_nvia_otp">OTP દ્વારા ઈમેલ પર પરિશીલન કરો</string>
+    <string name="code_send_to">કોડ મોકલવામાં</string>
+    <string name="change">ફેરફાર કરો</string>
+    <string name="resend_in">ફરીથી મોકલવામાં</string>
+    <string name="complete_verification">પૂર્ણ પરિશીલન</string>
+    <string name="enter_6_digit_verification_code_xxxxxx">6 અંકનો પરિશીલન કોડ દાખલ કરો XXXXXX</string>
+    <string name="step_into_a_world_of_comfort_and_convenience_with_expert_your_sanctuary_awaits_where_seamless_living_meets_modern_convenience_unlock_the_door_to_a_smarter_home_experience_where_every_room_is_designed_with_you_in_mind">એક્સપર્ટ સાથે સુખ અને સરળતાની દુનિયામાં પાંચો અવગાહન આપો, તમારી સરનામું જહેર કરે છે, જ્યારે સીમલેસ લિવિંગ અને આધુનિક સુવિધાઓ મળે છે. સ્માર્ટ ઘર અનુભવનો દરવાજો ખોલો, જ્યારે દરેક રૂમ તમારી માટે રચાયું છે.</string>
+    <string name="get_started_with">સાથે શરૂ કરો,</string>
+    <string name="welcome_to_expert_here_nconnecting_home_service_providers_with_ease">સારાંશ માટે આપનું સ્વાગત છે સરળતા સાથે ઘરેલું સેવા પ્રોવાઇડરોને જોડવા</string>
+    <string name="why_choose_expert_here">Expert અહીં પસંદ કરો કેમ?</string>
+    <string name="join_comm">\nશ્રેષ્ઠ ઘરની સેવાઓ પ્રદાન કરવાના માહિર પ્રોફેશનલ્સની સમુદાયમાં જોડાઓ. એક્સપર્ટ અહીં તમારી પ્રકારની મહત્વપૂર્ણ સેવાઓને લઈને તમારી આયુર્વેદિક સેવાઓ વધારવાનો દ્વાર છે:\n • વિસ્તારિત પોહોંચ: તમારી વ્યાવસાયિક હુનરોને શોધતા વધુ ગ્રાહકોનો સંપર્ક કરો.\n • લઘુતમ શ્રેણીબદ્ધ શ્રેણીબદ્ધ: આમાં તમારી માર્ગદર્શિકા નિર્માણશીલ પ્લેટફોર્મ દ્વારા તમારી નિયતોનું સંચાલન કરો.\n • સિગ્નલ પેમેન્ટ્સ: અમારી સિગ્નલ ચૂકવણીનો આનંદ માણો અમારા સિગ્નલ ચૂકવણી સિસ્ટમની સાથે.\n • પારદર્શી રેટિંગ્સ: પારદર્શી રેટિંગ્સ અને સમીક્ષાઓની માધ્યમમાં ગ્રાહકો સાથે વિશ્વાસ બાંધો.</string>
+    <string name="get_started_in_3_easy_steps">3 સરળ પગલાંમાં શરૂ કરો:</string>
+    <string name="stringkamka">\n1. તમારી પ્રોફાઇલ બનાવો: તમારી દક્ષતા અને અનુભવ પોતાના ગ્રાહકોને આકર્ષણ કરવા માટે દર્શાવો.\n2. સેવા વિનંતીઓ બ્રાઉઝ કરો: તમારા વિસ્તારમાં સેવાઓના વિનંતીઓ જાહેર કરો અને જે તમારી દક્ષતા સાથે મેળવાયેલા છે તેનાં પરિણામો પસંદ કરો.\n3. જોડાણ અને સેવા: ગ્રાહકો સાથે સંપર્ક કરો, તમારા અનુભવો સમયપ્રમાણે વ્યવસ્થિત કરો અને અદ્વિતીય સેવાઓ પ્રદાન કરો.</string>
+    <string name="learn_more_on">વધુ જાણો</string>
+    <string name="lets_go">ચાલો ચાલો</string>
+    <string name="create_new_account">નવું એકાઉન્ટ બનાવો!</string>
+    <string name="already_have_account">પહેલેથી એક એકાઉન્ટ છે?</string>
+    <string name="become_a_patner">સહયોગી બનો!</string>
+    <string name="partner_login">પાર્ટનર લોગઇન</string>
+    <string name="service_place">સેવા સ્થળ?</string>
+    <string name="choose_service_place">સેવા સ્થળ પસંદ કરો?</string>
+    <string name="your_address_will_show_here">તમારું સરનામું અહીં દર્શાવાશે!</string>
+    <string name="confirm_location">સ્થળની પુષ્ટિ કરો</string>
+    <string name="search_your_place">તમારું સ્થળ શોધો?</string>
+    <string name="lets_sign_you_in">ચાલો તમે સાઇન ઇન કરો</string>
+    <string name="welcome_back_nyou_have_been_missed">સ્વાગત છે પાછા,\nતમને મિસ કરાયું છે</string>
+    <string name="forgot_password">પાસવર્ડ ભૂલ્યો છે?</string>
+    <string name="or">અથવા</string>
+    <string name="don_t_have_an_account">એક એકાઉન્ટ નથી?</string>
+    <string name="register_now">હવે નોંધણી કરો</string>
+    <string name="password">પાસવર્ડ</string>
+    <string name="ongoing_call">ચાલી રહી છેલા..</string>
+    <string name="all_reiews">બધી સમીક્ષાઓ</string>
+    <string name="no_reviews_available">કોઈ સમીક્ષાઓ ઉપલબ્ધ નથી!</string>
+    <string name="create_order">ઓર્ડર બનાવો</string>
+    <string name="select_date_and_time">તારીખ અને સમય પસંદ કરો</string>
+    <string name="select_service">સેવા પસંદ કરો</string>
+
+
+    <string name="create_and_add">બનાવો અને ઉમેરો</string>
+    <string name="customer_name">ગ્રાહકનું નામ</string>
+    <string name="address">સરનામું</string>
+    <string name="delete_review">સમીક્ષા કાઢી નાંખો</string>
+    <string name="your_review">તમારી સમીક્ષા</string>
+    <string name="hey_users_give_your_review_as_your_service_experience_choose_start_for_rating_as_your_experience">હે વપરાશકર્તાઓ, તમારી સેવા અનુભવને તમારી સમીક્ષા આપો, તમારા અનુભવ માટે રેટિંગ માટે તારીખ પસંદ કરો</string>
+    <string name="handy_men_work_image">હેન્ડી મેન કામ છબી</string>
+    <string name="work_image_1_1">કામ છબી 1:1</string>
+    <string name="your_review_and_work_image_will_be_public_for">તમારી સમીક્ષા અને કામ છબી જાહેર થશે માટે</string>
+    <string name="enhance_user_experience">વપરાશકર્તા અનુભવ વધારવા</string>
+    <string name="learn_more">વધુ જાણો</string>
+    <string name="submit_review">સમીક્ષા સબમિટ કરો</string>
+    <string name="describe_your_experiences_with_this_service">આ સેવા સાથે તમારા અનુભવોનું વર્ણન કરો.</string>
+    <string name="create_service">સેવા બનાવો</string>
+    <string name="service_title">સેવા શીર્ષક</string>
+    <string name="maximum_5_tags">મહત્તમ 5 ટેગ્સ</string>
+    <string name="select_category">શ્રેણી પસંદ કરો</string>
+    <string name="select_sub_category">ઉપ-શ્રેણી પસંદ કરો</string>
+    <string name="status">સ્થિતિ</string>
+    <string name="service_image">સેવા છબી</string>
+    <string name="upload_logo_jpg_png_jpeg_amp_ratio_1_2"><![CDATA[લોગો jpg, png, jpeg અપલોડ કરો & અનુપાત (1:2)]]></string>
+    <string name="service_cost">સેવા કિંમત</string>
+    <string name="tax_type">કર પ્રકાર</string>
+    <string name="tax_value">કર મૂલ્ય</string>
+    <string name="currency">ચલણ</string>
+    <string name="select_duration">અવધિ પસંદ કરો</string>
+    <string name="size">માપ</string>
+    <string name="create">બનાવો</string>
+    <string name="service_tag_press_enter_to_add_tag">સેવા ટેગ (પ્રેસ એન્ટર ટેગ ઉમેરવા માટે)</string>
+    <string name="final_price">અંતિમ ભાવ</string>
+    <string name="discount_price">ડિસ્કાઉન્ટ ભાવ</string>
+    <string name="members_for_this_service">આ સેવા માટે સભ્યો</string>
+    <string name="service_duration">સેવા અવધિ</string>
+    <string name="ringing">રિંગિંગ..</string>
+    <string name="reset_profile_npassword">પ્રોફાઇલ રીસેટ\nપાસવર્ડ</string>
+    <string name="your_request_accepted_for_reset_your_npassword">તમારી વિનંતી પાસવર્ડ રીસેટ માટે સ્વીકાર કરી છે</string>
+    <string name="enter_password">પાસવર્ડ દાખલ કરો</string>
+    <string name="confirm_password">પાસવર્ડ ખાતરી કરો</string>
+    <string name="privacy_policy">ગોપનીયતા નીતિ</string>
+    <string name="fill_required_details">આવશ્યક વિગતો ભરો</string>
+    <string name="personal_details">વ્યક્તિગત વિગતો</string>
+    <string name="government_issued_id_proof">સરકારી જાહેર આઈડી પ્રુફ</string>
+    <string name="select_id_type">આઈડી પ્રકાર પસંદ કરો?</string>
+    <string name="upload_document_ratio_16_9">દસ્તાવેજ અપલોડ કરો અનુપાત (16:9)</string>
+    <string name="document_verified">દસ્તાવેજ સાચવેલ!</string>
+    <string name="verify_email_via_otp">OTP દ્વારા ઈમેલ સાચવો</string>
+    <string name="company_details">કંપની વિગતો</string>
+    <string name="select_type">પ્રકાર પસંદ કરો</string>
+    <string name="logo">લોગો</string>
+    <string name="upload_logo_jpg_png_jpeg_amp_ratio_1_1"><![CDATA[લોગો jpg, png, jpeg અપલોડ કરો & અનુપાત (1:1)]]></string>
+    <string name="banner_image">બેનર ચિત્ર</string>
+    <string name="upload_banner_jpg_png_jpeg_amp_ratio_16_9"><![CDATA[બેનર jpg, png, jpeg અપલોડ કરો & અનુપાત (16:9)]]></string>
+    <string name="location_information">સ્થળ માહિતી</string>
+    <string name="choose_your_location">તમારું સ્થળ પસંદ કરો</string>
+    <string name="set_password">પાસવર્ડ સેટ કરો</string>
+    <string name="set_new_profile_npassword">નવો પ્રોફાઇલ પાસવર્ડ સેટ કરો</string>
+    <string name="complete">પૂર્ણ કરો</string>
+    <string name="company_name">કંપની નામ?</string>
+    <string name="visiting_charges">યાત્રા શુલ્ક</string>
+    <string name="advance_booking_days">એડવાન્સ બુકિંગ દિવસો</string>
+    <string name="no_of_members">સભ્યો સંખ્યા</string>
+    <string name="city">શહેર</string>
+    <string name="latitude">અક્ષાંશ</string>
+    <string name="longitude">દેશાંતર</string>
+    <string name="your_full_name">તમારું પૂરું નામ?</string>
+    <string name="valid_email">માન્ય ઇમેલ?</string>
+    <string name="valid_phone_number">માન્ય ફોન નંબર</string>
+    <string name="welcome_to_expert_here">સ્વાગત છે એક્સપર્ટ હીરે</string>
+    <string name="your_expert_hub_service_provider">તમારા એક્સપર્ટ હબ સેવા પ્રદાતા!</string>
+    <string name="why_join_us_nat_exper_here_we_believe_in_fostering_a_community_of_experts_dedicated_to_delivering_exceptional_services_by_joining_us_you_become_part_of_a_dynamic_platform_that_connects_you_with_a_diverse_range_of_clients_seeking_your_expertise_whether_you_re_a_seasoned_professional_or_a_rising_star_in_your_field_our_platform_provides_the_perfect_stage_for_you_to_showcase_your_skills_and_connect_with_customers_who_value_your_unique_talents">🚀 આપણે કેવી રીતે જોઇન કરીશું? અહીં અનુભવ જોયું છે, અમે અતિશય સેવાઓ પૂરી કરવા માટે પ્રતિષ્ઠાશીલ વિશેષજ્ઞોની સમુદાયને બઢાવવામાં વિશ્વાસ રાખીશું. અમારા સાથે જોઇન થવાથી, તમે એક જગ્યાએ ભાગીદારિ બની જાઓ છો જે તમને તમારી પ્રદર્શનીયતાને માન્યતા આપતી વિવિધ ગ્રાહકોને જોડે છે. તમે જો એક અભ્યાસી વ્યાવસાયિક અથવા તમારા ક્ષેત્રમાં વાચાળ સ્તાર છો, અમારી પ્લેટફોર્મ તમારા કસ્તભૂમિનું પ્રદર્શન કરવા માટે પરિપૂર્ણ પોડિયમ આપે છે અને તમારા વિશિષ્ટ પ્રતિભાઓને માન્યતા આપનાર ગ્રાહકોને જોડાવા માટે. </string>
+    <string name="privacy_policy_nwe_prioritize_the_security_and_confidentiality_of_both_our_service_providers_and_customers_our_robust_privacy_policy_ensures_that_your_personal_information_is_handled_with_the_utmost_care_and_is_never_compromised_trust_is_the_foundation_of_our_platform_and_we_are_committed_to_maintaining_the_highest_standards_of_privacy_and_security_to_create_a_safe_and_trustworthy_environment_for_everyone">🔐 ગોપનીયતા નીતિ \nઆમે બંધા અમારા સેવા પ્રદાતાઓ અને ગ્રાહકોની સાખળા અને ગોપનીયતા પ્રાથમિકતામાં રાખવા માટે. અમારી ટેક્સટ પ્રાથમિકતા નીતિ ખરીદી કરે છે કે તમારી વ્યક્તિગત માહિતીને મહેનતથી વહેંચવામાં આવે છે અને ક્યારેય સંગ્રહિત ન થવામાં આવતી નથી. વિશ્વાસ આમાં અમારી પ્લેટફોર્મનો આધાર છે, અને અમે બંધા માટે હાઈસ્ટ ગોપનીયતા અને સુરક્ષાનો મોટા મૂળો બનાવવા માટે પ્રતિબંધાઓ માંથી બચાવવા માટે આપે છે સુરક્ષિત અને વિશ્વાસનીય પરિસર.</string>
+    <string name="profit_through_connection_with_your_customers_nat_expert_here_we_understand_that_your_success_is_our_success_by_joining_our_platform_you_gain_access_to_a_vast_network_of_potential_clients_actively_seeking_the_services_you_offer_maximize_your_earnings_and_broaden_your_professional_reach_by_connecting_with_customers_who_appreciate_your_expertise_we_provide_the_tools_and_support_you_need_to_turn_every_interaction_into_a_profitable_opportunity">💼 તમારા ગ્રાહકોથી સંપર્ક દ્વારા લાભ \nઅહીં એક્સપર્ટ હીરે અમે સમજું છું કે તમારો સફળતા અમારો સફળતા છે. અમારી પ્લેટફોર્મમાં જોઇન થવાથી તમે પોતેના ગ્રાહકોને એક વિસ્તૃત નેટવર્કનો ઍક્સેસ મેળવો છો જે તમે પૂરી કરી રહ્યા છો તમારા સેવાઓ શોધો. તમારી આવકને વધારો અને તમારી વ્યાવસાયિક પહોંચને વિસ્તૃત કરો ગ્રાહકોનો સંપર્ક કરીને જે તમારી વિશેષજ્ઞતા માને છે. અમે તમને પ્રતિ અવતરણને લાભદાયક અવસરમાં બદલવા માટે જરૂરી સાધનો અને સહાય આપીશું.</string>
+    <string name="get_started_today_ndon_t_miss_out_on_the_incredible_opportunities_that_await_you_at_your_company_name_join_us_today_and_embark_on_a_journey_of_professional_growth_meaningful_connections_and_financial_success_your_expertise_deserves_a_platform_that_values_and_rewards_your_skills_and_that_platform_is_your_company_name_welcome_aboard_and_here_s_to_a_thriving_partnership">🤝 આજે શરૂ કરો! \nઅને મુલાકાત લો અદ્ભુત અવસરો જે તમારે તમારા કંપની નામ પર મળી રહ્યા છે અજવાળાથી તમારા વ્યાવસાયિક વૃદ્ધિ, અર્થપૂર્ણ જોડાણો અને આર્થિક સફળતાનું એક યાત્રા પર નિકાળો. તમારી વિશેષજ્ઞતા મૂલ્યનીતિ અને પ્રશંસા કરે છે તમારા કુશળતા અને તે પ્લેટફોર્મ તમારા કંપની નામ છે. આભરી અને એક વિકસતી ભાગીદારીનું આભાર!</string>
+    <string name="n1_create_your_profile_showcase_your_skills_and_experience_to_attract_potential_clients_n2_browse_service_requests_explore_service_requests_in_your_area_and_choose_the_ones_that_match_your_expertise_n3_connect_and_serve_engage_with_customers_schedule_appointments_and_provide_exceptional_services">\n1. તમારી પ્રોફાઈલ બનાવો: તમારી કુશળતાઓ અને અનુભવ પોતેના ગ્રાહકોને આકર્ષિત કરવા માટે પ્રદર્શન કરો.\n2. સેવા વિનંતીઓ બ્રાઉઝ કરો: તમારા વિસ્તારમાં સેવા વિનંતીઓને અન્વય કરો અને જે સેવાઓ તમારી માહિતી માટે યોગ્ય છે તેમને પસંદ કરો.\n3. જોડાણ અને સેવ કરો: ગ્રાહકો સાથે જુડી રહો, નિયત મુલાકાતો બંધાવો અને અસાધારણ સેવાઓ આપી.</string>
+    <string name="accept_privacy_policy">ગોપનીયતા નીતિ સ્વીકારો</string>
+    <string name="register_now_as_service_provider">હવે સેવા પ્રદાતા તરીકે રજિસ્ટર કરો</string>
+    <string name="lets_register_naccount">ચાલો રજિસ્ટર કરો\nએકાઉન્ટ</string>
+    <string name="hello_user_you_have_na_greatful_journey">હેલ્લો વપરાશકર્તા, તમારી સાથે \nએક મહત્વપૂર્ણ મુદ્દા</string>
+    <string name="already_have_an_account">પહેલેથીજ એક એકાઉન્ટ છે?</string>
+    <string name="login">લોગિન</string>
+    <string name="loading">લોડ થાય છે..</string>
+    <string name="category_title">કેટેગરી શીર્ષક</string>
+    <string name="location_details">સ્થળ વિગતો</string>
+    <string name="swipe_down_to_refresh">રિફ્રેશ કરવા માટે નીચે સ્વાઇપ કરો!</string>
+    <string name="filters">ફિલ્ટર્સ</string>
+    <string name="no_data_available">કોઈ ડેટા ઉપલબ્ધ નથી!</string>
+    <string name="search_service_at_expert_here">એક્સપર્ટ હીરે સેવા શોધો</string>
+    <string name="active">સક્રિય</string>
+    <string name="choose_category">કેટેગરી પસંદ કરો</string>
+    <string name="select_currency">ચલણ પસંદ કરો?</string>
+    <string name="incoming_call">આવતી કૉલ</string>
+    <string name="decline">નામાંકો</string>
+    <string name="accept">સ્વીકારો</string>
+    <string name="delete_service">સેવા ડિલિટ કરો</string>
+    <string name="are_you_sure_you_want_to_delete_this_service">શું તમે ખાતરી છો કે આ સેવા કાઢવા માટે તૈયાર છો?</string>
+    <string name="cancel">રદ કરો</string>
+    <string name="delete">ડિલિટ</string>
+    <string name="user_address">વપરાશકર્તા સરનામું</string>
+    <string name="application_preference">એપ્લિકેશન પ્રાથમિકતા</string>
+    <string name="language">ભાષા</string>
+    <string name="dark_theme">ઘોર થીમ</string>
+    <string name="change_password">પાસવર્ડ બદલો</string>
+    <string name="help_amp_privacy_policy"><![CDATA[મદદ & ગોપનીયતા નીતિ]]></string>
+    <string name="terms_of_service">સેવાની શરતો</string>
+    <string name="logout">લોગઆઉટ</string>
+    <string name="delete_account">એકાઉન્ટ ડિલિટ કરો</string>
+    <string name="lock_per"><![CDATA[લૉક સ્ક્રીન પર દર્શાવવાની મંજૂરી આવશ્યક છે જ્યાં તમારું ડિવાઇસ સ્ક્રીન બંધ છે. કૃપા કરીને \'\'એપ સેટિંગ્સ > અન્ય પ્રમિશન > લૉક સ્ક્રીન પર દર્શાવવા\'\' પર જાઓ અને મંજૂરી હાથમાં માન્યતા આપો.]]></string>
+    <string name="dont_show_again">ફરીથી દર્શાવવું નહીં?</string>
+    <string name="processing_please_wait">પ્રક્રિયા ચાલુ છે કૃપા કરીને નિરીક્ષણ કરો..</string>
+    <string name="rating">રેટિંગ</string>
+    <string name="services_searching_radius">સેવાઓ શોધવાનું ત્રણી અવળ</string>
+    <string name="reset">રીસેટ</string>
+    <string name="apply">લાગુ કરો</string>
+    <string name="service_description">સેવા વર્ણન</string>
+    <string name="our_location">અમારો સ્થાન</string>
+    <string name="enter_email_to_send_code">કોડ મોકલવા માટે ઈમેલ દાખલ કરો!</string>
+    <string name="submit">સબમિટ કરો</string>
+    <string name="do_you_want_to_exit">શું તમે બહાર ને જવા માંગો છો?</string>
+    <string name="no">ના</string>
+    <string name="yes">હા</string>
+    <string name="select_options">વિકલ્પો પસંદ કરો</string>
+    <string name="camera">કેમેરા</string>
+    <string name="gallery">ગૅલેરી</string>
+    <string name="your_status">તમારું સ્થિતિ</string>
+    <string name="now_you_can_receive_calls">હવે તમે કૉલ્સ મેળવી શકો છો</string>
+    <string name="now_you_can_t_receive_any_calls">હવે તમે કોઈપણ કૉલ્સ મેળવી શકતા નથી</string>
+    <string name="your_services">તમારી સેવાઓ</string>
+    <string name="total_services">કુલ સેવાઓ</string>
+    <string name="not_activate">સક્રિય નથી</string>
+    <string name="your_pending_orders">તમારા બાકી ઓર્ડર્સ</string>
+    <string name="search_services">સેવાઓ શોધો</string>
+    <string name="select_category_to_view_subcategories">ઉપવિભાગો</string>
+    <string name="your_location">તમારો સ્થાન</string>
+    <string name="services_searching_range">સેવાઓ શોધવાનું ત્રણી અવળ</string>
+    <string name="search_service_at">સેવા શોધો</string>
+    <string name="no_images_are_uploaded_to_image_slider">કોઈ છબીઓ ચિત્ર સ્લાઇડર પર અપલોડ કરવામાં આવી નથી!</string>
+    <string name="profile">પ્રોફાઇલ</string>
+    <string name="preference">પસંદગી</string>
+    <string name="term_amp_privacy"><![CDATA[ટર્મ & ગોપનીયતા]]></string>
+    <string name="term_amp_condition"><![CDATA[ટર્મ & શરતો]]></string>
+    <string name="others">અન્ય</string>
+    <string name="share_app">ઍપ શેર કરો</string>
+    <string name="rate_app">ઍપ મૂકો</string>
+    <string name="help">મદદ</string>
+    <string name="about">વિશેમાં</string>
+    <string name="join_amp_prosper"><![CDATA[💼 જોડાઓ & સમૃદ્ધિ]]></string>
+    <string name="join_us_and_witness_the_transformation_as_you_evolve_from_a_service_provider_to_a_trailblazer_together_let_s_redefine_success_one_opportunity_at_a_time_your_journey_begins_now">આવો અમારા સાથે જોડાઓ અને સ્વીકારો પરિવર્તન, જ્યાં તમે એક સેવા પ્રદાતા થઈને ટ્રેલબ્લેઝર બનો. સાથે, એક સમયમાં એક અવસર, સફળતાને પુનઃવ્યાખ્યાયિત કરીએ છે. તમારી પ્રવૃત્તિ હવે પ્રારંભ થાય છે.</string>
+    <string name="become_provider">પ્રોવાઇડર બનો</string>
+    <string name="read_more_on">પર વધુ વાંચો</string>
+    <string name="please_allow_location_permission_in_you_app_settings_to_use_the_app">દયાળુપાત્રતા માટે કૃપા કરીને તમારા એપ સેટિંગ્સમાં સ્થાન પરવાનગી આપો અને એપ વાપરવા માટે</string>
+    <string name="tun_on_location">સ્થાન ચાલુ કરો</string>
+    <string name="open_permission_settings">પરવાનગી સેટિંગ્સ ખોલો</string>
+    <string name="internet_connection_is_required_to_proceed_with_your_operation_the_system_cannot_connect_to_the_main_server_without_internet_access_please_check_your_internet_connection">તમારી પ્રક્રિયા સાથે આગળ વધવા માટે ઇન્ટરનેટ કનેક્શન જરૂરી છે. પ્રમુખ સર્વર સાથે સિસ્ટમ ઇન્ટરનેટ ઍક્સેસ વગર જોડાઈ શકતો નથી. કૃપા કરીને તમારી ઇન્ટરનેટ કનેક્શન તપાસો</string>
+    <string name="no_internet">(: ઇન્ટરનેટ નથી</string>
+    <string name="retry">પ્રયત્ન કરો</string>
+    <string name="try_after_some_time">થોડા સમય પછી પ્રયાસ કરો?</string>
+    <string name="insert_link">લિંક ડાળો</string>
+    <string name="enter_url">URL દાખલ કરો</string>
+    <string name="add_link">લિંક ઉમેરો</string>
+    <string name="we_are_processing_your_request_to_the_nprovider_connecting">અમે તમારી વિનંતી પ્રોસેસ કરી રહ્યા છીએ, કનેક્ટ થાય છે...</string>
+    <string name="sign_in">સાઇન ઇન કરો</string>
+    <string name="select_service_serching_range">સેવા શોધવાનું ત્રણી અવળ પસંદ કરો</string>
+    <string name="range">વિસ્તાર</string>
+    <string name="edit_review">સમીક્ષા સંપાદિત કરો</string>
+    <string name="service_charge">સેવા ચાર્જ</string>
+    <string name="discount_cost">ડિસ્કાઉન્ટ કોસ્ટ</string>
+    <string name="tax_include">ટેક્સ સમાવી શકે છે</string>
+    <string name="total">કુલ</string>
+    <string name="given_service_cost_not_fixed_it_can_be_change_according_to_your_demand_and_other_issues">આપેલી સેવાનો ખર્ચ ફિક્સ નથી, તે તમારી માંગ અને અન્ય સમસ્યાઓના અનુસાર બદલી શકે છે!</string>
+    <string name="images">છબીઓ</string>
+    <string name="review_amp_rating"><![CDATA[સમીક્ષા & રેટિંગ]]></string>
+    <string name="more">વધુ..</string>
+    <string name="choose_sub_category">સબ કેટેગરી પસંદ કરો</string>
+    <string name="taxes">ટેક્સો</string>
+
+
+    <string name="choose_your_language">તમારી ભાષા પસંદ કરો</string>
+    <string name="language_change">ભાષા બદલી</string> <!-- Gujarati -->
+    <string name="in_coming">આવી રહ્યું</string>
+    <string name="out_going">જઈ રહ્યું</string>
+    <string name="home">ઘર</string>
+    <string name="services">સેવાઓ</string>
+    <string name="reviews">સમીક્ષાઓ</string>
+
+    <string name="search_call">કૉલ શોધો</string>
+    <string name="no_review_yet_on_your_services">આપના સેવાઓ પર હજી ત્રણું મુજબ નથી!</string>
+    <string name="your_bookmark">તમારી બુકમાર્ક</string> <!-- Gujarati -->
+    <string name="providers_in_your_wishlist">તમારા ઇચ્છાબંધનમાં પ્રોવાઇડર્સ</string>
+    <string name="you_have">તમારી પાસે છે</string>
+    <string name="why_choose_us">આમાંથી કેમ પસંદ કરવું?</string>
+    <string name="top_service_providers_services_near_you">તમારા નજીકના શ્રેષ્ઠ સેવા પ્રદાતા સેવાઓ</string>
+    <string name="browse_services_nand_compare_nthan_filter">સેવાઓ બ્રાઉઝ કરો \nઅને તુલના કરો \nપછી ફિલ્ટર કરો</string>
+    <string name="book_service_at_your_n_home_hassles_nservice">તમારા ઘરમાં સેવા બુક કરો\n ઝાંઝર રહિત સેવા</string>
+    <string name="enjoy_service_which_n_is_booked_by_you_nexperts_is_here">આપની વચ્ચે બુક કરેલી સેવા આનંદ લો,\n એક્સપર્ટ્સ અહીં છે!</string>
+    <string name="call_history">કૉલ ઇતિહાસ</string>
+    <string name="bookmark">બુકમાર્ક</string>
+    <string name="are_you_sure_you_want_to_logout">શું તમે ખાતરી છો કે તમે લૉગઆઉટ કરવા માંગો છો?</string>
+    <string name="service_request_calls_history">સેવા વિનંતી કૉલ ઇતિહાસ</string>
+    <string name="view">જુઓ</string>
+
+
+
+    <string name="describe_your_issue">તમારી સમસ્યા વર્ણન કરો</string>
+    <string name="type_here">અહીં લખો..</string>
+    <string name="our_team_will_review_your_issue_than_we_will_nprovide_you_possible_support_and_help_you_no_nworry_about_it_user_satisfaction_is_our_first_priority">અમારી ટીમ તમારી સમસ્યા પર સમીક્ષા કરશે, પછી અમે તમને સંભવના સહાય અને મદદ આપીશું, તમને કોઈ ચિંતા કરવી જરૂર નથી, વપરાશકર્તાની સંતોષનું આમું આમાં પ્રથમ મહત્ત્વ છે</string>
+    <string name="submit_ticket">ટિકિટ સબમિટ કરો</string>
+    <string name="home_services_near_you">તમારા નજીકના ઘરેલું સેવાઓ</string>
+    <string name="service_provider_near_you">તમારા નજીકના સેવા પ્રદાતા</string>
+    <string name="are_you_sure_to_reset_your_password_we_will_send_you_otp_in_your_email">શું તમે ખોટું પાસવર્ડ રીસેટ કરવા માટે ખોટું છો તમને તમારા ઇમેઇલ માં OTP મોકલીશું?</string>
+    <string name="confirm_reset_password">પાસવર્ડ પુનઃનિર્ધારિત કરો?</string>
+    <string name="exit">બહાર નીકળો</string>
+    <string name="exit_edit_page">સંપાદન પાનું બહાર નીકળો?</string>
+    <string name="exitpagemessage">તમે કેટલાક બદલાવો કર્યા છે શું તમે સંપાદન પેજમાં રહેવા માંગો છો અથવા બહાર નીકળવા અને બધા બદલાવો બહાર ફેંકવા માંગો છો?</string>
+    <string name="your_wishlist_is_empty">તમારી ઇચ્છાઓની યાદી ખાલી છે</string>
+    <string name="not_found_any_provider_in_you_list">(: તમારી યાદી માં કોઈ પ્રોવાઇડર મળ્યો નથી.</string>
+    <string name="review_images">સમીક્ષા છબીઓ</string>
+    <string name="book_service">સેવા બુક કરો</string>
+    <string name="rate_service">સેવા દર કરો</string>
+
+    <string name="app_is_under_maintenance">એપ જાળવણી હેઠળ છે</string>
+    <string name="maintenance_txt">એડમિન દ્વારા જાળવણી સંદેશ, કૃપા કરીને અહીં સંદેશ દર્શાવો, જે એડમિન એપ મારફતે પ્રદાન કરશે। ઠીક છે, તમારા પાસે કોઈ પ્રશ્નો હોય તો તમે મને પૂછો શકો છો.</string>
+    <string name="blocked_by_admin">એડમિન દ્વારા બ્લોક કરાયા છે!</string>
+    <string name="you_are_blocked_by_admin_due_to_some_invalid_activity_contact_admin_for_more_info">કેટલીક અમાન્ય પ્રવૃત્તિઓને કારણે એડમિન દ્વારા તમારે બ્લોક કરવામાં આવ્યા છે. વધુ માહિતી માટે એડમિનનો સંપર્ક કરો!</string>
+    <string name="ready_to_add_your_first_service">તમારી પહેલી સેવા ઉમેરવા માટે તૈયાર?</string>
+    <string name="start_offering_your_service_today">આજથી તમારી સેવા પ્રદાન કરવાનું શરૂ કરો!</string>
+    <string name="add_first_service">પહેલી સેવા ઉમેરો</string>
+
+
+</resources>

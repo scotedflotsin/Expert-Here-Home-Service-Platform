@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/main_screen_bg_color2">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/toolbarnewservice"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:elevation="@dimen/_10sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:background="@color/widgets_background"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/titleUser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/orelegaone"
+                    android:text="@string/service_request_calls_history"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/_13sdp">
+
+                </TextView>
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/swipeLayoutBookmark"
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent"
+            android:layout_above="@id/my_template"
+            android:layout_below="@id/toolbarnewservice">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/linearLayout6"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:background="@drawable/bg_et"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/_2sdp"
+                    android:paddingRight="@dimen/_2sdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+
+                    <androidx.appcompat.widget.SearchView
+                        android:id="@+id/searchView"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_27sdp"
+                        android:background="@color/main_screen_bg_color"
+                        android:fontFamily="@font/oxygen_regular"
+                        app:iconifiedByDefault="false"
+                        app:queryBackground="@color/main_screen_bg_color"
+                        app:queryHint="@string/search_call"
+                        app:searchIcon="@drawable/search">
+
+                    </androidx.appcompat.widget.SearchView>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/txtNoData"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+
+                    >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/time_icon">
+
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:gravity="center"
+                        android:text="@string/no_data_available"
+                        android:textAlignment="center"
+                        android:textColor="@color/grey_white_text_color" />
+
+                </LinearLayout>
+
+
+                <androidx.recyclerview.widget.RecyclerView
+
+                    android:id="@+id/recycler_call"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@+id/progressBar"
+                    android:layout_below="@id/linearLayout6"
+                    android:visibility="gone">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+
+                <com.facebook.shimmer.ShimmerFrameLayout
+
+                    android:id="@+id/shimmer_call"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@+id/progressBar"
+                    android:layout_below="@id/linearLayout6">
+
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerShimmer"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:focusable="false"
+                        android:padding="@dimen/_5sdp"
+                        android:scrollbars="none">
+
+                    </androidx.recyclerview.widget.RecyclerView>
+
+
+                </com.facebook.shimmer.ShimmerFrameLayout>
+
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:visibility="gone">
+
+                </ProgressBar>
+
+
+
+
+            </RelativeLayout>
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+
+        <com.google.android.ads.nativetemplates.TemplateView
+            android:id="@+id/my_template"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:background="@color/main_screen_bg_color"
+            app:gnt_template_type="@layout/gnt_small_template_view" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

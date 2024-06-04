@@ -1,0 +1,144 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_10sdp"
+    app:cardCornerRadius="@dimen/_10sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center|end"
+        android:background="@color/main_screen_bg_color"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/cancelBtn"
+            android:scaleType="centerCrop"
+            android:src="@drawable/baseline_close_24"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            >
+
+        </ImageView>
+
+        <ScrollView
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:background="@color/main_screen_bg_color"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="@dimen/_4sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/_13sdp"
+                        android:text="Customer Name: "
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+                    <TextView
+
+                        android:id="@+id/customerName"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/_12sdp"
+                        android:text="Demo Name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+                </LinearLayout>
+
+                    <TextView
+
+                        android:id="@+id/dateTime"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/_12sdp"
+                        android:text="DATE"
+                        android:background="@color/light_grey"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/_13sdp"
+                        android:text="Service Name: "
+                        android:textStyle="bold"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+                    <TextView
+
+                        android:id="@+id/serviceName"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/_12sdp"
+                        android:text="Service Name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/_13sdp"
+                        android:text="Address: "
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+                    <TextView
+
+                        android:id="@+id/addressName"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/_12sdp"
+                        android:text="Full Address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

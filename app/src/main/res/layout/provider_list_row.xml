@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/_130sdp"
+    android:layout_marginStart="@dimen/_7sdp"
+    android:layout_marginTop="@dimen/_5sdp"
+    android:layout_marginBottom="@dimen/_5sdp"
+    android:focusable="true"
+    app:cardCornerRadius="@dimen/_8sdp"
+    android:clickable="true"
+    android:foreground="?attr/selectableItemBackground"
+    android:id="@+id/itemClickService"
+    android:layout_height="wrap_content"
+    >
+
+
+    <LinearLayout
+        android:gravity="center"
+        android:background="@color/widgets_background"
+        android:paddingBottom="@dimen/_8sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/serviceImage"
+                android:scaleType="centerCrop"
+
+                android:src="@drawable/circular_grey"
+                android:layout_width="@dimen/_65sdp"
+                android:layout_height="@dimen/_65sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <TextView
+            android:id="@+id/titleTxt"
+            android:fontFamily="@font/outfit_medium"
+            android:textSize="@dimen/_12sdp"
+            android:lines="1"
+            android:ellipsize="end"
+            android:textAlignment="center"
+            android:textColor="@color/text_color"
+            android:padding="@dimen/_3sdp"
+            android:text="Company Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <TextView
+            android:id="@+id/displayPriceTxt"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/outfit_light"
+            android:paddingBottom="@dimen/_2sdp"
+            android:text="13+ Services"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/_11sdp" />
+
+
+
+
+        <LinearLayout
+            android:layout_margin="@dimen/_3sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/grey_rounder_transparent"
+            android:gravity="center"
+            android:paddingLeft="@dimen/_5sdp"
+            android:paddingRight="@dimen/_5sdp"
+            >
+
+            <ImageView
+                android:layout_width="@dimen/_13sdp"
+                android:layout_height="@dimen/_13sdp"
+                android:src="@drawable/start_rating_icon"
+                app:tint="@color/yellow_600">
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/reviewTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/outfit_light"
+                android:text="4.5 (5)"
+                android:textColor="#000"
+                android:textSize="@dimen/_10sdp">
+
+            </TextView>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+</androidx.cardview.widget.CardView>

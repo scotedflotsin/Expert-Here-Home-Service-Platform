@@ -1,0 +1,61 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/widgets_background"
+    android:padding="16dp">
+
+
+    <ProgressBar
+        android:indeterminateTint="@color/theme_Blue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </ProgressBar>
+
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/_10sdp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <ImageView
+            android:src="@drawable/service"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_width="@dimen/_10sdp"
+            android:layout_height="@dimen/_10sdp"
+            app:tint="@color/black">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/dialogMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/theme_Blue"
+            android:fontFamily="@font/outfit"
+            android:text="Car interior deep cleaning"
+            android:textSize="@dimen/_10sdp"
+            android:gravity="center"/>
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_color"
+        android:fontFamily="@font/outfit"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="@string/we_are_processing_your_request_to_the_nprovider_connecting"
+        android:textSize="@dimen/_10sdp"
+        android:gravity="center"/>
+
+</LinearLayout>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/main_screen_bg_color"
+    android:layout_height="match_parent"
+    tools:context=".users.MoreReviewsActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/toolbarnewservice"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:elevation="@dimen/_10sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:gravity="center"
+            android:background="@color/widgets_background"
+
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/backReview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_5sdp"
+                android:src="@drawable/baseline_arrow_back_24">
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/titleUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:layout_weight="1"
+                android:fontFamily="@font/orelegaone"
+                android:text="@string/all_reiews"
+                android:textAlignment="center"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/_13sdp">
+
+            </TextView>
+
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_review"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_below="@+id/toolbarnewservice"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:background="@color/widgets_background"
+        android:layout_above="@id/progressReview"
+        tools:listitem="@layout/review_row_full"
+        android:layout_height="match_parent">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmer_review"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_below="@+id/toolbarnewservice"
+        android:layout_width="match_parent"
+        android:background="@color/widgets_background"
+        android:layout_above="@id/progressReview"
+        tools:listitem="@layout/review_row_full"
+        android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_shimmer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+
+    <ProgressBar
+        android:id="@+id/progressReview"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+
+        android:layout_above="@id/my_template"
+        android:layout_height="@dimen/_20sdp">
+
+    </ProgressBar>
+
+    <TextView
+        android:id="@+id/noReviewTxt"
+        android:visibility="gone"
+        android:text="@string/no_reviews_available"
+        android:gravity="center"
+        android:textSize="@dimen/_12sdp"
+        android:fontFamily="@font/outfit_light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbarnewservice"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+       >
+
+    </TextView>
+
+
+
+    <com.google.android.ads.nativetemplates.TemplateView
+        android:id="@+id/my_template"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:gnt_template_type="@layout/gnt_small_template_view" />
+
+
+
+
+</RelativeLayout>

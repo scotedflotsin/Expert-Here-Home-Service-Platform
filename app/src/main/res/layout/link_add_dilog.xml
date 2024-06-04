@@ -1,0 +1,68 @@
+<!-- res/layout/dialog_custom_layout.xml -->
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    android:layout_marginHorizontal="20dp"
+    app:cardBackgroundColor="@color/widgets_background"
+    app:cardCornerRadius="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_weight="1"
+            android:fontFamily="@font/outfit"
+            android:text="@string/insert_link"
+            android:textAlignment="textEnd"
+            android:textSize="@dimen/_13sdp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/linkTextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:gravity="center"
+            android:textColorHint="@null"                    app:boxBackgroundColor="@color/et_bg_color"
+
+            app:cursorColor="@color/black"
+            app:expandedHintEnabled="true"
+            app:hintTextColor="@color/text_color">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etLink"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_4sdp"
+                android:fontFamily="@font/outfit"
+                android:hint="@string/enter_url"
+                android:importantForAutofill="noExcludeDescendants"
+                android:inputType="text"
+                android:maxLines="1"
+
+                android:paddingStart="@dimen/_10sdp"
+                android:textColorHint="@color/grey_white_text_color"
+                android:textSize="@dimen/_13sdp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/addLinkBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bgrectangle"
+            android:foreground="?attr/selectableItemBackground"
+            android:text="@string/add_link"
+            android:textSize="@dimen/_12sdp"
+            android:visibility="visible"
+            app:backgroundTint="@color/black" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.REQUEST_COMPANION_USE_DATA_IN_BACKGROUND" />
+    <uses-permission android:name="android.permission.REQUEST_COMPANION_RUN_IN_BACKGROUND" />
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32"
+        tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_CONNECTED_DEVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_DATA_SYNC" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
+    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+    <uses-permission android:name="Manifest.permission.MODIFY_PHONE_STATE" />
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:extractNativeLibs="true"
+        android:forceDarkAllowed="false"
+        android:fullBackupContent="@xml/backup_rules"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:theme="@style/Theme.ExpertHere"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".MaintenanceActivity"
+            android:theme="@style/Theme.FullScreen"
+            android:exported="false" />
+        <activity
+            android:name=".users.HelpUserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".users.ServiceForCategoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Common.BrowserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Common.TermsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".Common.PrivacyPolicyActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".Common.ContactUsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".Common.AboutUsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".serviceProvider.CategoriesListActivity"
+            android:exported="false"
+            android:label="@string/title_activity_categories_list"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ExpertHere"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".calling.MainCallActivity"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".calling.CallingScreen"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".calling.OutGoingCallActivity"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".users.UserServiceSerachActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".serviceProvider.NewOrderActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".serviceProvider.ServiceProviderProfileDetailsActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".users.AddReviewActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".users.MoreReviewsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".users.ServicesByCategoryActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".users.EditUserActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+
+        <receiver
+            android:name=".helper.InternetReceiver"
+            android:exported="true"
+            android:permission="TODO">
+            <intent-filter>
+                <action
+                    android:name="android.net.conn.CONNECTIVITY_CHANGE"
+                    tools:ignore="BatteryLife" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".serviceProvider.NewServiceActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".helper.ImageCompressActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Base.Theme.AppCompat"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".serviceProvider.ProviderHome"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".serviceProvider.ProviderDetailsActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".test.TestActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".serviceProvider.ProviderIntroActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".users.HomeActivity"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".users.ForgotPassOtpVerifyActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".users.OtpSendActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".users.PasswordResetActivity"
+            android:exported="false"
+            android:screenOrientation="fullSensor" />
+        <activity
+            android:name=".users.RegisterActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".users.LoginActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".LocationSelectActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".users.IntroActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".SplashScreen"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FullScreen"
+            tools:ignore="LockedOrientationActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="https" />
+                <data android:host="experthere.in" />
+                <data android:pathPrefix="/provider_profile.php" />
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="http" />
+                <data android:host="experthere.in" />
+                <data android:pathPrefix="/provider_profile.php" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_api_key" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="www.experthere.in.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <service
+            android:name=".FCM.MyFirebaseMessagingService"
+            android:exported="false"
+            android:permission="TODO"
+            tools:ignore="ExportedService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".calling.OutGoingCallService"
+            android:exported="false"
+            android:foregroundServiceType="dataSync">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name=".calling.OutGoingNotificationActionReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="www.experthere.in.calling.STOP" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".FCM.AnswerCallReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="www.experthere.in.calling.CALL_RECEIVED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".FCM.RejectCallReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="www.experthere.in.calling.CALL_DECLINE" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".calling.DialToneGeneratorService" />
+        <service android:name=".calling.MainCallService" />
+        <service android:name=".helper.app.OrderNotifcationService" />
+
+
+
+
+
+        <receiver
+            android:name=".helper.BootCompletedReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+
+
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3940256099942544~3347511713"/>
+
+
+
+
+
+
+
+
+
+    </application>
+
+</manifest>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:id="@+id/select_lay_subcat"
+    android:clickable="true"
+    android:foreground="?attr/selectableItemBackground"
+    android:background="@color/shimmer_bg"
+    android:layout_height="@dimen/_10sdp"
+    android:layout_margin="@dimen/_5sdp"
+    android:focusable="true">
+
+
+
+
+</LinearLayout>

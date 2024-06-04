@@ -1,0 +1,83 @@
+<!-- fragment_bottom_sheet.xml -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/_10sdp"
+    android:gravity="center"
+    android:background="@color/widgets_background"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:gravity="center">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/outfit"
+            android:text="@string/do_you_want_to_exit"
+            android:textAlignment="textEnd"
+            android:textSize="@dimen/_15sdp">
+
+        </TextView>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10sdp"
+            android:src="@drawable/baseline_exit_to_app_24"
+            app:tint="@color/black" />
+
+
+
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/next3Layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <Button
+            android:id="@+id/noBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_border"
+            android:foreground="?attr/selectableItemBackground"
+            android:text="@string/no"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/_12sdp"
+            app:backgroundTint="@color/black" />
+
+        <Button
+            android:id="@+id/yesBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:background="@drawable/bg_black_rectangle"
+            android:foreground="?attr/selectableItemBackground"
+            android:text="@string/yes"
+            android:textSize="@dimen/_12sdp"
+            app:backgroundTint="@color/black" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:orientation="vertical"
+
+    app:cardCornerRadius="@dimen/_8sdp"
+    android:background="@color/color_sky_blue_main_screen"
+    android:layout_height="wrap_content">
+
+
+    <androidx.cardview.widget.CardView
+        app:cardCornerRadius="@dimen/_8sdp"
+        android:layout_height="@dimen/_140sdp"
+        android:layout_width="match_parent"
+        >
+
+        <ImageView
+            android:id="@+id/imageView"
+            tool:src="@drawable/demo_banner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"/>
+
+    </androidx.cardview.widget.CardView>
+    <!-- res/layout/slider_item.xml -->
+
+
+
+
+</LinearLayout>

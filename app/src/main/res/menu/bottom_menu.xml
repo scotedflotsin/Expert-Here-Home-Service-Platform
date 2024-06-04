@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+
+        android:id="@+id/incomingMenuBtn"
+android:enabled="true"
+        android:icon="@drawable/incomming_calls"
+        android:title="@string/in_coming"
+        >
+
+    </item>
+    <item
+        android:id="@+id/outgoingMenuBtn"
+        android:icon="@drawable/call_out"
+        android:title="@string/out_going">
+
+    </item>
+    <item
+        android:id="@+id/homeMenuBtn"
+        android:icon="@drawable/home"
+        android:title="@string/home">
+
+    </item>
+    <item
+        android:id="@+id/servicesMenuBtn"
+        android:icon="@drawable/service"
+        android:title="@string/services">
+
+    </item>
+    <item
+        android:id="@+id/reviewsMenuBtn"
+        android:icon="@drawable/review_star"
+        android:title="@string/reviews">
+
+    </item>
+
+</menu>

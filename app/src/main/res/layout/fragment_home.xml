@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fragment_background"
+
+    tools:context=".serviceProvider.fragments.HomeFragment">
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+
+                xmlns:tool="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:padding="@dimen/_5sdp"
+                app:cardCornerRadius="@dimen/_5sdp"
+                app:cardElevation="@dimen/_3sdp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/widgets_background"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/serviceTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:fontFamily="@font/outfit_light"
+                            android:text="@string/your_status"
+                            android:textColor="@color/text_color"
+                            android:textSize="@dimen/_11sdp">
+
+                        </TextView>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:background="@color/light_grey">
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout13"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:layout_marginBottom="@dimen/_20sdp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@+id/activeLay"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:visibility="gone">
+
+                            <ImageView
+                                android:id="@+id/imgUser"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="@dimen/_5sdp"
+                                android:src="@drawable/active_btn">
+
+                            </ImageView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/oxygen_light"
+                                android:text="@string/now_you_can_receive_calls"
+                                android:textColor="@color/text_color"
+                                android:textSize="@dimen/_8sdp">
+
+                            </TextView>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/deActiveLay"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="@dimen/_5sdp"
+                                android:src="@drawable/deactive_btn">
+
+                            </ImageView>
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="@dimen/_5sdp"
+                                android:src="@drawable/exclimation_red">
+
+                            </ImageView>
+                            <!--                        android:text="@string/now_you_can_t_receive_any_calls"-->
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/oxygen_light"
+                                android:text="@string/now_you_can_t_receive_any_calls"
+                                android:textColor="@color/text_color"
+                                android:textSize="@dimen/_8sdp">
+
+                            </TextView>
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_3sdp"
+                            android:layout_marginEnd="@dimen/_20sdp"
+                            android:gravity="end"
+                            android:orientation="horizontal">
+
+
+
+                            <androidx.appcompat.widget.SwitchCompat
+                                android:id="@+id/statusSwitchProvider"
+
+                                app:thumbTint="@color/redBtnTxtColor"
+                                app:trackTint="@color/slider_off_color_red"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                            </androidx.appcompat.widget.SwitchCompat>
+
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+
+                xmlns:tool="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+
+                android:padding="@dimen/_5sdp"
+
+                app:cardCornerRadius="@dimen/_5sdp"
+                app:cardElevation="@dimen/_3sdp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/widgets_background"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/_5sdp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:fontFamily="@font/outfit_light"
+                            android:text="@string/your_services"
+                            android:textColor="@color/text_color"
+                            android:textSize="@dimen/_11sdp">
+
+                        </TextView>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:background="@color/light_grey">
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_20sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_20sdp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/oxygen_light"
+                                android:text="@string/total_services"
+                                android:textColor="@color/text_color"
+                                android:textSize="@dimen/_9sdp">
+
+                            </TextView>
+
+                            <TextView
+                                android:id="@+id/totalTxt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_3sdp"
+                                android:fontFamily="@font/oxygen_light"
+                                android:text="0"
+                                android:textColor="@color/text_color"
+                                android:textSize="@dimen/_18sdp">
+
+                            </TextView>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/oxygen_light"
+                                android:text="@string/active"
+                                android:textColor="@color/slider_green"
+                                android:textSize="@dimen/_9sdp">
+
+                            </TextView>
+
+                            <TextView
+                                android:id="@+id/activeTxt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_3sdp"
+                                android:fontFamily="@font/oxygen_light"
+                                android:text="0"
+                                android:textColor="@color/slider_green"
+                                android:textSize="@dimen/_18sdp">
+
+                            </TextView>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/oxygen_light"
+                                android:text="@string/not_activate"
+                                android:textColor="@color/slider_red"
+                                android:textSize="@dimen/_9sdp">
+
+                            </TextView>
+
+                            <TextView
+                                android:id="@+id/notActiveTxt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_3sdp"
+                                android:fontFamily="@font/oxygen_light"
+                                android:text="0"
+                                android:textColor="@color/slider_red"
+                                android:textSize="@dimen/_18sdp">
+
+                            </TextView>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+
+                xmlns:tool="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:padding="@dimen/_5sdp"
+                app:cardCornerRadius="@dimen/_5sdp"
+                app:cardElevation="@dimen/_3sdp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/widgets_background"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:fontFamily="@font/outfit_light"
+                            android:text="@string/your_pending_orders"
+                            android:textColor="@color/text_color"
+                            android:textSize="@dimen/_11sdp">
+
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/orderCountTxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/outfit_light"
+                            android:text=": 0"
+                            android:textColor="@color/text_color"
+                            android:textSize="@dimen/_11sdp">
+
+                        </TextView>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:background="@color/light_grey">
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+
+                        <androidx.recyclerview.widget.RecyclerView
+
+                            android:id="@+id/recyclerOrders"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:visibility="gone">
+
+                        </androidx.recyclerview.widget.RecyclerView>
+
+
+                        <com.facebook.shimmer.ShimmerFrameLayout
+
+                            android:id="@+id/shimmer_orders"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/recyclerShimmer"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:focusable="false"
+                                android:scrollbars="none">
+
+                            </androidx.recyclerview.widget.RecyclerView>
+
+                        </com.facebook.shimmer.ShimmerFrameLayout>
+
+                        <TextView
+                            android:id="@+id/noDataText"
+                            android:visibility="gone"
+                            android:layout_width="match_parent"
+                            android:gravity="center"
+                            android:text="@string/no_data_available"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+
+                        </TextView>
+
+
+                        <ProgressBar
+                            android:id="@+id/progressBar"
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            android:visibility="gone">
+
+                        </ProgressBar>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/createOrderBtn"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_15sdp"
+        android:background="@drawable/rounded_btn_bg_theme_blue"
+        android:drawableEnd="@drawable/baseline_add_24"
+        android:gravity="center"
+        android:text="@string/create_order"
+        android:textAllCaps="false"
+        android:textColor="@color/secondTextColor"
+        android:textSize="@dimen/_8sdp">
+
+    </androidx.appcompat.widget.AppCompatButton>
+
+
+</RelativeLayout>

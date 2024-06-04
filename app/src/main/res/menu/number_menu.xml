@@ -1,0 +1,10 @@
+<!-- res/menu/number_menu.xml -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="1" />
+    <item android:title="2" />
+    <item android:title="3" />
+    <item android:title="4" />
+    <item android:title="5" />
+    <item android:title="6" />
+    <item android:title="7" />
+</menu>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_screen_bg_color2"
+    tools:context=".serviceProvider.profile_frgments.ServiciesProviderFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+ <androidx.recyclerview.widget.RecyclerView
+     android:id="@+id/recycler_Service"
+     android:scrollbars="none"
+     android:layout_marginTop="@dimen/_5sdp"
+     android:layout_above="@id/progressService"
+     android:layout_width="match_parent"
+     android:visibility="gone"
+     android:layout_height="match_parent">
+
+ </androidx.recyclerview.widget.RecyclerView>
+
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+     android:id="@+id/shimmer_service"
+     android:scrollbars="none"
+     android:layout_marginTop="@dimen/_5sdp"
+     android:layout_above="@id/progressService"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerShimmer"
+            android:scrollbars="none"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+ </com.facebook.shimmer.ShimmerFrameLayout>
+
+ <TextView
+     android:id="@+id/noDataText"
+     android:scrollbars="none"
+     android:gravity="center"
+     android:visibility="gone"
+     android:textColor="@color/text_color"
+     android:text="@string/no_data_available"
+     android:layout_marginTop="@dimen/_5sdp"
+     android:layout_above="@id/progressService"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent">
+
+ </TextView>
+
+
+    <ProgressBar
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/progressService"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </ProgressBar>
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/_4sdp"
+    android:layout_marginEnd="@dimen/_4sdp"
+    android:layout_marginBottom="@dimen/_5sdp"
+    app:cardCornerRadius="@dimen/_8sdp"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/widgets_background"
+       >
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="@dimen/_5sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="@dimen/_90sdp"
+                android:layout_height="@dimen/_110sdp"
+                android:background="@color/shimmer_bg"
+                android:scaleType="centerCrop"
+
+                />
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_10sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:background="@color/shimmer_bg"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/service_image_lay"
+                app:layout_constraintTop_toTopOf="@+id/service_image_lay">
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@color/shimmer_bg" />
+
+                    <LinearLayout
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@color/shimmer_bg" />
+
+                    <LinearLayout
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@color/shimmer_bg" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@color/shimmer_bg" />
+
+                    <LinearLayout
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@color/shimmer_bg" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

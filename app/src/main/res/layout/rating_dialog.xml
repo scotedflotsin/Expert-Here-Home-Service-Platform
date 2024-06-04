@@ -1,0 +1,105 @@
+<!-- res/layout/dialog_custom_layout.xml -->
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_15sdp"
+    app:cardBackgroundColor="@color/widgets_background"
+    app:cardCornerRadius="@dimen/_15sdp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:gravity="center"
+        android:orientation="vertical"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/outfit"
+                android:text="@string/rate_app"
+                android:textAlignment="textEnd"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/_13sdp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:src="@drawable/smile" />
+
+        </LinearLayout>
+
+
+        <RatingBar
+            android:id="@+id/ratingBarNew"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:numStars="5"
+            android:progressTint="@color/rating_bar_color"
+            android:stepSize="1">
+
+        </RatingBar>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_5sdp">
+
+            <LinearLayout
+                android:id="@+id/laterBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/color_grey_mainscreen"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/outfit"
+                    android:text="Later"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13sdp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/submitBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/color_sky_blue_main_screen"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/outfit"
+                    android:text="@string/submit"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13sdp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

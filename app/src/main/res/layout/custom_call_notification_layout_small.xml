@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="64dp"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/_2sdp"
+        android:paddingEnd="@dimen/_2sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <ImageView
+
+                android:layout_width="@dimen/_10sdp"
+                android:layout_height="@dimen/_10sdp"
+                android:src="@drawable/app_icon">
+
+            </ImageView>
+
+            <TextView
+                style="@style/TextAppearance.Compat.Notification.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/orelegaone"
+                android:text="Expert "
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/_8sdp" />
+
+
+            <TextView
+                style="@style/TextAppearance.Compat.Notification.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/orelegaone"
+                android:text="here"
+                android:textColor="@color/theme_Blue"
+                android:textSize="@dimen/_8sdp" />
+
+            <TextView
+                style="@style/TextAppearance.Compat.Notification.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/orelegaone"
+                android:text="  User "
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/_8sdp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+           >
+
+            <ImageView
+                android:id="@+id/userImg"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:src="@drawable/demo_img">
+
+            </ImageView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/username"
+                        style="@style/TextAppearance.Compat.Notification.Title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/outfit_medium"
+                        android:text="Abhishek "
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/_8sdp" />
+
+                    <ImageView
+
+                        android:layout_width="@dimen/_8sdp"
+                        android:layout_height="@dimen/_8sdp"
+                        android:layout_marginStart="@dimen/_3sdp"
+                        android:layout_marginEnd="@dimen/_3sdp"
+                        android:src="@drawable/service">
+
+                    </ImageView>
+
+                    <TextView
+                        android:id="@+id/serviceTitle"
+                        style="@style/TextAppearance.Compat.Notification.Title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/outfit"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:text="Car interior deep cleaning "
+                        android:textColor="@color/theme_Blue"
+                        android:textSize="@dimen/_7sdp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/TextAppearance.Compat.Notification.Title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/outfit_light"
+                        android:text="@string/incoming_call"
+                        android:visibility="gone"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/_7sdp" />
+
+                    <LinearLayout
+                        android:layout_marginTop="2sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="end|center"
+                        android:orientation="horizontal">
+
+                        <!-- Reject button -->
+                        <LinearLayout
+                            android:id="@+id/declineCallBtn"
+                            android:layout_width="@dimen/_65sdp"
+                            android:layout_height="@dimen/_23sdp"
+                            android:background="@drawable/red_rounded_bg_btn"
+                            android:backgroundTint="@color/redBtnTxtColor"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:gravity="center"
+                            android:textColor="@color/white">
+
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/decline"
+                                android:textColor="@color/secondTextColor"
+                                android:textSize="@dimen/_8sdp">
+
+                            </TextView>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/acceptCallBtb"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:layout_width="@dimen/_65sdp"
+                            android:layout_height="@dimen/_23sdp"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:background="@drawable/green_rounded_bg_btn"
+                            android:gravity="center"
+                            android:textColor="@color/white">
+
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/accept"
+                                android:textColor="@color/secondTextColor"
+                                android:textSize="@dimen/_8sdp">
+
+                            </TextView>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

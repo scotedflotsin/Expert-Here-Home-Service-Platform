@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/widgets_background"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/_10sdp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/outfit_light"
+        android:text="@string/filters"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/_14sdp">
+
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@color/light_grey" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:gravity="center"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/_5sdp"
+            android:paddingEnd="@dimen/_5sdp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:fontFamily="@font/outfit_medium"
+                android:text="Price Range"
+                android:textColor="@color/text_color" />
+
+            <TextView
+                android:id="@+id/priceRangeTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:layout_weight="1"
+                android:fontFamily="@font/outfit_light"
+                android:text="INR 100 - INR 2000"
+                android:textAlignment="viewEnd"
+                android:textColor="@color/text_color" />
+        </LinearLayout>
+
+        <com.google.android.material.slider.RangeSlider
+            android:id="@+id/priceRangeSlider"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+
+            android:valueFrom="100"
+            android:valueTo="5000"
+            app:haloColor="@color/theme_Blue"
+            app:labelBehavior="gone"
+            app:thumbColor="@color/theme_Blue"
+            app:tickVisible="false"
+            app:trackColorActive="@color/theme_Blue"
+            app:trackHeight="@dimen/_6sdp"
+            app:values="@array/initial_slider_values" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+           >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:gravity="center|start"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/attention"
+                    app:tint="@color/redBtnTxtColor">
+
+                </ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:fontFamily="@font/outfit_light"
+                    android:text="With Price filter you won't able to view services having cost more than 5000 RS. \nAlso Price Filter Shows Results Excluding GST."
+                    android:textSize="@dimen/_7sdp" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@color/light_grey" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/_5sdp"
+            android:paddingEnd="@dimen/_5sdp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:fontFamily="@font/outfit_medium"
+                android:text="@string/rating"
+                android:textColor="@color/text_color" />
+
+
+        </LinearLayout>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/chipGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:paddingEnd="@dimen/_10sdp"
+                app:singleLine="true"
+
+                app:singleSelection="true">
+
+                <!-- Use custom layout for the Chip -->
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/allChip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:checkable="true"
+                    android:checked="true"
+                    android:text="All"
+                    android:textColor="@drawable/chip_text_color_selector"
+                    app:chipBackgroundColor="@drawable/chip_bg"
+                    app:chipCornerRadius="@dimen/_3sdp"
+                    app:chipIcon="@drawable/review_star"
+                    app:chipIconTint="@drawable/selector_chip"
+                    app:chipStrokeColor="@drawable/chip_text_color_selector"
+
+                    />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/oneChip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:checkable="true"
+                    android:checked="false"
+                    android:text="1"
+                    android:textColor="@drawable/chip_text_color_selector"
+                    app:chipBackgroundColor="@drawable/chip_bg"
+                    app:chipCornerRadius="@dimen/_3sdp"
+                    app:chipIcon="@drawable/review_star"
+                    app:chipIconTint="@drawable/selector_chip"
+                    app:chipStrokeColor="@drawable/chip_text_color_selector"
+
+                    />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/twoChip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:checkable="true"
+                    android:checked="false"
+                    android:text="2"
+                    android:textColor="@drawable/chip_text_color_selector"
+                    app:chipBackgroundColor="@drawable/chip_bg"
+                    app:chipCornerRadius="@dimen/_3sdp"
+                    app:chipIcon="@drawable/review_star"
+                    app:chipIconTint="@drawable/selector_chip"
+                    app:chipStrokeColor="@drawable/chip_text_color_selector"
+
+                    />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/threeChip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:checkable="true"
+                    android:checked="false"
+                    android:text="3"
+                    android:textColor="@drawable/chip_text_color_selector"
+                    app:chipBackgroundColor="@drawable/chip_bg"
+                    app:chipCornerRadius="@dimen/_3sdp"
+                    app:chipIcon="@drawable/review_star"
+                    app:chipIconTint="@drawable/selector_chip"
+                    app:chipStrokeColor="@drawable/chip_text_color_selector"
+
+                    />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/fousChip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:checkable="true"
+                    android:checked="false"
+                    android:text="4"
+                    android:textColor="@drawable/chip_text_color_selector"
+                    app:chipBackgroundColor="@drawable/chip_bg"
+                    app:chipCornerRadius="@dimen/_3sdp"
+                    app:chipIcon="@drawable/review_star"
+                    app:chipIconTint="@drawable/selector_chip"
+                    app:chipStrokeColor="@drawable/chip_text_color_selector"
+
+                    />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/fiveChip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:checkable="true"
+                    android:checked="false"
+                    android:text="5"
+                    android:textColor="@drawable/chip_text_color_selector"
+                    app:chipBackgroundColor="@drawable/chip_bg"
+                    app:chipCornerRadius="@dimen/_3sdp"
+                    app:chipIcon="@drawable/review_star"
+                    app:chipIconTint="@drawable/selector_chip"
+                    app:chipStrokeColor="@drawable/chip_text_color_selector"
+
+                    />
+
+
+                <!-- Add more chips with the same custom layout -->
+
+            </com.google.android.material.chip.ChipGroup>
+
+        </HorizontalScrollView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/_5sdp"
+            android:paddingEnd="@dimen/_5sdp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:fontFamily="@font/outfit_medium"
+                android:text="@string/services_searching_radius"
+                android:textColor="@color/text_color" />
+
+            <TextView
+                android:id="@+id/rangeTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:layout_weight="1"
+                android:fontFamily="@font/outfit_light"
+                android:text="0 KM"
+                android:textAlignment="viewEnd"
+                android:textColor="@color/text_color" />
+        </LinearLayout>
+
+        <com.google.android.material.slider.Slider
+            android:id="@+id/rangeSlider"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:valueFrom="0"
+            android:valueTo="100"
+
+            app:haloColor="@color/theme_Blue"
+            app:labelBehavior="gone"
+            app:thumbColor="@color/theme_Blue"
+            app:tickVisible="false"
+            app:trackColorActive="@color/theme_Blue"
+            app:trackHeight="@dimen/_6sdp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/cancelBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/rectange_button_white"
+            android:backgroundTint="@color/theme_Blue"
+            android:text="@string/cancel"
+            android:textColor="@color/secondTextColor" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/resetBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/rectange_button_white"
+            android:text="@string/reset"
+
+            android:textColor="#000" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/applyBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/rectange_button_white"
+            android:backgroundTint="@color/theme_Blue"
+            android:text="@string/apply"
+            android:textColor="@color/secondTextColor" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

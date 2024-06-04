@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_screen_bg_color">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/toolbarnewservice"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:elevation="@dimen/_10sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:gravity="center"
+            android:background="@color/widgets_background"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/backReview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_5sdp"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:src="@drawable/baseline_arrow_back_24">
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/titleTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:fontFamily="@font/orelegaone"
+                android:text="Title"
+                android:textAlignment="center"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/_13sdp">
+
+            </TextView>
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_width="@dimen/_15sdp"
+                android:visibility="invisible"
+                android:layout_height="@dimen/_15sdp">
+
+            </ProgressBar>
+
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_below="@+id/toolbarnewservice"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </WebView>
+
+
+
+
+</RelativeLayout>

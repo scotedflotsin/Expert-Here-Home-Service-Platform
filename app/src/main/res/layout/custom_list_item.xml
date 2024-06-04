@@ -1,0 +1,34 @@
+<!-- custom_list_item.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@color/widgets_background"
+
+    android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/iconImageView"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="8dp"
+        android:src="@drawable/baseline_location_on_24" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/addressTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/user_address"
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

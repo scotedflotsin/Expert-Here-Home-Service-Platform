@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="@color/widgets_background"
+    android:foreground="?attr/selectableItemBackground"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:textSize="@dimen/_12sdp"
+        android:padding="@dimen/_8sdp"
+        android:id="@+id/title_service"
+        android:text="Service Title"
+        android:textColor="@color/text_color"
+        android:fontFamily="@font/outfit_light"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+    <LinearLayout
+        android:background="@color/light_grey"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+
+</LinearLayout>

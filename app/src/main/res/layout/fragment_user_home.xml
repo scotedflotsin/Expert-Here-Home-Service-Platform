@@ -1,0 +1,657 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_sky_blue_main_screen"
+    tools:context=".users.fragments.UserHomeFragment">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/main_screen_bg_color"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/_5sdp"
+        android:paddingBottom="@dimen/_5sdp">
+
+        <LinearLayout
+            android:id="@+id/locationLay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="start|center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:fontFamily="@font/outfit"
+                android:maxLines="1"
+                android:paddingStart="@dimen/_8sdp"
+                android:text="@string/your_location"
+                android:textAlignment="viewStart"
+                android:textSize="@dimen/_9sdp">
+
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/main_screen_bg_color"
+                android:foreground="?attr/selectableItemBackground"
+                android:gravity="center_vertical"
+                android:paddingStart="@dimen/_5sdp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/baseline_location_on_24"
+                    app:tint="@color/theme_Blue">
+
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/locationTxtCat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/outfit"
+                    android:maxLines="1"
+                    android:text="@string/location_details"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/_11sdp">
+
+                </TextView>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/clickRangeBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="end|center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/_8sdp"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:fontFamily="@font/outfit"
+                android:maxLines="1"
+                android:text="@string/services_searching_range"
+                android:textAlignment="viewEnd"
+                android:textSize="@dimen/_9sdp">
+
+            </TextView>
+
+
+            <TextView
+                android:id="@+id/kmTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/_8sdp"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:fontFamily="@font/outfit"
+                android:maxLines="1"
+                android:text="20 km"
+                android:textAlignment="viewEnd"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/_11sdp">
+
+            </TextView>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_37sdp"
+        android:layout_below="@+id/linearLayout14"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_9sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:background="@color/white"
+        android:clickable="true"
+        android:elevation="1dp"
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:text="@string/swipe_down_to_refresh"
+        app:cardCornerRadius="@dimen/_5sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_border_search"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/_8sdp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/outfit_light"
+                android:text="@string/search_service_at"
+                android:textColor="@color/grey_white_text_color"
+                android:textSize="@dimen/_10sdp">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/outfit_light"
+                android:text=" Expert"
+                android:textColor="@color/theme_Blue"
+                android:textSize="@dimen/_10sdp">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/outfit_light"
+                android:text=" Here"
+
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/_10sdp">
+
+            </TextView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:paddingRight="@dimen/_8sdp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/search"
+                    app:tint="@color/theme_Blue">
+
+                </ImageView>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/cardView"
+        android:layout_marginTop="@dimen/_10sdp">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_10sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/viewPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_140sdp"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_5sdp" />
+
+                <TextView
+                    android:id="@+id/noSliderDatatxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_120sdp"
+                    android:layout_below="@+id/cardView"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:fontFamily="@font/outfit_light"
+                    android:gravity="center"
+                    android:text="@string/no_images_are_uploaded_to_image_slider"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/dotsLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/viewPager"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:layout_marginBottom="@dimen/_4sdp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingTop="5sp">
+
+                    <!-- Dot images will be added dynamically here -->
+
+                </LinearLayout>
+
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/dotsLayout"
+                    android:layout_marginTop="@dimen/_5sdp">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/main_screen_bg_color2"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:background="@color/main_screen_bg_color"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:paddingEnd="@dimen/_10sdp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_5sdp"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:fontFamily="@font/outfit"
+                                android:text="@string/categories"
+                                android:textColor="@color/text_color"
+                                android:textSize="@dimen/_13sdp">
+
+                            </TextView>
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/recycler_cat"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:visibility="gone"
+                                android:layout_marginStart="@dimen/_10sdp"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:orientation="horizontal" />
+
+
+                            <com.facebook.shimmer.ShimmerFrameLayout
+                                android:id="@+id/shimmerCat"
+                                android:layout_width="match_parent"
+                                android:layout_marginStart="@dimen/_8sdp"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <androidx.recyclerview.widget.RecyclerView
+                                    android:id="@+id/recyclerShimmerCat"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:focusable="false"
+                                    android:orientation="horizontal"
+                                    android:scrollbars="none">
+
+                                </androidx.recyclerview.widget.RecyclerView>
+
+
+                            </com.facebook.shimmer.ShimmerFrameLayout>
+
+
+
+                            <ProgressBar
+                                android:id="@+id/progCat"
+                                android:layout_width="@dimen/_25sdp"
+                                android:layout_height="@dimen/_25sdp"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:orientation="horizontal"
+                                android:visibility="gone" />
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/linearLayout7"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+
+                            android:background="@color/main_screen_bg_color"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:paddingEnd="@dimen/_5sdp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_5sdp"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:fontFamily="@font/outfit"
+                                android:text="@string/top_service_providers_services_near_you"
+                                android:textColor="@color/text_color"
+                                android:textSize="@dimen/_13sdp">
+
+                            </TextView>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="horizontal"
+                                android:paddingBottom="@dimen/_10sdp">
+
+                                <androidx.recyclerview.widget.RecyclerView
+                                    android:id="@+id/recycler_top_services"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="horizontal"
+                                    android:visibility="gone" />
+
+
+                                <TextView
+                                    android:id="@+id/noData_top_services"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text="@string/no_data_available"
+                                    android:visibility="gone" />
+
+
+                                <com.facebook.shimmer.ShimmerFrameLayout
+                                    android:id="@+id/shimmerTop"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="horizontal">
+
+                                    <androidx.recyclerview.widget.RecyclerView
+                                        android:id="@+id/recyclerShimmerTop"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:focusable="false"
+                                        android:orientation="horizontal"
+                                        android:scrollbars="none">
+
+                                    </androidx.recyclerview.widget.RecyclerView>
+
+
+                                </com.facebook.shimmer.ShimmerFrameLayout>
+
+                                <ProgressBar
+                                    android:id="@+id/progTopServices"
+                                    android:layout_width="@dimen/_25sdp"
+                                    android:layout_height="@dimen/_25sdp"
+                                    android:layout_marginTop="@dimen/_10sdp"
+                                    android:orientation="horizontal"
+                                    android:visibility="gone" />
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/homeServiceLay"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+
+                            android:background="@color/color_sky_blue_dark_main_screen"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:paddingEnd="@dimen/_5sdp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_5sdp"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:fontFamily="@font/outfit"
+                                android:text="@string/home_services_near_you"
+                                android:textColor="@color/text_color"
+                                android:textSize="@dimen/_13sdp">
+
+                            </TextView>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="horizontal"
+                                android:paddingBottom="@dimen/_10sdp">
+
+                                <androidx.recyclerview.widget.RecyclerView
+                                    android:id="@+id/recycler_home_services"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:visibility="gone"
+                                    android:orientation="horizontal" />
+
+                                <ProgressBar
+                                    android:id="@+id/progHomeServices"
+                                    android:layout_width="@dimen/_25sdp"
+                                    android:layout_height="@dimen/_25sdp"
+                                    android:layout_marginTop="@dimen/_10sdp"
+                                    android:orientation="horizontal"
+                                    android:visibility="gone" />
+                                <com.facebook.shimmer.ShimmerFrameLayout
+                                    android:id="@+id/shimmerHomeServices"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="horizontal">
+
+                                    <androidx.recyclerview.widget.RecyclerView
+                                        android:id="@+id/recyclerShimmerHomeService"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:focusable="false"
+                                        android:orientation="horizontal"
+                                        android:scrollbars="none">
+
+                                    </androidx.recyclerview.widget.RecyclerView>
+
+
+                                </com.facebook.shimmer.ShimmerFrameLayout>
+
+
+                                <TextView
+                                    android:id="@+id/noData_home_services"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text="@string/no_data_available"
+                                    android:visibility="gone" />
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/providersLay"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="@dimen/_5sdp"
+
+                            android:background="@color/color_sky_blue_dark_main_screen"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:paddingEnd="@dimen/_5sdp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_5sdp"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:fontFamily="@font/outfit"
+                                android:text="@string/service_provider_near_you"
+                                android:textColor="@color/text_color"
+                                android:textSize="@dimen/_13sdp">
+
+                            </TextView>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="horizontal"
+                                android:paddingBottom="@dimen/_10sdp">
+
+                                <androidx.recyclerview.widget.RecyclerView
+                                    android:id="@+id/recycler_home_providers"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:visibility="gone"
+                                    android:orientation="horizontal" />
+
+                                <TextView
+                                    android:id="@+id/noData_home_providers"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text="@string/no_data_available"
+                                    android:visibility="gone" />
+
+
+                                <com.facebook.shimmer.ShimmerFrameLayout
+                                    android:id="@+id/shimmerProviders"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="horizontal">
+
+                                    <androidx.recyclerview.widget.RecyclerView
+                                        android:id="@+id/recyclerShimmerProviders"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:focusable="false"
+                                        android:orientation="horizontal"
+                                        android:scrollbars="none">
+
+                                    </androidx.recyclerview.widget.RecyclerView>
+
+
+                                </com.facebook.shimmer.ShimmerFrameLayout>
+
+
+
+                                <ProgressBar
+                                    android:id="@+id/progHomeProviders"
+                                    android:layout_width="@dimen/_25sdp"
+                                    android:layout_height="@dimen/_25sdp"
+                                    android:layout_marginTop="@dimen/_10sdp"
+                                    android:orientation="horizontal"
+                                    android:visibility="gone" />
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:background="@color/main_screen_bg_color2"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:paddingEnd="@dimen/_5sdp">
+
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/recycler_cat_user"
+                                android:layout_width="match_parent"
+                                android:visibility="gone"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical" />
+
+
+                            <TextView
+                                android:id="@+id/noData_cat_services"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="@string/no_data_available"
+                                android:visibility="gone" />
+
+
+                            <com.facebook.shimmer.ShimmerFrameLayout
+                                android:id="@+id/shimmerCatServices"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <androidx.recyclerview.widget.RecyclerView
+                                    android:id="@+id/recyclerShimmerCatServices"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:focusable="false"
+                                    android:orientation="horizontal"
+                                    android:scrollbars="none">
+
+                                </androidx.recyclerview.widget.RecyclerView>
+
+
+                            </com.facebook.shimmer.ShimmerFrameLayout>
+
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </ScrollView>
+
+            </LinearLayout>
+
+
+        </androidx.core.widget.NestedScrollView>
+
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</RelativeLayout>
+
+
+
+
+

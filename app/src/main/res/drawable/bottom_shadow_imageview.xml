@@ -1,0 +1,7 @@
+<!-- res/drawable/gradient_shadow.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <gradient
+        android:angle="270"
+        android:endColor="@color/theme_blue_alpha"
+        android:startColor="#00000000" />
+</shape>

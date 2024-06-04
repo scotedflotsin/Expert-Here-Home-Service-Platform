@@ -1,0 +1,933 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".serviceProvider.NewServiceActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/toolbarnewservice"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:elevation="@dimen/_10sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:background="@color/widgets_background"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/backNewServiceBtn"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:padding="@dimen/_8sdp"
+                    android:src="@drawable/baseline_arrow_back_24" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingStart="@dimen/_10sdp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/orelegaone"
+                    android:text="Expert "
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/_18sdp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/orelegaone"
+                    android:text="here"
+                    android:textColor="@color/theme_Blue"
+                    android:textSize="@dimen/_18sdp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:fontFamily="@font/outfit"
+                    android:gravity="bottom"
+                    android:text="@string/create_service"
+                    android:textColor="@color/text_color"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/stepsCountText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/_8sdp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/outfit"
+                    android:text="Step 1 of 3"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/grey_white_text_color"
+                    android:textSize="@dimen/_13sdp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/buttonLayProvider"
+        android:layout_below="@+id/toolbarnewservice"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="0dp"
+        android:background="@color/main_screen_bg_color"
+        android:scrollbars="none"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/buttonLayProvider"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarnewservice">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/_14sdp">
+
+            <LinearLayout
+                android:id="@+id/lay1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/nameTextInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColorHint="@null"
+                    app:boxStrokeColor="@drawable/custom_box_stroke_color"
+
+                    app:boxBackgroundColor="@color/et_bg_color"
+                    app:cursorColor="@color/black"
+                    app:expandedHintEnabled="true"
+                    app:hintTextColor="@color/text_color">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etServiceTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_4sdp"
+                        android:fontFamily="@font/outfit"
+                        android:hint="@string/service_title"
+                        android:importantForAutofill="noExcludeDescendants"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:paddingStart="@dimen/_10sdp"
+                        android:textColorHint="@color/grey_white_text_color"
+                        android:textSize="@dimen/_13sdp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tagsTextInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColorHint="@null"
+                    app:boxStrokeColor="@drawable/custom_box_stroke_color"
+
+                    app:boxBackgroundColor="@color/et_bg_color"
+                    app:cursorColor="@color/black"
+                    app:expandedHintEnabled="true"
+                    app:hintTextColor="@color/text_color">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/tagsET"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_4sdp"
+                        android:fontFamily="@font/outfit"
+                        android:hint="@string/service_tag_press_enter_to_add_tag"
+                        android:imeOptions="actionDone"
+                        android:importantForAutofill="noExcludeDescendants"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:paddingStart="@dimen/_10sdp"
+                        android:textColorHint="@color/grey_white_text_color"
+                        android:textSize="@dimen/_13sdp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:gravity="end"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/maxTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="@dimen/_5sdp"
+                        android:text="@string/maximum_5_tags"
+                        android:textColor="@color/text_color" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recylerview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10sdp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/selectCatBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_margin="@dimen/_4sdp"
+                    android:background="@drawable/bg_et"
+                    android:backgroundTint="@color/grey_white_text_color"
+                    android:clickable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/selectedCatTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/outfit"
+                        android:text="@string/select_category"
+                        android:textColor="@color/grey_white_text_color"
+                        android:textSize="@dimen/_13sdp">
+
+                    </TextView>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:src="@drawable/baseline_keyboard_arrow_down_24" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/selectSubCatBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_margin="@dimen/_4sdp"
+                    android:background="@drawable/bg_et"
+                    android:backgroundTint="@color/grey_white_text_color"
+                    android:clickable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:gravity="center_vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/selectedSubCatTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/outfit"
+                        android:text="@string/select_sub_category"
+                        android:textColor="@color/grey_white_text_color"
+                        android:textSize="@dimen/_13sdp">
+
+                    </TextView>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:src="@drawable/baseline_keyboard_arrow_down_24" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_8sdp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/outfit"
+                        android:text="@string/status"
+                        android:textAlignment="viewStart"
+                        android:textSize="@dimen/_13sdp">
+
+                    </TextView>
+
+                    <io.github.vejei.cupertinoswitch.CupertinoSwitch
+
+                        android:id="@+id/switchStatus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:sliderOffColor="@color/theme_Blue"
+                        app:sliderOnColor="@color/white"
+                        app:sliderRadius="@dimen/_40sdp"
+                        app:switchHeight="@dimen/_20sdp"
+                        app:switchWidth="@dimen/_35sdp"
+                        app:trackOffColor="#dddddd"
+                        app:trackOnColor="@color/theme_Blue" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lay2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/_30sdp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/_8sdp"
+                    android:layout_weight="1"
+                    android:textColor="@color/text_color"
+                    android:fontFamily="@font/inter_regular"
+                    android:paddingStart="@dimen/_2sdp"
+                    android:paddingTop="10sp"
+                    android:text="@string/service_image"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/_13sdp">
+
+                </TextView>
+
+
+                <LinearLayout
+
+                    android:id="@+id/uploadLogo"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_140sdp"
+                    android:background="@drawable/bg_dotted"
+                    android:clickable="true"
+                    android:backgroundTint="@color/black"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imgShowLogo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_100sdp"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:paddingTop="@dimen/_10sdp"
+                        android:paddingBottom="@dimen/_10sdp"
+                        android:src="@drawable/app_icon"
+                        android:visibility="gone">
+
+                    </ImageView>
+
+                    <LinearLayout
+                        android:id="@+id/uploadViewLayLogo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/upload_icon"
+                            app:tint="@color/text_color" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/outfit"
+                            android:padding="10sp"
+                            android:textColor="@color/grey_white_text_color"
+                            android:text="@string/upload_logo_jpg_png_jpeg_amp_ratio_1_2"
+                            android:textSize="@dimen/_10sdp">
+
+                        </TextView>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/_8sdp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/inter_regular"
+                    android:paddingStart="@dimen/_2sdp"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:textColor="@color/grey_white_text_color"
+                    android:text="@string/service_cost"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/_13sdp">
+
+                </TextView>
+
+                <LinearLayout
+                    android:id="@+id/selectTaxExcludeBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_45sdp"
+                    android:layout_margin="@dimen/_4sdp"
+                    android:background="@drawable/bg_et"
+                    android:backgroundTint="@color/grey_white_text_color"
+                    android:clickable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/taxExcludeTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/outfit"
+                        android:text="@string/tax_type"
+                        android:textColor="@color/grey_white_text_color"
+                        android:textSize="@dimen/_13sdp">
+
+                    </TextView>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:src="@drawable/baseline_keyboard_arrow_down_24" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/selectTaxValueBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_45sdp"
+                    android:layout_margin="@dimen/_4sdp"
+                    android:background="@drawable/bg_et"
+                    android:backgroundTint="@color/grey_white_text_color"
+                    android:clickable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/taxValueTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/outfit"
+                        android:text="@string/tax_value"
+                        android:textColor="@color/grey_white_text_color"
+                        android:textSize="@dimen/_13sdp">
+
+                    </TextView>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:src="@drawable/baseline_keyboard_arrow_down_24" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/selectCurrencyBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_45sdp"
+                    android:layout_margin="@dimen/_4sdp"
+                    android:background="@drawable/bg_et"
+                    android:backgroundTint="@color/grey_white_text_color"
+                    android:clickable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/currencyTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/outfit"
+                        android:text="@string/currency"
+                        android:textColor="@color/grey_white_text_color"
+                        android:textSize="@dimen/_13sdp">
+
+                    </TextView>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:src="@drawable/baseline_keyboard_arrow_down_24" />
+                </LinearLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/noOfMembersTextInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColorHint="@null"
+                    app:boxStrokeColor="@drawable/custom_box_stroke_color"
+
+                    app:boxBackgroundColor="@color/et_bg_color"
+                    
+                    app:cursorColor="@color/black"
+                    app:expandedHintEnabled="true"
+                    app:hintTextColor="@color/text_color">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/finalPriceEt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_4sdp"
+                        android:fontFamily="@font/outfit"
+                        android:hint="@string/final_price"
+                        android:importantForAutofill="noExcludeDescendants"
+                        android:inputType="number"
+                        android:maxLength="8"
+                        android:maxLines="1"
+                        android:paddingStart="@dimen/_10sdp"
+                        android:textColorHint="@color/grey_white_text_color"
+                        android:textSize="@dimen/_13sdp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/dicountPriceTextInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    app:boxStrokeColor="@drawable/custom_box_stroke_color"
+
+                    android:textColorHint="@null"
+                    app:boxBackgroundColor="@color/et_bg_color"
+                    
+                    app:cursorColor="@color/black"
+                    app:expandedHintEnabled="true"
+                    app:hintTextColor="@color/text_color">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/discountPriceEt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_4sdp"
+                        android:fontFamily="@font/outfit"
+                        android:hint="@string/discount_price"
+                        android:importantForAutofill="noExcludeDescendants"
+                        android:inputType="number"
+                        android:maxLength="8"
+                        android:maxLines="1"
+                        android:paddingStart="@dimen/_10sdp"
+                        android:textColorHint="@color/grey_white_text_color"
+                        android:textSize="@dimen/_13sdp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/membersTextInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    app:boxStrokeColor="@drawable/custom_box_stroke_color"
+
+                    android:textColorHint="@null"
+                    app:boxBackgroundColor="@color/et_bg_color"
+                    
+                    app:cursorColor="@color/black"
+                    app:expandedHintEnabled="true"
+                    app:hintTextColor="@color/text_color">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/membersETService"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_4sdp"
+                        android:fontFamily="@font/outfit"
+                        android:hint="@string/members_for_this_service"
+                        android:importantForAutofill="noExcludeDescendants"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:paddingStart="@dimen/_10sdp"
+                        android:textColorHint="@color/grey_white_text_color"
+                        android:textSize="@dimen/_13sdp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+
+                    <LinearLayout
+                        android:id="@+id/selectDurationBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:backgroundTint="@color/grey"
+                        android:clickable="true"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/durationTxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/outfit"
+                            android:text="@string/select_duration"
+                            android:textColor="@color/grey_white_text_color"
+                            android:textSize="@dimen/_11sdp">
+
+                        </TextView>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/baseline_keyboard_arrow_down_24" />
+
+                        <!--                <LinearLayout-->
+                        <!--                    android:layout_width="2dp"-->
+                        <!--                    android:layout_height="match_parent"-->
+                        <!--                    android:background="@color/mid_grey">-->
+
+                        <!--                </LinearLayout>-->
+
+
+                    </LinearLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/durationTextInputLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:textColorHint="@null"
+                        app:boxBackgroundColor="@color/et_bg_color"
+                        app:boxStrokeColor="@drawable/custom_box_stroke_color"
+
+                        
+                        app:cursorColor="@color/black"
+
+                        app:expandedHintEnabled="true"
+                        app:hintTextColor="@color/text_color">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/durationEt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/outfit"
+                            android:hint="@string/service_duration"
+                            android:importantForAutofill="noExcludeDescendants"
+                            android:inputType="number"
+                            android:maxLines="1"
+                            android:textColorHint="@color/grey_white_text_color"
+                            android:textSize="@dimen/_13sdp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lay3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/buttonLayProvider"
+                android:layout_below="@+id/toolbarnewservice"
+                android:background="@color/main_screen_bg_color"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <!--            html Text Editor -->
+
+
+                <jp.wasabeef.richeditor.RichEditor
+                    android:id="@+id/richEditor"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_350sdp"
+                    android:background="@color/main_screen_bg_color"
+                    android:layout_above="@+id/optionsLayout" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/buttonLayProvider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:background="@color/main_screen_bg_color"
+        android:orientation="vertical"
+        android:padding="@dimen/_14sdp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <Button
+            android:id="@+id/next1Btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bgrectangle"
+            android:foreground="?attr/selectableItemBackground"
+            android:text="@string/next"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12sdp"
+            android:visibility="visible"
+            app:backgroundTint="@color/black" />
+
+
+        <LinearLayout
+            android:id="@+id/next2Layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <Button
+                android:id="@+id/prev2Btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_border"
+                android:foreground="?attr/selectableItemBackground"
+                android:text="@string/previous"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/_12sdp"
+                app:backgroundTint="@color/black" />
+
+            <Button
+                android:id="@+id/next2Btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:background="@drawable/bg_black_rectangle"
+                android:foreground="?attr/selectableItemBackground"
+                android:text="@string/next"
+                android:textSize="@dimen/_12sdp"
+                app:backgroundTint="@color/black" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/next3Layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <HorizontalScrollView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/boldButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:padding="@dimen/_2sdp"
+                        app:tint="@color/grey_white_text_color"
+                        android:src="@drawable/baseline_format_bold_24">
+
+                    </ImageView>
+
+                    <ImageView
+                        android:id="@+id/colorButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:padding="@dimen/_2sdp"
+                        app:tint="@color/grey_white_text_color"
+
+                        android:src="@drawable/baseline_format_color_text_24">
+
+                    </ImageView>
+
+                    <LinearLayout
+                        android:id="@+id/fontSizeButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:clickable="true"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="@dimen/_2sdp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            app:tint="@color/grey_white_text_color"
+                            android:src="@drawable/baseline_text_fields_24">
+
+                        </ImageView>
+
+                        <TextView
+                            android:id="@+id/selectedFontSizeTxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/size"
+                            android:textAlignment="center"
+                            android:textSize="@dimen/_8sdp">
+
+                        </TextView>
+                    </LinearLayout>
+
+
+                    <ImageView
+                        android:id="@+id/alignLeftButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:padding="@dimen/_2sdp"
+                        app:tint="@color/grey_white_text_color"
+
+                        android:src="@drawable/baseline_format_align_left_24" />
+
+                    <ImageView
+                        android:id="@+id/alignCenterButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:padding="@dimen/_2sdp"
+                        app:tint="@color/grey_white_text_color"
+
+                        android:src="@drawable/baseline_format_align_center_24" />
+
+                    <ImageView
+                        android:id="@+id/alignRightButton"
+                        android:layout_width="22dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:padding="@dimen/_2sdp"
+                        app:tint="@color/grey_white_text_color"
+
+                        android:src="@drawable/baseline_format_align_right_24" />
+
+                    <ImageView
+                        android:id="@+id/linksButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:padding="@dimen/_2sdp"
+                        app:tint="@color/grey_white_text_color"
+
+                        android:src="@drawable/baseline_link_24" />
+
+                    <ImageView
+                        android:id="@+id/insertBullets"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/_2sdp"
+                        app:tint="@color/grey_white_text_color"
+
+                        android:src="@drawable/baseline_format_list_bulleted_24" />
+
+                    <ImageView
+                        android:id="@+id/insertNumbers"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/_2sdp"
+                        app:tint="@color/grey_white_text_color"
+
+                        android:src="@drawable/baseline_format_list_numbered_24" />
+
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp">
+
+                <Button
+                    android:id="@+id/prev3Btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_border"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:text="@string/previous"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/_12sdp"
+                    app:backgroundTint="@color/black" />
+
+                <Button
+                    android:id="@+id/complete3Btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/white"
+
+                    android:background="@drawable/bg_black_rectangle"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:text="@string/create"
+                    android:textSize="@dimen/_12sdp"
+                    app:backgroundTint="@color/black" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

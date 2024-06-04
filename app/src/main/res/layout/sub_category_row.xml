@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:id="@+id/select_lay_subcat"
+    android:clickable="true"
+    android:foreground="?attr/selectableItemBackground"
+    android:background="@color/widgets_background"
+    android:layout_height="wrap_content"
+    android:focusable="true">
+
+
+    <TextView
+        android:id="@+id/subCatTxt"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:paddingTop="@dimen/_6sdp"
+        android:paddingBottom="@dimen/_6sdp"
+        android:text="Category Name"
+        android:textSize="@dimen/_11sdp"
+        android:textColor="@color/text_color"
+        android:fontFamily="@font/outfit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+
+</LinearLayout>

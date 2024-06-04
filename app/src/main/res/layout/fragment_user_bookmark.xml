@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".users.fragments.UserBookmarkFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/main_screen_bg_color2">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/toolbarnewservice"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:elevation="@dimen/_10sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:background="@color/widgets_background"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/titleUser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/orelegaone"
+                    android:text="@string/your_bookmark"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/_13sdp">
+
+                </TextView>
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/swipeLayoutBookmark"
+            android:layout_width="match_parent"
+            android:layout_above="@id/my_template"
+            android:layout_height="match_parent"
+            android:layout_below="@id/toolbarnewservice">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/linearLayout17"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/main_screen_bg_color"
+                    android:paddingStart="@dimen/_10sdp"
+
+                    android:paddingTop="@dimen/_10sdp"
+                    android:paddingBottom="@dimen/_10sdp">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/you_have"
+                        android:textSize="@dimen/_10sdp" />
+
+                    <TextView
+                        android:id="@+id/bookmarkCountTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_3sdp"
+                        android:layout_marginEnd="@dimen/_3sdp"
+                        android:text="0"
+                        android:textSize="@dimen/_10sdp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/providers_in_your_wishlist"
+                        android:textSize="@dimen/_10sdp" />
+
+
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler_bookmark"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@id/progress"
+                    android:visibility="gone"
+                    android:layout_below="@+id/linearLayout17"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_5sdp">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+                <com.facebook.shimmer.ShimmerFrameLayout
+                    android:id="@+id/shimmer_bookmark"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@id/progress"
+                    android:visibility="visible"
+                    android:layout_below="@+id/linearLayout17"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_5sdp">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerShimmer"
+                        android:focusable="false"
+                        android:scrollbars="none"
+                        android:padding="@dimen/_5sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                    </androidx.recyclerview.widget.RecyclerView>
+
+                </com.facebook.shimmer.ShimmerFrameLayout>
+
+                <LinearLayout
+                    android:id="@+id/noDataLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    android:layout_above="@id/progress"
+                    android:layout_below="@+id/linearLayout17"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_5sdp">
+
+
+                    <ImageView
+
+                        android:src="@drawable/empty_bookmark_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:textSize="@dimen/_13sdp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:fontFamily="@font/inter_regular"
+                        android:text="@string/your_wishlist_is_empty"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </TextView><TextView
+                        android:textSize="@dimen/_10sdp"
+                        android:textColor="@color/grey_white_text_color"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/inter_regular"
+                        android:text="@string/not_found_any_provider_in_you_list"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+                    <ImageView
+                        android:id="@+id/addNowBtn"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:src="@drawable/add_not_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </ImageView>
+
+                </LinearLayout>
+
+
+                <ProgressBar
+                    android:id="@+id/progress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:visibility="gone">
+
+                </ProgressBar>
+
+            </LinearLayout>
+
+
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+
+        <com.google.android.ads.nativetemplates.TemplateView
+            android:id="@+id/my_template"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:background="@color/main_screen_bg_color"
+            app:gnt_template_type="@layout/gnt_small_template_view" />
+
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

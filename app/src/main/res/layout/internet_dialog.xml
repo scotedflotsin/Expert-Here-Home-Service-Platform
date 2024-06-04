@@ -1,0 +1,77 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_10sdp"
+    app:cardCornerRadius="@dimen/_10sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <LinearLayout
+        android:background="@color/main_screen_bg_color"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="@dimen/_15sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+    <ImageView
+        android:src="@drawable/no_internet_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </ImageView>
+
+
+    <TextView
+        android:id="@+id/dialogTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/no_internet"
+        android:textSize="18sp"
+        android:textColor="@color/text_color"
+        android:fontFamily="@font/oxygen_regular"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/dialogMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textAlignment="center"
+        android:fontFamily="@font/oxygen_regular"
+        android:text="@string/internet_connection_is_required_to_proceed_with_your_operation_the_system_cannot_connect_to_the_main_server_without_internet_access_please_check_your_internet_connection"
+        android:textSize="@dimen/_10sdp"
+        android:gravity="center"/>
+
+
+    <Button
+        android:id="@+id/retryBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:paddingStart="@dimen/_70sdp"
+        android:paddingEnd="@dimen/_70sdp"
+        android:background="@drawable/bg_black_rectangle"
+        android:foreground="?attr/selectableItemBackground"
+        android:text="@string/retry"
+        android:textSize="@dimen/_12sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:backgroundTint="@color/theme_Blue"
+
+        />
+    <TextView
+        android:id="@+id/exitInternet"
+        android:textColor="@color/theme_light_blue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textAlignment="center"
+        android:fontFamily="@font/oxygen_regular"
+        android:text="@string/try_after_some_time"
+        android:textSize="@dimen/_10sdp"
+        android:gravity="center"/>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="initial_slider_values">
+        <item>100.0</item>
+        <item>100.0</item>
+    </array>
+
+
+    <array name="search_uggestions">
+        <item>Car Service</item>
+        <item>Car Painter</item>
+        <item>Ac Service</item>
+        <item>Plumber Service</item>
+    </array>
+
+</resources>

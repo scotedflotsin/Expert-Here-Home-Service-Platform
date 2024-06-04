@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_screen_bg_color"
+    tools:context=".users.IntroActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:gravity="center|top"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Expert "
+            android:fontFamily="@font/orelegaone"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/_18sdp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="here"
+            android:fontFamily="@font/orelegaone"
+            android:textColor="@color/theme_Blue"
+            android:textSize="@dimen/_18sdp" />
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scrollbars="none"
+        android:layout_above="@+id/linearLayout2"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+
+        <LinearLayout
+            android:background="@color/main_screen_bg_color"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/main_screen_bg_color"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    >
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/outfit"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:text="@string/why_choose_us"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/_10sdp">
+
+                    </TextView>
+
+
+                    <LinearLayout
+                        android:id="@+id/layoua1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/light_grey_dot"
+                                android:padding="@dimen/_10sdp"
+                                android:src="@drawable/service"
+                                app:tint="#000">
+
+                            </ImageView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:fontFamily="@font/outfit"
+                                android:text="@string/browse_services_nand_compare_nthan_filter"
+                                android:textAlignment="center"
+                                android:textColor="@color/text_color"
+                                android:textSize="@dimen/_8sdp">
+
+                            </TextView>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/light_grey_dot"
+                                android:padding="@dimen/_10sdp"
+                                android:src="@drawable/call_slim_long"
+                                app:tint="#000">
+
+                            </ImageView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:fontFamily="@font/outfit"
+                                android:text="@string/book_service_at_your_n_home_hassles_nservice"
+                                android:textAlignment="center"
+                                android:textColor="@color/text_color"
+                                android:textSize="@dimen/_8sdp">
+
+                            </TextView>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/light_grey_dot"
+                                android:padding="@dimen/_10sdp"
+                                android:src="@drawable/service_man"
+                                app:tint="#000">
+
+                            </ImageView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:fontFamily="@font/outfit"
+                                android:text="@string/enjoy_service_which_n_is_booked_by_you_nexperts_is_here"
+                                android:textAlignment="center"
+                                android:textColor="@color/text_color"
+                                android:textSize="@dimen/_8sdp">
+
+                            </TextView>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+
+<!--                <org.imaginativeworld.whynotimagecarousel.ImageCarousel-->
+<!--                    android:id="@+id/carousel"-->
+<!--                    android:layout_width="@dimen/_250sdp"-->
+<!--                    android:layout_height="@dimen/_175sdp"-->
+<!--                    app:autoPlay="true"-->
+<!--                    android:visibility="gone"-->
+<!--                    app:showIndicator="true"-->
+<!--                    android:layout_margin="@dimen/_20sdp"-->
+<!--                    app:showNavigationButtons="false"-->
+<!--                    tools:ignore="MissingConstraints" />-->
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/outfit"
+                android:textColor="@color/text_color"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:padding="@dimen/_5sdp"
+                android:text="@string/step_into_a_world_of_comfort_and_convenience_with_expert_your_sanctuary_awaits_where_seamless_living_meets_modern_convenience_unlock_the_door_to_a_smarter_home_experience_where_every_room_is_designed_with_you_in_mind"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="@+id/layoua1"
+                app:layout_constraintStart_toStartOf="@+id/layoua1"
+                app:layout_constraintTop_toBottomOf="@+id/layoua1">
+
+            </TextView>
+
+            <LinearLayout
+                android:background="@color/grey_white_text_color"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="vertical"
+
+                android:padding="@dimen/_5sdp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/ramabhadra"
+                    android:text="@string/get_started_with"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/_16sdp"
+                     />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/orelegaone"
+                        android:text="Expert "
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/_15sdp"
+                         />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/orelegaone"
+                        android:text="here "
+                        android:textColor="@color/theme_Blue"
+                        android:textSize="@dimen/_15sdp"
+                         />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="! "
+                        android:fontFamily="@font/orelegaone"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/_15sdp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_color"
+                    android:fontFamily="@font/outfit"
+                    android:text="@string/welcome_to_expert_here_nconnecting_home_service_providers_with_ease"
+                    android:textSize="@dimen/_12sdp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/why_choose_expert_here"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/_14sdp"
+                    android:fontFamily="@font/outfit"
+                    android:textStyle="bold" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/outfit"
+                    android:text="@string/join_comm"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/_12sdp"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/outfit"
+                    android:text="@string/get_started_in_3_easy_steps"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/_14sdp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_color"
+                    android:fontFamily="@font/outfit"
+                    android:text="@string/stringkamka"
+                    android:textSize="@dimen/_12sdp"
+
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/learn_more_on"
+                        android:fontFamily="@font/outfit"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <TextView
+                        android:id="@+id/linkText"
+                        android:fontFamily="@font/outfit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:text="https://www.experthere.in "
+                        android:textColor="@color/theme_light_blue"
+                        android:textSize="@dimen/_12sdp" />
+
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="2dp"
+        android:gravity="center"
+        android:padding="@dimen/_5sdp"
+
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+<LinearLayout
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/lets_go"
+
+        android:textAlignment="viewStart"
+        android:fontFamily="@font/outfit"
+        android:textColor="@color/text_color"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:textSize="@dimen/_14sdp" />
+    <Button
+        android:id="@+id/createAccountBtn"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:textSize="@dimen/_12sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/secondTextColor"
+        android:backgroundTint="@color/theme_Blue"
+        android:text="@string/create_new_account" />
+
+
+    <Button
+        android:id="@+id/haveAccountBtn"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:textSize="@dimen/_12sdp"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/text_color"
+        android:text="@string/already_have_account" />
+
+</LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/partnerRegisterTxtBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/outfit"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:padding="@dimen/_5sdp"
+                android:textColor="@color/text_color"
+                android:text="@string/become_a_patner" />
+            <TextView
+                android:id="@+id/partnerLoginTxtBtn"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:fontFamily="@font/outfit"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/_12sdp"
+                android:padding="@dimen/_5sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/partner_login" />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

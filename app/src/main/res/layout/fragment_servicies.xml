@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".serviceProvider.fragments.ServicesFragment">
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/main_screen_bg_color">
+
+
+            <TextView
+                android:id="@+id/noServiceTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No Service Added Yet !\n Create New On Clicking + icon!"
+                android:textAlignment="center"
+                android:textSize="@dimen/_14sdp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+            </TextView>
+
+
+            <LinearLayout
+                android:id="@+id/linearLayout6"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_margin="@dimen/_10sdp"
+                android:background="@drawable/bg_et"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/_2sdp"
+                android:paddingRight="@dimen/_2sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+                <androidx.appcompat.widget.SearchView
+                    android:id="@+id/searchView"
+                    android:theme="@style/AppSearchView"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_27sdp"
+                    android:background="@color/main_screen_bg_color"
+                    android:fontFamily="@font/oxygen_regular"
+                    app:iconifiedByDefault="false"
+                    app:queryBackground="@color/main_screen_bg_color"
+                    app:queryHint="@string/search_services"
+                    app:searchIcon="@drawable/search">
+
+                </androidx.appcompat.widget.SearchView>
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerServices"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_43sdp"
+                android:orientation="vertical"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout6">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <com.facebook.shimmer.ShimmerFrameLayout
+                android:id="@+id/shimmerServices"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_43sdp"
+                android:orientation="vertical"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout6">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerShimmer"
+                    android:focusable="false"
+                    android:scrollbars="none"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                </androidx.recyclerview.widget.RecyclerView>
+
+            </com.facebook.shimmer.ShimmerFrameLayout>
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <ImageView
+                android:id="@+id/add_btn_newService"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_18sdp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/add_plus_icon"
+                app:backgroundTint="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+            </ImageView>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+</FrameLayout>
