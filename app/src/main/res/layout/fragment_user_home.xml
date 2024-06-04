@@ -297,18 +297,19 @@
                                 android:id="@+id/recycler_cat"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:visibility="gone"
+                                android:layout_marginBottom="@dimen/_5sdp"
                                 android:layout_marginStart="@dimen/_10sdp"
                                 android:layout_marginTop="@dimen/_10sdp"
-                                android:orientation="horizontal" />
+                                android:orientation="horizontal"
+                                android:visibility="gone" />
 
 
                             <com.facebook.shimmer.ShimmerFrameLayout
                                 android:id="@+id/shimmerCat"
                                 android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
                                 android:layout_marginStart="@dimen/_8sdp"
                                 android:layout_marginTop="@dimen/_10sdp"
-                                android:layout_height="wrap_content"
                                 android:orientation="horizontal">
 
                                 <androidx.recyclerview.widget.RecyclerView
@@ -323,7 +324,6 @@
 
 
                             </com.facebook.shimmer.ShimmerFrameLayout>
-
 
 
                             <ProgressBar
@@ -456,8 +456,8 @@
                                     android:layout_width="0dp"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
-                                    android:visibility="gone"
-                                    android:orientation="horizontal" />
+                                    android:orientation="horizontal"
+                                    android:visibility="gone" />
 
                                 <ProgressBar
                                     android:id="@+id/progHomeServices"
@@ -466,6 +466,7 @@
                                     android:layout_marginTop="@dimen/_10sdp"
                                     android:orientation="horizontal"
                                     android:visibility="gone" />
+
                                 <com.facebook.shimmer.ShimmerFrameLayout
                                     android:id="@+id/shimmerHomeServices"
                                     android:layout_width="0dp"
@@ -537,8 +538,8 @@
                                     android:layout_width="0dp"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
-                                    android:visibility="gone"
-                                    android:orientation="horizontal" />
+                                    android:orientation="horizontal"
+                                    android:visibility="gone" />
 
                                 <TextView
                                     android:id="@+id/noData_home_providers"
@@ -571,7 +572,6 @@
                                 </com.facebook.shimmer.ShimmerFrameLayout>
 
 
-
                                 <ProgressBar
                                     android:id="@+id/progHomeProviders"
                                     android:layout_width="@dimen/_25sdp"
@@ -599,9 +599,9 @@
                             <androidx.recyclerview.widget.RecyclerView
                                 android:id="@+id/recycler_cat_user"
                                 android:layout_width="match_parent"
-                                android:visibility="gone"
                                 android:layout_height="match_parent"
-                                android:orientation="vertical" />
+                                android:orientation="vertical"
+                                android:visibility="gone" />
 
 
                             <TextView
@@ -631,7 +631,6 @@
 
 
                             </com.facebook.shimmer.ShimmerFrameLayout>
-
 
 
                         </LinearLayout>
