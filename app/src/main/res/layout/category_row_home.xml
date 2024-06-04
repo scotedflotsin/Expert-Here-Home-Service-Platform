@@ -20,8 +20,8 @@
 
         <ImageView
             android:id="@+id/catImg"
-            android:layout_width="@dimen/_30sdp"
-            android:layout_height="@dimen/_40sdp"
+            android:layout_width="@dimen/_44sdp"
+            android:layout_height="@dimen/_44sdp"
             android:src="@drawable/demo_cat" />
 
         <TextView
