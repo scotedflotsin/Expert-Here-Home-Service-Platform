@@ -1,4 +1,0 @@
-#Tue Jun 04 12:16:55 IST 2024
-base.0=D\:\\Expert Here\\Expert Here Full Projects 1 June latest final\\Expert Here Full Projects 1 June latest final\\ExpertHere 7 march\\nativetemplates\\build\\intermediates\\dex\\debugAndroidTest\\mergeDexDebugAndroidTest\\classes.dex
-path.0=classes.dex
-renamed.0=classes.dex

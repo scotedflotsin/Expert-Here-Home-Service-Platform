@@ -154,7 +154,7 @@ public class HelpUserActivity extends AppCompatActivity {
 
         String email = preferences.getString("email", "0");
         String name = preferences.getString("name", "0");
-        String to = "issues@experthere.in";
+        String to = "info@experthere.in";
         String subject = "User : General Help";
 
         ApiInterface apiInterface = ApiClient.getClient().create(ApiInterface.class);
@@ -170,6 +170,7 @@ public class HelpUserActivity extends AppCompatActivity {
 
                         issueET.setText("");
                         Toast.makeText(HelpUserActivity.this, "Ticket Submitted!", Toast.LENGTH_SHORT).show();
+
                     }
                 });
 

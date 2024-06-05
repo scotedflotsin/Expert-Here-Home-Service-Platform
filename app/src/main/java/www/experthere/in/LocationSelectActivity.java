@@ -437,6 +437,10 @@ public class LocationSelectActivity extends AppCompatActivity implements OnMapRe
                 }
             } else {
                 // Permission denied, handle accordingly
+
+                Toast.makeText(LocationSelectActivity.this, "Running", Toast.LENGTH_SHORT).show();
+
+
             }
         }
     }
@@ -797,7 +801,7 @@ public void mapLocatorWithOutGps(String latitude,String longitude){
             checkIfGpsIsEnabled();
         } catch (NumberFormatException e) {
             // Handle the exception if parsing fails
-            Toast.makeText(getApplicationContext(), "Invalid latitude or longitude values!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), e.getLocalizedMessage(), Toast.LENGTH_SHORT).show();
             checkIfGpsIsEnabled();
 
         }
