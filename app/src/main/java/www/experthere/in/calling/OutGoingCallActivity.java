@@ -74,6 +74,7 @@ public class OutGoingCallActivity extends AppCompatActivity implements SensorEve
 
         setUpProximatySensor();
 
+
         IntentFilter filter = new IntentFilter();
         filter.addAction(ACTION_STOP);
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {

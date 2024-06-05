@@ -40,6 +40,7 @@ import www.experthere.in.FCM.AnswerCallReceiver;
 import www.experthere.in.FCM.RejectCallReceiver;
 import www.experthere.in.MyApplication;
 import www.experthere.in.R;
+import www.experthere.in.SplashScreen;
 import www.experthere.in.api.ApiClient;
 import www.experthere.in.api.ApiInterface;
 import www.experthere.in.helper.CustomToastNegative;
@@ -69,11 +70,7 @@ public class CallingScreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
 
-        getWindow().addFlags(WindowManager.LayoutParams.FLAG_SHOW_WHEN_LOCKED |
-                WindowManager.LayoutParams.FLAG_DISMISS_KEYGUARD |
-                WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON |
-                WindowManager.LayoutParams.FLAG_FULLSCREEN |
-                WindowManager.LayoutParams.FLAG_TURN_SCREEN_ON);
+        getWindow().addFlags(WindowManager.LayoutParams.FLAG_SHOW_WHEN_LOCKED | WindowManager.LayoutParams.FLAG_DISMISS_KEYGUARD | WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON | WindowManager.LayoutParams.FLAG_FULLSCREEN | WindowManager.LayoutParams.FLAG_TURN_SCREEN_ON);
 
         setContentView(R.layout.activity_callig_screen);
 
@@ -96,9 +93,7 @@ public class CallingScreen extends AppCompatActivity {
 
 
         PowerManager powerManager = (PowerManager) getSystemService(Context.POWER_SERVICE);
-        PowerManager.WakeLock wakeLock = powerManager.newWakeLock(PowerManager.FULL_WAKE_LOCK |
-                PowerManager.ACQUIRE_CAUSES_WAKEUP |
-                PowerManager.ON_AFTER_RELEASE, "YourApp:WakeLock");
+        PowerManager.WakeLock wakeLock = powerManager.newWakeLock(PowerManager.FULL_WAKE_LOCK | PowerManager.ACQUIRE_CAUSES_WAKEUP | PowerManager.ON_AFTER_RELEASE, "YourApp:WakeLock");
         wakeLock.acquire();
 
         KeyguardManager keyguardManager = (KeyguardManager) getSystemService(Context.KEYGUARD_SERVICE);
@@ -110,7 +105,7 @@ public class CallingScreen extends AppCompatActivity {
         filter1.addAction(CALL_REJECTED_BY_USER);
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
             registerReceiver(dismissCallingScreenReceiver, filter1, Context.RECEIVER_NOT_EXPORTED);
-        }else {
+        } else {
             registerReceiver(dismissCallingScreenReceiver, filter1);
 
         }
@@ -123,7 +118,7 @@ public class CallingScreen extends AppCompatActivity {
         filter.addAction(FINISH_ACTION);
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
             registerReceiver(finishReceiver, filter, Context.RECEIVER_NOT_EXPORTED);
-        }else {
+        } else {
             registerReceiver(finishReceiver, filter);
 
         }
@@ -174,12 +169,14 @@ public class CallingScreen extends AppCompatActivity {
                 NotificationManager notificationManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
                 if (bundle != null) {
                     notificationManager.cancel(bundle.getInt("notification_id", 0));
+                    Log.d("DR3076818", "This is hiting.");
                 }
 
 
                 sendBroadcast(declineIntent);
 
-                finish();
+         finish();
+
 
             }
         });
@@ -189,19 +186,23 @@ public class CallingScreen extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 //                processingDialog.show();
-                Log.e(TAG, "onClick: Pick  button" );
-                NotificationManager notificationManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
 
-                if (bundle != null) {
-                    notificationManager.cancel(bundle.getInt("notification_id", 0));
-                }
 
-                Intent acceptIntent = new Intent(CallingScreen.this, AnswerCallReceiver.class);
-                acceptIntent.putExtras(getIntent());
-                acceptIntent.setAction(AnswerCallReceiver.ANSWER_CALL_ACTION);
-                sendBroadcast(acceptIntent);
+                    Log.e(TAG, "onClick: Pick  button");
+                    NotificationManager notificationManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
 
-                finish();
+                    if (bundle != null) {
+                        notificationManager.cancel(bundle.getInt("notification_id", 0));
+                    }
+
+                    Intent acceptIntent = new Intent(CallingScreen.this, AnswerCallReceiver.class);
+                    acceptIntent.putExtras(getIntent());
+                    acceptIntent.setAction(AnswerCallReceiver.ANSWER_CALL_ACTION);
+                    sendBroadcast(acceptIntent);
+
+                    finish();
+
+
             }
         });
 
@@ -371,7 +372,7 @@ public class CallingScreen extends AppCompatActivity {
                             @Override
                             public void run() {
 
-                                CustomToastNegative.create(getApplicationContext(),"Error: "+serviceResponse.getMessage());
+                                CustomToastNegative.create(getApplicationContext(), "Error: " + serviceResponse.getMessage());
 
                                 doneCallHistory();
 
@@ -385,7 +386,7 @@ public class CallingScreen extends AppCompatActivity {
                     new Handler(Looper.getMainLooper()).post(new Runnable() {
                         @Override
                         public void run() {
-                            CustomToastNegative.create(getApplicationContext()," "+serviceResponse.getMessage());
+                            CustomToastNegative.create(getApplicationContext(), " " + serviceResponse.getMessage());
                             doneCallHistory();
 
                         }
@@ -474,7 +475,7 @@ public class CallingScreen extends AppCompatActivity {
                         new Handler(Looper.getMainLooper()).post(new Runnable() {
                             @Override
                             public void run() {
-                                CustomToastNegative.create(getApplicationContext(),"Error: "+serviceResponse.getMessage());
+                                CustomToastNegative.create(getApplicationContext(), "Error: " + serviceResponse.getMessage());
                                 doneCallHistory();
 
                             }
@@ -487,7 +488,7 @@ public class CallingScreen extends AppCompatActivity {
                     new Handler(Looper.getMainLooper()).post(new Runnable() {
                         @Override
                         public void run() {
-                            CustomToastNegative.create(getApplicationContext()," "+serviceResponse.getMessage());
+                            CustomToastNegative.create(getApplicationContext(), " " + serviceResponse.getMessage());
                             doneCallHistory();
 
                         }
