@@ -317,5 +317,6 @@
     <string name="ready_to_add_your_first_service">Ready To Add Your First Service?</string>
     <string name="start_offering_your_service_today">Start Offering Your Service Today!</string>
     <string name="add_first_service">Add First Service</string>
+    <string name="share_profile">Share profile</string>
 
 </resources>

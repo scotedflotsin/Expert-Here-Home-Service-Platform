@@ -26,6 +26,7 @@ import com.karumi.dexter.listener.multi.MultiplePermissionsListener;
 import java.util.List;
 
 import www.experthere.in.R;
+import www.experthere.in.helper.CustomToastNegative;
 import www.experthere.in.helper.InternetReceiver;
 import www.experthere.in.serviceProvider.ProviderIntroActivity;
 
@@ -122,23 +123,49 @@ public class IntroActivity extends AppCompatActivity  {
     private void checkPermissions() {
 
 
-        Dexter.withContext(getApplicationContext())
-                .withPermissions(Manifest.permission.ACCESS_FINE_LOCATION, Manifest.permission.ACCESS_COARSE_LOCATION)
-                .withListener(new MultiplePermissionsListener() {
-                    @Override
-                    public void onPermissionsChecked(MultiplePermissionsReport multiplePermissionsReport) {
+//        Dexter.withContext(getApplicationContext())
+//                .withPermissions(Manifest.permission.ACCESS_FINE_LOCATION, Manifest.permission.ACCESS_COARSE_LOCATION)
+//                .withListener(new MultiplePermissionsListener() {
+//                    @Override
+//                    public void onPermissionsChecked(MultiplePermissionsReport multiplePermissionsReport) {
+//
+//                        if (multiplePermissionsReport.areAllPermissionsGranted()) {
+//
+//                        }
+//
+//                    }
+//
+//                    @Override
+//                    public void onPermissionRationaleShouldBeShown(List<PermissionRequest> list, PermissionToken permissionToken) {
+//
+//                    }
+//                }).check();
 
-                        if (multiplePermissionsReport.areAllPermissionsGranted()) {
-
+            Dexter.withContext(this)
+                    .withPermissions(
+                            Manifest.permission.ACCESS_FINE_LOCATION,
+                            Manifest.permission.ACCESS_COARSE_LOCATION
+                    )
+                    .withListener(new MultiplePermissionsListener() {
+                        @Override
+                        public void onPermissionsChecked(MultiplePermissionsReport multiplePermissionsReport) {
+                            if (multiplePermissionsReport.areAllPermissionsGranted()) {
+                                // Permissions are granted
+                            } else {
+                                // Permissions are denied
+                                checkPermissions(); // Re-check permissions
+                            }
                         }
 
-                    }
+                        @Override
+                        public void onPermissionRationaleShouldBeShown(List<PermissionRequest> list, PermissionToken permissionToken) {
+                            // Show the rationale and continue asking for permissions
+                            permissionToken.continuePermissionRequest();
+                            CustomToastNegative.create(getApplicationContext(),"Permission Required!");
 
-                    @Override
-                    public void onPermissionRationaleShouldBeShown(List<PermissionRequest> list, PermissionToken permissionToken) {
+                        }
+                    }).check();
 
-                    }
-                }).check();
 
 
     }

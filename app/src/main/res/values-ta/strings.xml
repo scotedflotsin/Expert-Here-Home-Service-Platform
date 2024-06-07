@@ -318,5 +318,6 @@
     <string name="ready_to_add_your_first_service">உங்கள் முதல் சேவையை சேர்க்க தயார்?</string>
     <string name="start_offering_your_service_today">இன்று உங்கள் சேவையை வழங்கத் தொடங்குங்கள்!</string>
     <string name="add_first_service">முதல் சேவையைச் சேர்</string>
+    <string name="share_profile">சுயவிவரத்தைப் பகிரவும்</string>
 
 </resources>

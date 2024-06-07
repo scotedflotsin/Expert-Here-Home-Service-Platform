@@ -864,12 +864,14 @@ public class HomeActivity extends AppCompatActivity {
             @Override
             public void onPermissionDenied(PermissionDeniedResponse permissionDeniedResponse) {
 
-                CustomToastNegative.create(getApplicationContext(), "Audio Permission Required!");
+                runOnUiThread(() ->{
+                    CustomToastNegative.create(getApplicationContext(), "Audio Permission Required!");
+                });
 
                 isGranted = false;
 
 
-                if (permissionDeniedResponse.isPermanentlyDenied()) {
+               if (permissionDeniedResponse.isPermanentlyDenied()) {
 
                     showPermissionDeniedDialog();
                 }
@@ -879,6 +881,7 @@ public class HomeActivity extends AppCompatActivity {
 
             @Override
             public void onPermissionRationaleShouldBeShown(PermissionRequest permissionRequest, PermissionToken permissionToken) {
+                permissionToken.continuePermissionRequest();
 
             }
         }).check();

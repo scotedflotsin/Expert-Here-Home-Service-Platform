@@ -243,7 +243,7 @@ public class ProviderDetailsActivity extends AppCompatActivity implements OnSubm
 
 
                             CustomToastNegative.create(getApplicationContext(),"Permission Required!");
-
+                            permissionToken.continuePermissionRequest();
                         }
                     }).check();
 
@@ -265,6 +265,8 @@ public class ProviderDetailsActivity extends AppCompatActivity implements OnSubm
                         public void onPermissionRationaleShouldBeShown(List<PermissionRequest> list, PermissionToken permissionToken) {
 
                             CustomToastNegative.create(getApplicationContext(),"Permission Required!");
+                            permissionToken.continuePermissionRequest();
+
                         }
                     }).check();
 
