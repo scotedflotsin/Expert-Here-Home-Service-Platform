@@ -437,6 +437,10 @@ public class LocationSelectActivity extends AppCompatActivity implements OnMapRe
                 }
             } else {
                 // Permission denied, handle accordingly
+
+                Toast.makeText(LocationSelectActivity.this, "Running", Toast.LENGTH_SHORT).show();
+
+
             }
         }
     }
@@ -790,14 +794,14 @@ public void mapLocatorWithOutGps(String latitude,String longitude){
             LatLng userLatLng = new LatLng(lat, lon);
 
             // Show a toast with the LatLng value
-            Toast.makeText(getApplicationContext(), userLatLng.toString(), Toast.LENGTH_SHORT).show();
+           // Toast.makeText(getApplicationContext(), userLatLng.toString(), Toast.LENGTH_SHORT).show();
 
             // Move the camera to the user's location on the map
             googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(userLatLng, 18.634048f));
             checkIfGpsIsEnabled();
         } catch (NumberFormatException e) {
             // Handle the exception if parsing fails
-            Toast.makeText(getApplicationContext(), "Invalid latitude or longitude values!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), e.getLocalizedMessage(), Toast.LENGTH_SHORT).show();
             checkIfGpsIsEnabled();
 
         }
