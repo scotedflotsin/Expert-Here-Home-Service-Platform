@@ -438,8 +438,7 @@ public class LocationSelectActivity extends AppCompatActivity implements OnMapRe
             } else {
                 // Permission denied, handle accordingly
 
-                Toast.makeText(LocationSelectActivity.this, "Running", Toast.LENGTH_SHORT).show();
-
+                mapLocatorWithOutGps("28.6129","77.229446");
 
             }
         }
